@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: mathdurga
 github_username: iamdurga
 search: true
-repository: "iamdurga1/iamdurga.github.io"
+repository: "iamdurga/iamdurga.github.io"
 # Build settings
 markdown: kramdown
 kramdown:
@@ -32,7 +32,8 @@ syntax_highlighter_opts:
 google-site-verification: ""
 logo: "/assets/head.png"
 teaser: "/assets/teaser.png"
-remote_theme: mmistakes/minimal-mistakes
+# remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 # Outputting
 # permalink: /:categories/:title/
 permalink: /:year/:month/:day/:title/
