@@ -30,8 +30,8 @@ syntax_highlighter_opts:
     block:
         line_numbers: true
 google-site-verification: ""
-logo: "/assets/images/pp.jpg"
-teaser: "/assets/images/project.jpg"
+logo: "/assets/head.png"
+teaser: "/assets/teaser.png"
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 # permalink: /:categories/:title/
