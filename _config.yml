@@ -1,0 +1,125 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Durga Pokharel
+email: pokhareldurga88@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A girl pursuing MSc. Mathematics on CDM TU.  
+twitter_username: mathdurga
+github_username: iamdurga
+search: true
+repository: "iamdurga1/iamdurga.github.io"
+# Build settings
+markdown: kramdown
+kramdown:
+   math_engine: mathjax
+   highlighter: rouge
+syntax_highlighter_opts:
+    block:
+        line_numbers: true
+google-site-verification: ""
+logo: "/assets/images/pp.jpg"
+teaser: "/assets/images/project.jpg"
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+# permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Durga Pokharel"
+  avatar : "/assets/images/pp.jpg"
+  bio    : "Student of MSc. Mathematics CDM TU and trying to learn programming."
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mathdurga"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/iamdurga"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/mathdurga"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/iamdurga"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      classes: wide
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+comments:
+  provider: "facebook"
+  facebook:
+    appid: 3681244498592683 # optional
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
