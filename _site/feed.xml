@@ -1,113 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-24T17:26:11+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.  </subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">Why do i regret not knowing about GitHub Pages earlier?</title><link href="http://localhost:4000/2020/09/19/why-do-i-regret-not-knowing-about-gitHub-pages-earlier/" rel="alternate" type="text/html" title="Why do i regret not knowing about GitHub Pages earlier?" /><published>2020-09-19T01:29:17+05:45</published><updated>2020-09-19T01:29:17+05:45</updated><id>http://localhost:4000/2020/09/19/why-do-i-regret-not-knowing-about-gitHub-pages-earlier</id><content type="html" xml:base="http://localhost:4000/2020/09/19/why-do-i-regret-not-knowing-about-gitHub-pages-earlier/">&lt;p&gt;&lt;strong&gt;Contents&lt;/strong&gt;&lt;/p&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#create-github-account&quot; id=&quot;markdown-toc-create-github-account&quot;&gt;Create GitHub account&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#download-and-install-ruby&quot; id=&quot;markdown-toc-download-and-install-ruby&quot;&gt;Download and Install Ruby&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#make-first-jekyll-project&quot; id=&quot;markdown-toc-make-first-jekyll-project&quot;&gt;Make First Jekyll Project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#deploy-it-on-github&quot; id=&quot;markdown-toc-deploy-it-on-github&quot;&gt;Deploy it on GitHub&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#make-a-repository&quot; id=&quot;markdown-toc-make-a-repository&quot;&gt;Make a Repository&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#blogging&quot; id=&quot;markdown-toc-blogging&quot;&gt;Blogging&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#before-writing-a-math-blog&quot; id=&quot;markdown-toc-before-writing-a-math-blog&quot;&gt;Before writing a Math Blog&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#on-_configyml&quot; id=&quot;markdown-toc-on-_configyml&quot;&gt;On _config.yml&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#show-formula&quot; id=&quot;markdown-toc-show-formula&quot;&gt;Show Formula&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#first-blog&quot; id=&quot;markdown-toc-first-blog&quot;&gt;First Blog&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#make-awesome-posts&quot; id=&quot;markdown-toc-make-awesome-posts&quot;&gt;Make Awesome Posts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#add-and-view-comment&quot; id=&quot;markdown-toc-add-and-view-comment&quot;&gt;Add and View Comment&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#polish-it&quot; id=&quot;markdown-toc-polish-it&quot;&gt;Polish It&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-24T18:33:36+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.  </subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">The Power of ‘What if?’</title><link href="http://localhost:4000/2020/09/19/the-power-of-what-if/" rel="alternate" type="text/html" title="The Power of 'What if?'" /><published>2020-09-19T01:29:17+05:45</published><updated>2020-09-19T01:29:17+05:45</updated><id>http://localhost:4000/2020/09/19/the-power-of-what-if</id><content type="html" xml:base="http://localhost:4000/2020/09/19/the-power-of-what-if/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;What if I did this? What if I couldn’t do this?&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="thoughts" /><category term="journal" /><summary type="html">Introduction What if I did this? What if I couldn’t do this?</summary></entry><entry><title type="html">My Blogging Journey</title><link href="http://localhost:4000/2020/09/19/my-blogging-journey/" rel="alternate" type="text/html" title="My Blogging Journey" /><published>2020-09-19T01:29:17+05:45</published><updated>2020-09-19T01:29:17+05:45</updated><id>http://localhost:4000/2020/09/19/my-blogging-journey</id><content type="html" xml:base="http://localhost:4000/2020/09/19/my-blogging-journey/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I was teaching secondary level students on 2019 and I was learning lots of things during that 1 year. It was really an amazing experience that I could share lots of thing and at the same time I learned the best practices that can be done my teachers to help students on their studies. And one of them is blogging.&lt;/p&gt;
 
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;A mathematics student from Nepal is about to write.&lt;/p&gt;
+&lt;h2 id=&quot;how-am-i-here&quot;&gt;How am I here?&lt;/h2&gt;
+&lt;p&gt;It really is hard for me to start blogging and all these tech stuffs were totally new to me but not until we try to learn it. So on 2019, I was trying to learn Python programming language, I wrote my first ever class on programming language on 2019. I was interested on Application of Mathematics on Machine Learning but due to personal problems, I couldn’t learn these much. Then while doing my MSc, I learned Latex, of course it is not a programming language. Then one of my friend suggested me to do blogging about the assignments and courseworks on our MSc degree. It was totally tough start for me not because I was new to this world but I am on village far from city and good Internet Connection. Due to COVID-19, I am on my village learning blogging and taking online classes using cellular data.&lt;/p&gt;
 
-&lt;h2 id=&quot;create-github-account&quot;&gt;Create GitHub account&lt;/h2&gt;
-&lt;p&gt;Of course we need one account. Everyone knows how to make one.&lt;/p&gt;
-
-&lt;h2 id=&quot;download-and-install-ruby&quot;&gt;Download and Install Ruby&lt;/h2&gt;
-&lt;p&gt;In order to maintain our project locally, it is necessary to download &lt;em&gt;Ruby&lt;/em&gt;. I hope you can find it on rubyinstaller.org/downloads for your system. I am using windows right now so i will write about it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Follow&lt;/strong&gt;: &lt;a href=&quot;https://www.kiltandcode.com/2020/04/30/how-to-create-a-blog-using-jekyll-and-github-pages-on-windows/&quot;&gt;Klit&amp;amp;Code&lt;/a&gt; for more hints.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please read more about installation on rubyinstaller.org for your easy setup.&lt;/p&gt;
-
-&lt;h2 id=&quot;make-first-jekyll-project&quot;&gt;Make First Jekyll Project&lt;/h2&gt;
+&lt;h2 id=&quot;okay-but-how-am-i-doing-it&quot;&gt;Okay but how am I doing it?&lt;/h2&gt;
+&lt;p&gt;I started with GitHub account and then ended with this platform. There are lot to learn and I am just a beginner on this field. But writing about my steps, there are few:-&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;First install jekyll.
-  Do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll bundler&lt;/code&gt; from terminal.&lt;/li&gt;
-  &lt;li&gt;Check your version if necessary by using -v argument. i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll -v&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;From the terminal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new path-to-project&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;To view initial project, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; then goto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Made GitHub account and learned about Git (still learning).&lt;/li&gt;
+  &lt;li&gt;Made a simple Jekyll site using default theme (i.e Minima) (I didn’t knew what is theme until I tried this).&lt;/li&gt;
+  &lt;li&gt;Heard about Minimal Mistakes, then tried it and glad to find this soon.&lt;/li&gt;
+  &lt;li&gt;Configured Google Analytics and Search Consoles.&lt;/li&gt;
+  &lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;deploy-it-on-github&quot;&gt;Deploy it on GitHub&lt;/h2&gt;
-&lt;p&gt;There are 2 ways, easy but slower, hard but faster. The easier way is using GitHub on browser and harder is GIT. To learn about GIT you can always go to pages like &lt;a href=&quot;https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html&quot;&gt;this one&lt;/a&gt;. I am going after easy part.&lt;/p&gt;
-
-&lt;h3 id=&quot;make-a-repository&quot;&gt;Make a Repository&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Go to your GitHub account and make a new repository under the name :&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;your-github-username.github.io&lt;/code&gt;. For me, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;iamdurga.github.io&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;For easier setup, start with a Readme.md file.&lt;/li&gt;
-  &lt;li&gt;Then go to add files.&lt;/li&gt;
-  &lt;li&gt;Drag and drop the files you were working on earlier inside project folder.&lt;/li&gt;
-  &lt;li&gt;Then goto the new tab on browser and type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;your-github-username.github.io&lt;/code&gt; hit enter and TADAAAAA.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;blogging&quot;&gt;Blogging&lt;/h2&gt;
-&lt;h3 id=&quot;before-writing-a-math-blog&quot;&gt;Before writing a Math Blog&lt;/h3&gt;
-&lt;p&gt;Just copy some files to your project from source theme. Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle info minima&lt;/code&gt; and hit enter to get onto minima directory. Goto that directory and copy the folders &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; and paste them to project directory.&lt;/p&gt;
-
-&lt;h4 id=&quot;on-_configyml&quot;&gt;On _config.yml&lt;/h4&gt;
-&lt;p&gt;Add below code too.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markdown: kramdown&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kramdown:&lt;/code&gt;&lt;br /&gt;
- &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;math_engine: mathjax&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.mathjax.org&quot;&gt;MathJax&lt;/a&gt; is awesome JS display engine that allows us to visualize Math Formulas. &lt;a href=&quot;https://kramdown.gettalong.org&quot;&gt;Kramdown&lt;/a&gt; according to developers is &lt;i&gt;kramdown (sic, not Kramdown or KramDown, just kramdown) is a free MIT-licensed Ruby library for parsing and converting a superset of Markdown. &lt;/i&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;show-formula&quot;&gt;Show Formula&lt;/h3&gt;
-&lt;p&gt;Since i pretend to be Machine Learning guy, i have to write notations and symbols on blogs always so there is a better way of doing this by using MathJax. A Javascript Framework.&lt;/p&gt;
-
-&lt;p&gt;I searched and tried different solutions but none worked for me may be i was doing it on wrong way but finally i got through the post of &lt;a href=&quot;http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html&quot;&gt;Ian Goodfellow&lt;/a&gt;, father of GAN.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;He suggested to use above code on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes/post.html&lt;/code&gt; but seems putting it on top of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt; also works fine if we have formula on title too. It is not a magic but every blog page has stack of pages like header, footer etc.&lt;/p&gt;
-
-&lt;h3 id=&quot;first-blog&quot;&gt;First Blog&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;I hope you are a VS Code Fan. Goto the folder inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; of our project directory and create a new markdown file with the format like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2020-9-19-why-use-github-pages.md&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Then on the top of file, write somethinge like below:&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;---&lt;/code&gt;&lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;layout: post &lt;/code&gt;&lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title:  &quot;Why do i regret not knowing about GitHub Pages earlier?&quot;&lt;/code&gt;&lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;date:   2020-09-19 10:29:17 +0545&lt;/code&gt;&lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;categories: jekyll update&lt;/code&gt;&lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;---&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The above format is named as [front matter]https://jekyllrb.com/docs/front-matter/). The terms &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;layout&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; etc are known as variables. We can add our own varaibles to make more awesome blogs.
-We can even use future date and the blog will be published on that date. The categories we used here will be automatically used on blog path by default. And the layout of this blog will be of post. It is interesting to see the file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts/post.html&lt;/code&gt;. We can only use layouts that are defined under that directory.
-So the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$ E=\frac{1}{2m} \sum_{i=0}^m {(y_i - t_i)^2} $$&lt;/code&gt; is the LaTex code for RMS error on ML world.&lt;/p&gt;
-
-\[E=\frac{1}{2m} \sum_{i=0}^m {(y_i - t_i)^2}\]
-
-&lt;p&gt;Pretty Cool right?&lt;/p&gt;
-
-&lt;h2 id=&quot;make-awesome-posts&quot;&gt;Make Awesome Posts&lt;/h2&gt;
-&lt;p&gt;First thing we need is to make a custom category. Initially, we have only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;, you can see under the folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt;. But pretty thing is whenever we write a new post on markdown and give the category name different on the top bar(see above) then new category is made. But still the post will not be visible to the front page so what can we do is add a permalink on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. i.e. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;permalink: /:categories/:year/:month/:day/:title:output_ext&lt;/code&gt;. Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:categories&lt;/code&gt; is placeholder for categories. Follow &lt;a href=&quot;https://jekyllrb.com/docs/permalinks/&quot;&gt;this&lt;/a&gt; official doc for more information.&lt;/p&gt;
-
-&lt;h2 id=&quot;add-and-view-comment&quot;&gt;Add and View Comment&lt;/h2&gt;
-&lt;p&gt;I scratched my head around for minutes and then i remembered some blogs where commenting was done by GitHub account. Jekyll is primarily used for static sites but comment falls under dynamic contents. There are various ideas though. Some people follows Disqus, and other stuffs. This &lt;a href=&quot;https://talk.jekyllrb.com/t/what-is-the-recommended-way-to-add-comment-sections-to-your-jekyll-blog/3330/6&quot;&gt;link&lt;/a&gt; contains a thread of commenting on Jekyll. And some people are smart to use GitHub’s Issue as comment. Follow this &lt;a href=&quot;https://aristath.github.io/blog/static-site-comments-using-github-issues-api&quot;&gt;blog&lt;/a&gt; for more information.&lt;/p&gt;
-
-&lt;h2 id=&quot;polish-it&quot;&gt;Polish It&lt;/h2&gt;
-&lt;p&gt;Sure the comments we are using right now is not that good. What we can do is add some CSS, JS and make it realtime commenting. But instead of that, i have used an awesome Jekyll theme &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Minimal Mistakes&lt;/a&gt;. I am using this same theme right now on this blog and i am more than gald to use it. I have seen many websites using this blog.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><summary type="html">Contents</summary></entry></feed>
+&lt;h2 id=&quot;what-can-i-write-about&quot;&gt;What can I write about?&lt;/h2&gt;
+&lt;p&gt;I am planning on writing about simple mathematics problems for Nepali students and target is Mathematics students. But if I got bored, I can write about some journal also.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="thoughts" /><category term="journal" /><summary type="html">Introduction I was teaching secondary level students on 2019 and I was learning lots of things during that 1 year. It was really an amazing experience that I could share lots of thing and at the same time I learned the best practices that can be done my teachers to help students on their studies. And one of them is blogging.</summary></entry></feed>

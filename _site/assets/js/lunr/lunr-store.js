@@ -1,7 +1,13 @@
 var store = [{
-        "title": "Why do i regret not knowing about GitHub Pages earlier?",
-        "excerpt":"Contents Introduction Create GitHub account Download and Install Ruby Make First Jekyll Project Deploy it on GitHub Make a Repository Blogging Before writing a Math Blog On _config.yml Show Formula First Blog Make Awesome Posts Add and View Comment Polish It Introduction A mathematics student from Nepal is about to...","categories": ["github-pages"],
-        "tags": [],
-        "url": "http://localhost:4000/2020/09/19/why-do-i-regret-not-knowing-about-gitHub-pages-earlier/",
-        "teaser": "http://localhost:4000/assets/teaser.png"
+        "title": "My Blogging Journey",
+        "excerpt":"Introduction I was teaching secondary level students on 2019 and I was learning lots of things during that 1 year. It was really an amazing experience that I could share lots of thing and at the same time I learned the best practices that can be done my teachers to...","categories": ["General"],
+        "tags": ["thoughts","journal"],
+        "url": "http://localhost:4000/2020/09/19/my-blogging-journey/",
+        "teaser": "http://localhost:4000/assets/images/what-if.png"
+      },{
+        "title": "The Power of 'What if?'",
+        "excerpt":"Introduction  What if I did this? What if I couldn’t do this?  ","categories": ["General"],
+        "tags": ["thoughts","journal"],
+        "url": "http://localhost:4000/2020/09/19/the-power-of-what-if/",
+        "teaser": "http://localhost:4000/assets/images/what-if.png"
       }]
