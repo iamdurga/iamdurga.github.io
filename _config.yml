@@ -32,8 +32,8 @@ syntax_highlighter_opts:
 google-site-verification: ""
 logo: "/assets/head.png"
 teaser: "/assets/teaser.png"
-remote_theme: mmistakes/minimal-mistakes
-# theme: minimal-mistakes-jekyll
+# remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 # Outputting
 # permalink: /:categories/:title/
 permalink: /:year/:month/:day/:title/
