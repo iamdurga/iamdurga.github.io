@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/head.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/1.png"
+  overlay_image: "assets/header_images/5.png"
 ---
 **Question:** Does every vector space contain a zero vector? Justify. Let s = {0,1} and f = R in f(S, R). Show that f = g and f + g = h where f(t) = 2t + 1 , $$ g(t) = 1 + 4t - 2t^2 $$ and h(t) = 5t + 1.
 

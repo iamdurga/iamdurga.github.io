@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/images/what-if.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/5.png"
+  overlay_image: "assets/header_images/3.png"
 ---
 **Question:** Find row echelon form and reduce row echelon form  A =    $$ \left[\begin{array}{cc} 0&-1 &2&3&4\\2&1&3&4&1\\1&3&-1&2&3\\3&3&-6&4&7 \end{array}\right] $$ 
 <br/>   

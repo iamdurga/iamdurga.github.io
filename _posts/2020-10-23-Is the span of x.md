@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/images/what-if.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/1.png"
+  overlay_image: "assets/header_images/5.png"
 ---
 **Question a:** Is the span of $$ \phi $$ is $$ \phi  $$ ? justify. The vectors $$ u_1 = ( 2, -3 , 1) , u_2 = (1 , 4 , -2) , u_3 = (-8 , 12 , -4) , u_4 = ( 1 , 37 , -17) , u_5 =    (-3 , -5 , 8) $$ generate $$ R^3 $$ . Find a subset of the  set $$ [u_1, u_2, u_3, u_4, u_5] $$.
 

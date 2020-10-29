@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/images/what-if.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/4.png"
+  overlay_image: "assets/header_images/8.png"
 ---
 **Question**: Is the zero vector a linear combination of any nonempty set of vectors ? Justify. Is the set of all differential real valued functions defined on R a subspace of c(R)? Justify your answer.
 

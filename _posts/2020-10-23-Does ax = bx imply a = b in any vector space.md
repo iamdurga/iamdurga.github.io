@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/head.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/6.png"
+  overlay_image: "assets/header_images/5.png"
 ---
 **Question:** Does ax = bx imply a = b in any vector space? Justify. Let v = $${(a_1, a_2):a_1, a_2 \in f}$$ where f is field. Define addition of elements of v coordinate wise, and  for $$c \in f$$ and $$(a_1, a_2) \in V$$ . Define $$c(a_1, a_2) = (a_1, 0)$$. Is vector space over F with these operations? Justify your answer by taking all condition of vector space.
 

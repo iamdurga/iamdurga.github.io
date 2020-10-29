@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/images/what-if.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/9.png"
+  overlay_image: "assets/header_images/7.png"
 ---
 **Question:** Does the zero vector have no basis? Justify . Construct the real polynomial degree at most 2 whose graph contaions the point $$(-4 , 24) ,(1 , 9)\  and\ (3 , 3) $$ sketch the graph.
 

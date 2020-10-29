@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/head.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/2.png"
+  overlay_image: "assets/header_images/7.png"
 ---
 **Question:**a. Is the empty set a subspace of every vector space ? Justify and let  s = $${(a, b, (a + b):a, b \in R)}$$ . Is a subspace of $$R^3$$ under the usual operation.\
 b. Let I = (-a , a) a > 0 be an open interval in R let v = Rt the space of all real valued function  define on I. Let $$v_e = {f\in v : f(-x) = f(x)} \forall x \in I $$ the set of all even function on I. And let $$v_o = {f \in v :f(-x) = -f(x)\forall x \in I} $$, the set of all odd function on I. Then show that v = $$ v_e \bigoplus v_0. $$ \

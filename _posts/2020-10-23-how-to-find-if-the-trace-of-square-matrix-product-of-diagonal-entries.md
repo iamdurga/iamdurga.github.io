@@ -6,8 +6,8 @@ tags:
   - Vectorspace
   - Basis
 header:
-  teaser: "assets/images/what-if.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/1.png"
+  overlay_image: "assets/header_images/5.png"
 ---
 **Question:** Is the trace of square matrice the product of its diagonal entries ? Justify. Determine whether the set $$w = [ (a_1 , a_2 , a_3) \in R_3 : a_1 + 2a_2 – 3a_3 = 2]$$ is subspace or not of $$ R^3$$ with justification.\
 

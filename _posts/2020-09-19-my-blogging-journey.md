@@ -6,8 +6,8 @@ tags:
   - thoughts
   - journal
 header:
-  teaser: "assets/images/what-if.png"
-  overlay_image: "assets/images/what-if.png"
+  teaser: "assets/header_images/1.png"
+  overlay_image: "assets/header_images/5.png"
 ---
 
 ## Introduction
