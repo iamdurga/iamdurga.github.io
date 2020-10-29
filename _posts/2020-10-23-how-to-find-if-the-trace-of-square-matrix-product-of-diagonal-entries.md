@@ -1,7 +1,7 @@
 ---
-title:  "Is  The Trace of square matrix product of its diagonal element.?"
+title:  "Is  The Trace of square matrix product of its diagonal element?"
 date:   2020-10-23 01:29:17 +0545
-categories: Linear Algebra
+categories: Linear-Algebra
 tags:
   - Vectorspace
   - Basis

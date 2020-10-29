@@ -1,7 +1,7 @@
 ---
 title:  "Is the span of X is X? Does every vector space have finite basis?"
 date:   2020-10-23 01:29:17 +0545
-categories: Linear Algebra
+categories: Linear-Algebra
 tags:
   - Vectorspace
   - Basis

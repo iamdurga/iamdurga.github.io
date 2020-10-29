@@ -1,5 +1,5 @@
 ---
-title:  "The Power of 'What if?'"
+title:  "What is Graph?"
 date:   2020-09-19 01:29:17 +0545
 categories: General
 tags:
@@ -10,5 +10,4 @@ header:
   overlay_image: "assets/images/what-if.png"
 ---
 
-## Introduction
-What if I did this? What if I couldn't do this?
+Comming soon....

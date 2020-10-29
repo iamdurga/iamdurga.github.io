@@ -67,7 +67,7 @@ plugins:
 author:
   name   : "Durga Pokharel"
   avatar : "/assets/head.png"
-  bio    : "Student of MSc. Mathematics CDM TU and trying to learn programming."
+  bio    : "Student of MSc. Mathematics on CDM TU and trying to learn programming."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"

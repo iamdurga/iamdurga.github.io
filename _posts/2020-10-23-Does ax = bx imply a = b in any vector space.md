@@ -1,7 +1,7 @@
 ---
 title:  "Does ax = bx imply a = b in any vector space?justify"
 date:   2020-10-23 01:29:17 +0545
-categories: Linear Algebra
+categories: Linear-Algebra
 tags:
   - Vectorspace
   - Basis

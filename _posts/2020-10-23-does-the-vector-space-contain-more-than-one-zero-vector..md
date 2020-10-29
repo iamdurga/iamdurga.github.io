@@ -1,8 +1,7 @@
 ---
-title:  "Does the Vector space contain more more than one zero vector.
-?'"
+title:  "Does the Vector space contain more more than one zero vector?"
 date:   2020-10-23 01:29:17 +0545
-categories: Linear Algebra
+categories: Linear-Algebra
 tags:
   - Vectorspace
   - Basis

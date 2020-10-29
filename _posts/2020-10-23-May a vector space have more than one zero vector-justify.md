@@ -1,7 +1,7 @@
 ---
-title:  "May a vector space have more than one zero vector?justify"
+title:  "May a vector space have more than one zero vector? Justify"
 date:   2020-10-23 01:29:17 +0545
-categories: Linear Algebra
+categories: Linear-Algebra
 tags:
   - Vectorspace
   - Basis
