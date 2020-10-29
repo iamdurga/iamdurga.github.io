@@ -28,7 +28,7 @@ kramdown:
 syntax_highlighter_opts:
     block:
         line_numbers: true
-google-site-verification: ""
+google-site-verification: "4nkARJqd8bJRcXn5snMiO4CavMhODUfCstP2cok1XHo"
 logo: "/assets/head.png"
 teaser: "/assets/teaser.png"
 remote_theme: mmistakes/minimal-mistakes
