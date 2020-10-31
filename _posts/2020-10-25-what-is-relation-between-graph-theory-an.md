@@ -1,6 +1,5 @@
 ---
-title:  "Is The Topology Was Discoverd Along W
-ith Graph.?'"
+title:  "Is The Topology Was Discoverd Along With Graph.?'"
 date:   2020-10-25 01:29:17 +0545
 categories: Graph-theory
 tags:

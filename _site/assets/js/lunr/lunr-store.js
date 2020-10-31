@@ -17,12 +17,6 @@ var store = [{
         "url": "http://localhost:4000/2020/09/19/the-power-why-not/",
         "teaser": "http://localhost:4000/assets/images/head.png"
       },{
-        "title": "What is Graph?",
-        "excerpt":"Comming soon….  ","categories": ["General"],
-        "tags": ["thoughts","journal"],
-        "url": "http://localhost:4000/2020/09/19/what-is-graph/",
-        "teaser": "http://localhost:4000/assets/images/what-if.png"
-      },{
         "title": "Does ax = bx imply a = b in any vector space?justify",
         "excerpt":"Question: Does ax = bx imply a = b in any vector space? Justify. Let v = \\({(a_1, a_2):a_1, a_2 \\in f}\\) where f is field. Define addition of elements of v coordinate wise, and for \\(c \\in f\\) and \\((a_1, a_2) \\in V\\) . Define \\(c(a_1, a_2) = (a_1,...","categories": ["Linear-Algebra"],
         "tags": ["Vectorspace","Basis"],
@@ -76,4 +70,16 @@ var store = [{
         "tags": ["Vectorspace","Basis"],
         "url": "http://localhost:4000/2020/10/23/zero-vector-and-its-basis/",
         "teaser": "http://localhost:4000/assets/header_images/9.png"
+      },{
+        "title": "Is Graph is used in Physics and chemistry?'",
+        "excerpt":"Some application of Graph In real word. If a graph represent a road network the height could represents the length of each road.There may be different heights assocoated with edge including distance,traveltimes or monetory cost. Such a weighted graphs are commonly used to program GPS and travel planning,search engine that...","categories": ["Graph-theory"],
+        "tags": ["Vertex","Arc"],
+        "url": "http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/",
+        "teaser": "http://localhost:4000/assets/header_images/6.png"
+      },{
+        "title": "Is The Topology Was Discoverd Along With Graph.?'",
+        "excerpt":"Graph Graph Theory is the subject of study of graphs,which are mathematical structures used to model pairwise relations between objects. The paper written by leonhard Euler on “Seven Bridges of Konlgsberg” and published in 1736 as regard as the first paper in the history of graph theory.More than centure after...","categories": ["Graph-theory"],
+        "tags": ["Vertex","Arc"],
+        "url": "http://localhost:4000/2020/10/25/what-is-relation-between-graph-theory-an/",
+        "teaser": "http://localhost:4000/assets/images/what-if.png"
       }]
