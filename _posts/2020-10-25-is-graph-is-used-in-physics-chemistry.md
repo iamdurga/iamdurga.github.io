@@ -1,5 +1,5 @@
 ---
-title:  "Is Graph is used in Physics and chemistry?'"
+title:  "Is Graph is used in Physics and Chemistry?"
 date:   2020-10-25 01:29:17 +0545
 categories: Graph-theory
 tags:
@@ -11,7 +11,8 @@ header:
 ---
 
 
-## Some application of **Graph** In real word.
+## Some application of **Graph** In real World.
+
 *  If  a graph represent a **road network** the height could represents the length of each road.There may be different heights assocoated with edge including distance,traveltimes or monetory cost. Such a weighted graphs are commonly used to program GPS and travel planning,search engine that compaces flight times and cost.
 *  It is also used in **mathematics** as it is useful in geometry and certain part of topology.
 *  It is useful in **Biology** too.Where vertex can represent certain spacies and egde represent migration paths or movement between species.Thir information is important when looking at the breeding patterns or tracking the spread.A diseases,parasites and how changes in the movement  can affect other spacies too.

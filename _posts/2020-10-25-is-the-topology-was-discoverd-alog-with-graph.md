@@ -11,7 +11,8 @@ header:
 ---
 
 # Graph 
-Graph Theory is the subject of study of graphs,which are mathematical structures  used to model pairwise relations between objects.
+Graph Theory is the subject of study of graphs, which are mathematical structures  used to model pairwise relations between objects.
+
 The paper written by leonhard Euler on **"Seven Bridges of Konlgsberg"** and published in 1736 as regard as the first paper in the history of graph theory.More than centure after Euler's paper on 
 **"Seven Bridges of Konlgsberg"** while listing was introduced then concepet of  **Topology** was introduced.**Cayley** was let by an intrest in particular analytical forms arising from differential calculus.To study particular case of graphs.In particulat the team graph was introduced by Sylvester in a paper published in 1878.THe first textbook in graph theory  was written by Derves Konig,abd was published in 1936.
 
