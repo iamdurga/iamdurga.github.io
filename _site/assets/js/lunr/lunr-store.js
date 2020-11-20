@@ -12,7 +12,7 @@ var store = [{
         "teaser": "http://localhost:4000/assets/images/what-if.png"
       },{
         "title": "The Power of 'Why not?'",
-        "excerpt":"Introduction  What if I did this? What if I couldn’t do this? \\((a + b)^2 = a^2 + 2ab + b^2 \\\\ (a - b)^2 = a^2 - 2ab + b^2\\)  ","categories": ["General"],
+        "excerpt":"Introduction  What if I did this? What if I couldn’t do this? $$ (a + b)^2 = a^2 + 2ab + b^2   (a - b)^2 = a^2 - 2ab + b^2  ","categories": ["General"],
         "tags": ["thoughts","journal"],
         "url": "http://localhost:4000/2020/09/19/the-power-why-not/",
         "teaser": "http://localhost:4000/assets/images/head.png"
@@ -47,11 +47,11 @@ var store = [{
         "url": "http://localhost:4000/2020/10/23/May-a-vector-space-have-more-than-one-zero-vector-justify/",
         "teaser": "http://localhost:4000/assets/head.png"
       },{
-        "title": "Does the Vector space contain more more than one zero vector?",
-        "excerpt":"Question: Does every vector space contain a zero vector? Justify. Let s = {0,1} and f = R in f(S, R). Show that f = g and f + g = h where f(t) = 2t + 1 , \\(g(t) = 1 + 4t - 2t^2\\) and h(t) = 5t...","categories": ["Linear-Algebra"],
+        "title": "Does the vector space contain more than one zero vector?",
+        "excerpt":"Homework Assigment 1 of linear Algebra Solution set 1 Excercise. 1.Does every vector space contain a zero vector? Justify.Let s = {0,1} and f = R in f(S, R) . Show that f = g and f + g = h where f(t) = 2t + 1 , $ g(t)...","categories": ["Linear","Algebra"],
         "tags": ["Vectorspace","Basis"],
         "url": "http://localhost:4000/2020/10/23/does-the-vector-space-contain-more-than-one-zero-vector",
-        "teaser": "http://localhost:4000/assets/header_images/1.png"
+        "teaser": "http://localhost:4000/assets/images/head.png"
       },{
         "title": "Is  The Trace of square matrix product of its diagonal element?",
         "excerpt":"Question: Is the trace of square matrice the product of its diagonal entries ? Justify. Determine whether the set \\(w = [ (a_1 , a_2 , a_3) \\in R_3 : a_1 + 2a_2 – 3a_3 = 2]\\) is subspace or not of \\(R^3\\) with justification.\\ Solution: First part: No, the...","categories": ["Linear-Algebra"],
@@ -82,4 +82,40 @@ var store = [{
         "tags": ["Vertex","Arc"],
         "url": "http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/",
         "teaser": "http://localhost:4000/assets/images/what-if.png"
+      },{
+        "title": "Is Every Real Number Has Additive Inverse?'",
+        "excerpt":"3. Distinguish between two statements \\((\\forall x \\in R)( \\exists y \\in R) (x + y = 0 ) and ( \\exists y \\in R)( \\forall x \\in R) (x + Y = 0)\\) Solution: Here \\[(\\forall X \\in R)( \\exists Y \\in R) (X + Y = 0 )\\]...","categories": ["Measure-theory"],
+        "tags": ["Converse","Inverse"],
+        "url": "http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/",
+        "teaser": "http://localhost:4000/assets/header_images/6.png"
+      },{
+        "title": "Is Y Is Inverse Of Every Real Number?",
+        "excerpt":"We know that the statement 1. \\(\\lim\\limits_{x\\to \\infty}f(x)\\) exsixts has the following meaning.Negate the statement. \\(\\exists(\\forall A)(\\forall t &gt; 0) (\\exists \\delta &gt; 0 ) (\\forall x) ( 0 &lt; |x – a| &lt; \\delta \\Rightarrow |f(x) – A| &lt; \\varepsilon\\) Solution: The negative of the statement is \\[\\forall(\\exists A)...","categories": ["Measure-theory"],
+        "tags": ["Converse","Inverse"],
+        "url": "http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number/",
+        "teaser": "http://localhost:4000/assets/header_images/7.png"
+      },{
+        "title": "Is Statement And Negation Of Statement Same Thing?",
+        "excerpt":"4.Condider the following two statement \\[( \\exists x \\in R) (\\forall y\\in s) (y &lt; x)\\\\ ( \\exists x \\in R) (\\forall y\\in s) ( y &gt; x) \\\\,(\\exists r\\in R) (\\forall y\\in s)(|y| &lt; r)\\] Determine which of these statements is true for each of the following choice of...","categories": ["Measure-theory"],
+        "tags": ["Converse","Inverse"],
+        "url": "http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/",
+        "teaser": "http://localhost:4000/assets/header_images/8.png"
+      },{
+        "title": "Can sin(x) Uniformly Convergence On [a, b] ?",
+        "excerpt":"8.Show that the function \\(f(x) = \\sin(x)\\) is uniformly continuous on \\([0, \\infty].\\) Sulution: For uniformly continious on \\([ 0, \\infty]\\) if \\(\\forall \\varepsilon, \\exists \\delta &gt; 0 , \\forall x , y \\in [0, \\infty] with | x - y| &lt; \\delta\\) \\(\\Rightarrow | f(x) - f(y) | &lt;...","categories": ["Measure-theory"],
+        "tags": ["Pointwise-convergence","Uniform-convergence"],
+        "url": "http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/",
+        "teaser": "http://localhost:4000/assets/header_images/7.png"
+      },{
+        "title": "If x Subset Of Y Then Inverse Of x Also Subset Of Y?",
+        "excerpt":"7. Let \\(f : X \\rightarrow Y\\) be a function. If B is subset of y then its inverse image $ f^-B $ is the subset of x define by \\[f^-B = {x : f(x) \\in B}\\] Now prove the following. \\[i.B_1 \\subset B_2 \\Rightarrow f^-B_1 \\subset f^- B_1\\] \\[ii....","categories": ["Measure-theory"],
+        "tags": ["Range","Domain"],
+        "url": "http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/",
+        "teaser": "http://localhost:4000/assets/header_images/1.png"
+      },{
+        "title": "Is If x Belong To The Domain Than f(x) belong To The Range ?",
+        "excerpt":"6. Let \\(F : x \\Rightarrow y\\) be a function .Then prove that \\[i. A_1 \\subset A_2 \\Rightarrow F(A_1) \\subset F(A_2) \\\\ ii. F(\\cup_i A_i) = \\cup_i F(A_i) \\\\ iii. F(\\cap_i A_i) \\subset \\cap_i f(A_i)\\] Solution: \\(Let , f: x \\rightarrow y\\) be a funxtion. i. \\(Let , y \\in...","categories": ["Measure-theory"],
+        "tags": ["Converse","Inverse"],
+        "url": "http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/",
+        "teaser": "http://localhost:4000/assets/header_images/2.png"
       }]
