@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-20T15:36:19+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">Can sin(x) Uniformly Convergence On [a, b] ?</title><link href="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/" rel="alternate" type="text/html" title="Can sin(x) Uniformly Convergence On [a, b] ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-%5Ba,%20b%5D</id><content type="html" xml:base="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/">&lt;p&gt;8.Show that the function&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-20T19:29:43+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">Can sin(x) Uniformly Convergence On [a, b] ?</title><link href="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/" rel="alternate" type="text/html" title="Can sin(x) Uniformly Convergence On [a, b] ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-%5Ba,%20b%5D</id><content type="html" xml:base="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/">&lt;p&gt;Show that the function&lt;/p&gt;
 
 &lt;p&gt;\(f(x) = \sin(x)\)
- is uniformly continuous on 
- \([0, \infty].\)&lt;/p&gt;
+is uniformly continuous on 
+\([0, \infty].\)&lt;/p&gt;
 
 &lt;p&gt;Sulution:&lt;/p&gt;
 
 &lt;p&gt;For uniformly continious on 
-\([ 0, \infty]\) if 
-\(\forall \varepsilon, \exists \delta &amp;gt; 0 , \forall x , y \in  [0, \infty] with | x - y| &amp;lt; \delta\)
+\([ 0, \infty]\)
+if 
+\(\forall \varepsilon, \exists \delta &amp;gt; 0, \forall x, y \in  [0, \infty] with\ | x - y| &amp;lt; \delta\)
 \(\Rightarrow | f(x) - f(y) | &amp;lt; \varepsilon\)
-\(we have, f(x) = \sin(x)\)
-\(let, we choose \delta = \varepsilon then, x, y \in [0, \infty] with , |x - y | &amp;lt; \delta\)&lt;/p&gt;
+\(we\ have\ , f(x) = \sin(x)\)
+\(let\ we\ choose\ \delta = \varepsilon\ then\  x, y \in [0, \infty] with\ , |x - y | &amp;lt; \delta\)&lt;/p&gt;
 
 \[| \sin(x) - \sin(y) |\]
 
@@ -19,7 +20,7 @@
 
 \[\Rightarrow2|\cos\frac{x + y}{2}|.|\sin\frac{x - y}{2}|\]
 
-\[Since , |\sin(x) | \leq |x| for all,  X\]
+\[Since\  |\sin(x) | \leq |x|\ for\  all\   X\]
 
 \[|\cos(x)| \leq 1\]
 
@@ -27,67 +28,63 @@
 
 \[\Rightarrow |x - y| &amp;lt; \varepsilon\]
 
-&lt;p&gt;Hence, the function \(f(x) = \sin(x)\) is uniformly continious on \([0, \infty]\)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Pointwise-convergence" /><category term="Uniform-convergence" /><summary type="html">8.Show that the function</summary></entry><entry><title type="html">Is If x Belong To The Domain Than f(x) belong To The Range ?</title><link href="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/" rel="alternate" type="text/html" title="Is If x Belong To The Domain Than f(x) belong To The Range ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range</id><content type="html" xml:base="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">&lt;p&gt;6.&lt;/p&gt;
-
-&lt;p&gt;Let 
+&lt;p&gt;Hence, the function \(f(x) = \sin(x)\) is uniformly continious on \([0, \infty]\)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Pointwise-convergence" /><category term="Uniform-convergence" /><summary type="html">Show that the function</summary></entry><entry><title type="html">Is If x Belong To The Domain Than f(x) belong To The Range ?</title><link href="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/" rel="alternate" type="text/html" title="Is If x Belong To The Domain Than f(x) belong To The Range ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range</id><content type="html" xml:base="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">&lt;p&gt;Let 
  \(F : x \Rightarrow y\)&lt;/p&gt;
 
-&lt;p&gt;be a function .Then prove that&lt;/p&gt;
+&lt;p&gt;be a function. Then prove that&lt;/p&gt;
 
-\[i. A_1 \subset A_2   \Rightarrow  F(A_1)  \subset  F(A_2) \\  
-   ii. F(\cup_i A_i)  = \cup_i F(A_i) \\ 
-    iii. F(\cap_i A_i) \subset \cap_i f(A_i)\]
+\[i.  A_1 \subset A_2   \Rightarrow  F(A_1)  \subset  F(A_2) \\  
+ii. F(\cup_i A_i)  = \cup_i F(A_i) \\ 
+iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
 
 &lt;p&gt;Solution:&lt;/p&gt;
 
-&lt;p&gt;\(Let , f: x \rightarrow y\) be a funxtion.&lt;/p&gt;
+&lt;p&gt;\(Let \ f: x \rightarrow y\) be a funxtion.&lt;/p&gt;
 
 &lt;p&gt;i.&lt;/p&gt;
 
-&lt;p&gt;\(Let , y \in f(A_1)\) 
-\(Then , \exists x \in A_1 : y = f(x)\).
-\(But , A_1 \subset A_2\)
-\(we can say , x \in A_2\) 
-\(Hence ,  y = f(x)\)&lt;/p&gt;
+&lt;p&gt;\(Let\ y \in f(A_1)\) 
+\(Then\ \exists x \in A_1 : y = f(x)\).
+\(But\ A_1 \subset A_2\)
+\(we\ can\ say\ , x \in A_2\) 
+\(Hence\ y = f(x)\)&lt;/p&gt;
 
 &lt;p&gt;ii.&lt;/p&gt;
 
-\[Let  y \in f( \cup_i A_i) then, \exists x \in \cup_i A_i : y = f(x)\]
+\[Let\  y \in f ( \cup_i A_i) then\ \exists x \in \cup_i A_i : y = f(x)\]
 
-\[Since , x \in (\cup_iA_i) \Rightarrow  x \in A_i for some , i\]
+\[Since\  x \in (\cup_iA_i) \Rightarrow  x \in A_i\ for\ some\ i\]
 
-\[so, y = f(x) \inf(A_i) and hence y \in \cup_i(A_i)\]
+\[so\  y = f(x) \in f(A_i)\  and\ hence\  y \in \cup_i(A_i)\]
 
 &lt;p&gt;Conversely&lt;/p&gt;
 
-\[Let y \in \cup_if(A_i) then, y \in f(A_i) for  some , i\]
+\[Let\  y \in \cup_if(A_i)\ then\ y \in f(A_i) for\ some\ i\]
 
-\[so, \exists x \in A_i : y = f(x)\]
+\[so\  \exists x \in A_i : y = f(x)\]
 
-\[and, x \in \Rightarrow x \in \cup_i(A_i)\]
+\[and\ x \in \Rightarrow x \in \cup_i(A_i)\]
 
-\[so, that, f(x) \in f(\cup_i A_i)\]
+\[so\ that\  f(x) \in f(\cup_i A_i)\]
 
 &lt;p&gt;iii.&lt;/p&gt;
 
-\[Let , y \in f(\cup_i A_i) then , \exists x \in \cap_i A_i : y = f(x)\]
+\[Let\ y \in f(\cup_i A_i)\ then\ \exists x \in \cap_i A_i : y = f(x)\]
 
-\[Since x \in \cap_i A_i\]
+\[Since\ x \in \cap_i A_i\]
 
-\[we can write , x \in A_i for all i\]
+\[we\ can\ write\  x \in A_i\ for\  all\ i\]
 
-\[so , f(x)  \in f(A_i) for all , i\]
+\[so\  f(x)  \in f(A_i)\ for\ all\  i\]
 
-\[Hence , f(x) \in \cap_if(A_i)\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">6.</summary></entry><entry><title type="html">If x Subset Of Y Then Inverse Of x Also Subset Of Y?</title><link href="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/" rel="alternate" type="text/html" title="If x Subset Of Y Then Inverse Of x Also Subset Of Y?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y</id><content type="html" xml:base="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/">&lt;p&gt;7.
-Let&lt;/p&gt;
-
-&lt;p&gt;\(f : X \rightarrow Y\) be a function. If  B is subset of  y then its inverse image $ f^-B $ is the subset of  x define by&lt;/p&gt;
+\[Hence\ f(x) \in \cap_if(A_i)\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Let \(F : x \Rightarrow y\)</summary></entry><entry><title type="html">If x Subset Of Y Then Inverse Of x Also Subset Of Y?</title><link href="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/" rel="alternate" type="text/html" title="If x Subset Of Y Then Inverse Of x Also Subset Of Y?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y</id><content type="html" xml:base="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/">&lt;p&gt;Let
+\(f : X \rightarrow Y\) be a function. If  B is subset of  y then its inverse image \(f^-B\) is the subset of  x define by&lt;/p&gt;
 
 \[f^-B = {x : f(x) \in B}\]
 
 &lt;p&gt;Now prove the following.&lt;/p&gt;
 
-\[i.B_1 \subset B_2 \Rightarrow f^-B_1  \subset f^- B_1\]
+\[i. B_1 \subset B_2 \Rightarrow f^-B_1  \subset f^- B_1\]
 
 \[ii. f^-\cup_i B_i = \cup_i f^-B_i\]
 
@@ -98,42 +95,42 @@ Let&lt;/p&gt;
 &lt;p&gt;Let 
 \(F(x) : x \rightarrow y\)&lt;/p&gt;
 
-&lt;p&gt;be a function. If B is the subset of Y , then its inverse maps 
- \(f^-x\)
-  is the subset of x define by&lt;/p&gt;
+&lt;p&gt;be a function. If B is the subset of Y, then it’s inverse maps 
+\(f^-x\)
+is the subset of x define by&lt;/p&gt;
 
 \[f^-B = { f(x) \in B}\]
 
-&lt;p&gt;i&lt;/p&gt;
+&lt;p&gt;i.&lt;/p&gt;
 
-\[let x \in f^-B_1 then, f(x) \in B_1\]
+\[let\ x \in f^-B_1\ then\ f(x) \in B_1\]
 
-\[since, B_1 \subset B_1\]
+\[since\  B_1 \subset B_1\]
 
-\[we can write,\\  
+\[we\ can\ write\ \\  
 f(x) \in f^-(B_2)\]
 
 &lt;p&gt;ii.&lt;/p&gt;
 
-\[Suppose ,  x \in f^-\cup_i(B_i)\]
+\[Suppose\ ,  x \in f^-\cup_i(B_i)\]
 
 \[f(X) \in \cup_i(B_i)\]
 
-\[So, f(x) \in B_i for some i\]
+\[So\ f(x) \in B_i for\ some\ i\]
 
-&lt;p&gt;this implies that&lt;/p&gt;
+&lt;p&gt;this implies that,&lt;/p&gt;
 
 \[x \in f^-B_i\]
 
-\[So, x \in \cap_i f^-(B_i)\]
+\[So\ x \in \cap_i f^-(B_i)\]
 
 &lt;p&gt;Conversely&lt;/p&gt;
 
-\[Suppose x \in \cap_i f^-(B_i)\]
+\[Suppose\ x \in \cap_i f^-(B_i)\]
 
-\[Then , x \in f^-(B_i)for some i\]
+\[Then\  x \in f^-(B_i)\ for\ some\ i\]
 
-\[So, f(x) \in B_i \subset (\cap_iB_i)\]
+\[So\ f(x) \in B_i \subset (\cap_iB_i)\]
 
 &lt;p&gt;therefore&lt;/p&gt;
 
@@ -141,9 +138,9 @@ f(x) \in f^-(B_2)\]
 
 &lt;p&gt;and hence&lt;/p&gt;
 
-\[x \in f^-(\cap_iB_i)\]</content><author><name>Durga Pokharel</name></author><category term="Range" /><category term="Domain" /><summary type="html">7. Let</summary></entry><entry><title type="html">Is Statement And Negation Of Statement Same Thing?</title><link href="http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/" rel="alternate" type="text/html" title="Is Statement And Negation Of Statement Same Thing?" /><published>2020-11-17T01:29:17+05:45</published><updated>2020-11-17T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing</id><content type="html" xml:base="http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/">&lt;p&gt;4.Condider the following two statement&lt;/p&gt;
+\[x \in f^-(\cap_iB_i)\]</content><author><name>Durga Pokharel</name></author><category term="Range" /><category term="Domain" /><summary type="html">Let \(f : X \rightarrow Y\) be a function. If B is subset of y then its inverse image \(f^-B\) is the subset of x define by</summary></entry><entry><title type="html">Is Statement And Negation Of Statement Same Thing?</title><link href="http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/" rel="alternate" type="text/html" title="Is Statement And Negation Of Statement Same Thing?" /><published>2020-11-17T01:29:17+05:45</published><updated>2020-11-17T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing</id><content type="html" xml:base="http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/">&lt;p&gt;Condider the following two statement&lt;/p&gt;
 
-\[( \exists x \in R) (\forall y\in s) (y &amp;lt; x)\\  ( \exists x \in  R) (\forall y\in s) ( y &amp;gt; x) \\,(\exists r\in R) (\forall y\in s)(|y| &amp;lt; r)\]
+\[( \exists x \in R)\  (\forall y\in s)\  (y &amp;lt; x)\\  ( \exists x \in  R) (\forall y\in s)\  ( y &amp;gt; x) \\ (\exists r\in R)\  (\forall y\in s)\ (|y| &amp;lt; r)\]
 
 &lt;p&gt;Determine  which of these statements is  true for each of the following choice of S&lt;/p&gt;
 
@@ -153,12 +150,10 @@ f(x) \in f^-(B_2)\]
 
 &lt;p&gt;Here&lt;/p&gt;
 
-\[( \exists x \in R) (\forall y\in s) (y &amp;lt; x)\\  ( \exists x \in  R) (\forall y\in s) ( y &amp;gt; x) \\,
-  (\exists r\in R) (\forall y\in s)(|y| &amp;lt; r)\]
+\[( \exists x \in R) (\forall y\in s) (y &amp;lt; x)\\  ( \exists x \in  R) (\forall y\in s) ( y &amp;gt; x) \\
+(\exists r\in R) (\forall y\in s)(|y| &amp;lt; r)\]
 
 &lt;p&gt;a. All True                             b. All false&lt;/p&gt;
-
-&lt;p&gt;5&lt;/p&gt;
 
 &lt;p&gt;Write converse inverse and contrapositive of the statement.
     “ if x &amp;lt; 0 then \(x^2 – x &amp;gt; 0\) “, Also write the negation of each statement.&lt;/p&gt;
@@ -167,32 +162,31 @@ f(x) \in f^-(B_2)\]
 
 &lt;p&gt;Given statement is&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$ &quot; if x &amp;lt; 0   then ,   x^2 – x &amp;gt; 0 &quot; $$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+\[' if\  x &amp;lt; 0\  then\    x^2 – x &amp;gt; 0 '\]
 
 &lt;p&gt;Converse:&lt;/p&gt;
 
-\[if x^2 – x &amp;gt; 0  then ,  x &amp;lt; 0.\]
+\[if\  x^2 – x &amp;gt; 0\   then\   x &amp;lt; 0.\]
 
 &lt;p&gt;Nagation:&lt;/p&gt;
 
-\[x^2 – x &amp;gt; 0  and ,  x &amp;gt; 0\]
+\[x^2 – x &amp;gt; 0\  and\   x &amp;gt; 0\]
 
 &lt;p&gt;Inverse&lt;/p&gt;
 
-\[if x &amp;gt; 0  then ,  x^2 – x &amp;lt; 0.\]
+\[if\ x &amp;gt; 0\ then\ ,  x^2 – x &amp;lt; 0.\]
 
 &lt;p&gt;Negation:&lt;/p&gt;
 
-\[x &amp;gt; 0  and ,  x^2 – x &amp;gt; 0.\]
+\[x &amp;gt; 0\  and\   x^2 – x &amp;gt; 0\]
 
 &lt;p&gt;Contrapositive:&lt;/p&gt;
 
-\[if  x^2 – x  &amp;lt; 0  then ,  x &amp;gt; 0\]
+\[if\  x^2 – x  &amp;lt; 0\  then\   x &amp;gt; 0\]
 
 &lt;p&gt;Negation:&lt;/p&gt;
 
-\[x^2 – x  &amp;lt; 0  and ,  x &amp;lt; 0.\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">4.Condider the following two statement</summary></entry><entry><title type="html">Is Graph is used in Physics and Chemistry?</title><link href="http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/" rel="alternate" type="text/html" title="Is Graph is used in Physics and Chemistry?" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/">&lt;h2 id=&quot;some-application-of-graph-in-real-world&quot;&gt;Some application of &lt;strong&gt;Graph&lt;/strong&gt; In real World.&lt;/h2&gt;
+\[x^2 – x  &amp;lt; 0\  and\   x &amp;lt; 0\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Condider the following two statement</summary></entry><entry><title type="html">Is Graph is used in Physics and Chemistry?</title><link href="http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/" rel="alternate" type="text/html" title="Is Graph is used in Physics and Chemistry?" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/">&lt;h2 id=&quot;some-application-of-graph-in-real-world&quot;&gt;Some application of &lt;strong&gt;Graph&lt;/strong&gt; In real World.&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;If  a graph represent a &lt;strong&gt;road network&lt;/strong&gt; the height could represents the length of each road.There may be different heights assocoated with edge including distance,traveltimes or monetory cost. Such a weighted graphs are commonly used to program GPS and travel planning,search engine that compaces flight times and cost.&lt;/li&gt;
@@ -205,9 +199,8 @@ Removal of nodes leads to  critical transition where network breaks  into small 
   &lt;li&gt;Graph theory is also used in &lt;strong&gt;Computer sciences&lt;/strong&gt; .It is used to represent networks of commonications,dataorganization,computational devices ,the flow of computation etc .For example the line strecture of  a website can be represent webpages and directed edges lines from one page to another.&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Durga Pokharel</name></author><category term="Vertex" /><category term="Arc" /><summary type="html">Some application of Graph In real World.</summary></entry><entry><title type="html">Is Y Is Inverse Of Every Real Number?</title><link href="http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number/" rel="alternate" type="text/html" title="Is Y Is Inverse Of Every Real Number?" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number/">&lt;p&gt;We know that the statement&lt;/p&gt;
 
-&lt;p&gt;1.&lt;/p&gt;
-
-&lt;p&gt;\(\lim\limits_{x\to \infty}f(x)\) exsixts has the following meaning.Negate the statement.
+&lt;p&gt;\(\lim\limits_{x\to \infty}f(x)\) 
+exsixts has the following meaning.Negate the statement.
 \(\exists(\forall A)(\forall t &amp;gt; 0) (\exists \delta &amp;gt; 0 ) (\forall x) ( 0 &amp;lt; |x – a| &amp;lt; \delta  \Rightarrow  |f(x) – A| &amp;lt; \varepsilon\)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
@@ -216,25 +209,21 @@ Removal of nodes leads to  critical transition where network breaks  into small 
 
 \[\forall(\exists A) ( \exists t &amp;gt; 0) (\forall \delta &amp;gt; 0) (\exists x) (0 &amp;lt; |x – a| &amp;lt; \delta  \Rightarrow |f(x) – A|  &amp;lt; \varepsilon\]
 
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;Write the following statement in symbol  form and then form its negation ,  for each$ \varepsilon  &amp;gt; 0 , there exsists an N &amp;gt; 0&lt;/p&gt;
-
-&lt;p&gt;s.t
-				\(| fn(x) – f(x) |  &amp;lt; ϵ  Whenever n &amp;gt; N and S x \in S.\)&lt;/p&gt;
+&lt;p&gt;Write the following statement in symbol  form and then form its negation,  for each \(\varepsilon  &amp;gt; 0\), there exsists an N &amp;gt; 0
+s.t
+\(| fn(x) – f(x) |  &amp;lt; ϵ \ Whenever\  n &amp;gt; N and\ S x \in S.\)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
 
-\[\forall \varepsilon &amp;gt; 0 , \exists N &amp;gt; 0\]
+\[\forall \varepsilon &amp;gt; 0,\ \exists N &amp;gt; 0\]
 
-\[s.t   |fn(x) – f(x) | &amp;lt; \varepsilon\]
+\[s.t\  |fn(x) – f(x) | &amp;lt; \varepsilon\]
 
 &lt;p&gt;&lt;strong&gt;Negation:&lt;/strong&gt;&lt;/p&gt;
 
-\[\exists \varepsilon &amp;gt; 0 , \forall N &amp;gt; 0 \\ s.t |fn(x) – f(x) | &amp;gt; \varepsilon\\  whenever n &amp;gt; N and x \in S.\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">We know that the statement</summary></entry><entry><title type="html">Is Every Real Number Has Additive Inverse?’</title><link href="http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/" rel="alternate" type="text/html" title="Is Every Real Number Has Additive Inverse?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/">&lt;p&gt;3.&lt;/p&gt;
-
-&lt;p&gt;Distinguish between two statements  \((\forall x \in R)( \exists y \in R) (x + y  = 0 ) and 
-	( \exists y \in R)( \forall x \in R) (x + Y = 0)\)&lt;/p&gt;
+\[\exists \varepsilon &amp;gt; 0, \ \forall N &amp;gt; 0 \\ s.t\ |fn(x) – f(x) | &amp;gt; \varepsilon\\ \  whenever\ n &amp;gt; N \ and\  x \in S.\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">We know that the statement</summary></entry><entry><title type="html">Is Every Real Number Has Additive Inverse?’</title><link href="http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/" rel="alternate" type="text/html" title="Is Every Real Number Has Additive Inverse?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/">&lt;p&gt;Distinguish between two statements&lt;br /&gt;
+\((\forall x \in R)\ ( \exists y \in R)\  (x + y  = 0 )\ and\ 
+( \exists y \in R)\ ( \forall x \in R)\  (x + Y = 0)\)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
 
@@ -246,7 +235,7 @@ Removal of nodes leads to  critical transition where network breaks  into small 
 
 \[(\exists y \in R)(\forall x \in R) (x + Y = 0)\]
 
-&lt;p&gt;Is  not true , since no y will be additive inverse for every real numbers.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">3.</summary></entry><entry><title type="html">Is The Topology Was Discoverd Along With Graph.?’</title><link href="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/" rel="alternate" type="text/html" title="Is The Topology Was Discoverd Along With Graph.?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/">&lt;h1 id=&quot;graph&quot;&gt;Graph&lt;/h1&gt;
+&lt;p&gt;Is  not true, since no y will be additive inverse for every real numbers.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Distinguish between two statements \((\forall x \in R)\ ( \exists y \in R)\ (x + y = 0 )\ and\ ( \exists y \in R)\ ( \forall x \in R)\ (x + Y = 0)\) Solution:</summary></entry><entry><title type="html">Is The Topology Was Discoverd Along With Graph.?’</title><link href="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/" rel="alternate" type="text/html" title="Is The Topology Was Discoverd Along With Graph.?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/">&lt;h1 id=&quot;graph&quot;&gt;Graph&lt;/h1&gt;
 &lt;p&gt;Graph Theory is the subject of study of graphs, which are mathematical structures  used to model pairwise relations between objects.&lt;/p&gt;
 
 &lt;p&gt;The paper written by leonhard Euler on &lt;strong&gt;“Seven Bridges of Konlgsberg”&lt;/strong&gt; and published in 1736 as regard as the first paper in the history of graph theory.More than centure after Euler’s paper on 

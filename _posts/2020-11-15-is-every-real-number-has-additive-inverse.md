@@ -11,12 +11,11 @@ header:
 
 ---
 
-
-3.
-
-
-Distinguish between two statements  $$  (\forall x \in R)( \exists y \in R) (x + y  = 0 ) and 
-	( \exists y \in R)( \forall x \in R) (x + Y = 0)$$
+Distinguish between two statements  
+$$  
+(\forall x \in R)\ ( \exists y \in R)\  (x + y  = 0 )\ and\ 
+( \exists y \in R)\ ( \forall x \in R)\  (x + Y = 0)
+$$
     
 **Solution:**
 
@@ -28,4 +27,4 @@ This statement is to mean that for every real number  has a additive inverse thi
 
 $$ (\exists y \in R)(\forall x \in R) (x + Y = 0) $$
         
-Is  not true , since no y will be additive inverse for every real numbers.
+Is  not true, since no y will be additive inverse for every real numbers.
