@@ -118,4 +118,34 @@ var store = [{
         "tags": ["Converse","Inverse"],
         "url": "http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/",
         "teaser": "http://localhost:4000/assets/header_images/2.png"
+      },{
+        "title": "Do You Know About History Of Matrix?",
+        "excerpt":"What is Matrices:- Introduction Certain branches of mathematics such as Linear Algebra and Group Theory use block of matrices while dealing with the problems of social sciences, physical science, biological science and engineering sciences. The ancient Chinese appreciated the advantages of array manipulation in dealing with systems of linear equations,...","categories": ["Matrix-Theory"],
+        "tags": ["Column","Row"],
+        "url": "http://localhost:4000/2020/11/30/do-you-know-about-history-of-matrix/",
+        "teaser": "http://localhost:4000/assets/header_images/8.png"
+      },{
+        "title": "Is Complex Fourier Is Same With Real Fourier?",
+        "excerpt":"Complex form of fourier series The complex form of fourier series is obtained by exaprassiong \\(cos\\frac{n\\pi.x}{l}\\) and \\(sin\\frac{n\\pi.x}{l}\\) in expontial form that is, \\(f(x) = \\frac{a_0}{2} + \\sum_{i=1}^\\infty[a_ncos\\frac{n.\\pi.x}{l}+b_nsin\\frac{n.\\pi.x}{l}]\\\\ f(x) = \\frac{a_0}{2} + \\sum_{i=1}^\\infty[\\frac{\\epsilon^(\\frac{n.\\pi.x}{l}+\\epsilon^(\\frac{-n.\\pi.x}{l}}{2}]a_n+ \\sum_{i=1}^\\infty[\\frac{\\epsilon^(\\frac{n.\\pi.x}{l}-\\epsilon^(\\frac{-n.\\pi.x}{l}}{2i}]b_n\\) Even Odd function:- In simple we know that function is even if \\(f(-x) = f(x)\\). and...","categories": ["Differential-Equation"],
+        "tags": ["Even","Odd"],
+        "url": "http://localhost:4000/2020/11/30/is-complex-fourier-is-same-with-real-fourier/",
+        "teaser": "http://localhost:4000/assets/header_images/5.png"
+      },{
+        "title": "IS Fourier Series Used In Real Life?",
+        "excerpt":"Some real world application of fourier series:-      Signal Processing   Approximation Properties   Control Theory   Partial differential equation   Image Processing   Heat Distribution Mapping  ","categories": ["Differential-Equation"],
+        "tags": ["Even","Odd"],
+        "url": "http://localhost:4000/2020/11/30/is-fourier-series-used-in-real-life/",
+        "teaser": "http://localhost:4000/assets/header_images/4.png"
+      },{
+        "title": "What Is Fourier Series?",
+        "excerpt":"What is fourior Series It is the method of expressing any given function in terms of sine and cosine series. The Fourier theorem’s can be expressed as “ any single valued function defined in the interval \\([\\pi,\\pi]\\) may be represented over this interval by trigonometric series. \\[f(x) = \\frac{a_0}{2} +...","categories": ["Differential","Equation"],
+        "tags": ["Even","Odd"],
+        "url": "http://localhost:4000/2020/11/30/what-is-fourier-series/",
+        "teaser": "http://localhost:4000/assets/header_images/6.png"
+      },{
+        "title": "How To Convert Decimal To Binary In Python?",
+        "excerpt":"Conversion From Decimal to Binary in python. Creation of python program to convert decimal to binary. For this take decimal number as input. Initialize current decimal as given decimal. Initialize remender as zero. Create a place to store binary number. We don’t know about how many step are taken to...","categories": ["Python-Programming-Language"],
+        "tags": ["Initialize","Loop"],
+        "url": "http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/",
+        "teaser": "http://localhost:4000/assets/header_images/8.png"
       }]

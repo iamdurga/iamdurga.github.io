@@ -1,4 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-20T19:29:43+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">Can sin(x) Uniformly Convergence On [a, b] ?</title><link href="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/" rel="alternate" type="text/html" title="Can sin(x) Uniformly Convergence On [a, b] ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-%5Ba,%20b%5D</id><content type="html" xml:base="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/">&lt;p&gt;Show that the function&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-17T17:56:58+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Convert Decimal To Binary In Python?</title><link href="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/" rel="alternate" type="text/html" title="How To Convert Decimal To Binary In Python?" /><published>2020-12-15T01:29:17+05:45</published><updated>2020-12-15T01:29:17+05:45</updated><id>http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python</id><content type="html" xml:base="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">&lt;h2 id=&quot;conversion-from-decimal-to-binary-in-python&quot;&gt;Conversion From Decimal to Binary in python.&lt;/h2&gt;
+
+&lt;p&gt;Creation of python program to convert decimal to binary.
+For this take decimal number as input. Initialize current decimal as given decimal. Initialize remender as zero. Create a place to store binary number. We don’t know about how many step are taken to convert so I choosed while loop. If current decimal is divisiable by 2 then remender is zero. Now I took current decimal  as quotient of original decimal number. I kept remender in place where I create the place to store it. Else I kept remender 1 in list. Similar process I repeat below.&lt;/p&gt;
+
+&lt;p&gt;dec = int(input(“Enter a decimal number. “))&lt;/p&gt;
+
+&lt;p&gt;curr_dec = dec&lt;/p&gt;
+
+&lt;p&gt;rem = 0&lt;/p&gt;
+
+&lt;p&gt;binary = []&lt;/p&gt;
+
+&lt;p&gt;while True:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if curr_dec % 2 == 0:
+    
+    rem = 0
+    
+    curr_dec = int(curr_dec/2)
+    
+    binary.append(rem)
+    
+else:
+    rem = 1
+    
+    curr_dec = int(curr_dec/2)
+    
+    binary.append(rem)
+    
+if curr_dec  == 1:
+    
+    binary.append(1)
+    
+    break
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;print(binary)&lt;/p&gt;
+
+&lt;p&gt;binary = binary[::-1]&lt;/p&gt;
+
+&lt;p&gt;print(binary)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Initialize" /><category term="Loop" /><summary type="html">Conversion From Decimal to Binary in python.</summary></entry><entry><title type="html">What Is Fourier Series?</title><link href="http://localhost:4000/2020/11/30/what-is-fourier-series/" rel="alternate" type="text/html" title="What Is Fourier Series?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/what-is-fourier-series</id><content type="html" xml:base="http://localhost:4000/2020/11/30/what-is-fourier-series/">&lt;h1 id=&quot;what-is-fourior-series&quot;&gt;What is fourior Series&lt;/h1&gt;
+
+&lt;p&gt;It is the method of expressing any given function in terms of sine and cosine series. The Fourier theorem’s can be expressed as “ any single valued function defined in the interval \([\pi,\pi]\) may be represented over this interval by trigonometric series.&lt;/p&gt;
+
+\[f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos(nx) + b_nsin(nx)]\]
+
+&lt;p&gt;Where&lt;/p&gt;
+
+&lt;p&gt;\(a_0, a_n , b_n\)  are called fourier coefficent, and  \(a_0, a_n, b_n\)&lt;/p&gt;
+
+&lt;p&gt;are determined by the following formula,&lt;/p&gt;
+
+\[1.\ a_0 = \frac{1}{\pi}\int_{-\pi}^\pi f(x) dx. \\
+
+2.\ a_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)cos(nx) dx. \\
+
+3.\ b_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)sin(nx) dx.\\\]
+
+&lt;p&gt;Where  n = 1, 2, 3, …..&lt;/p&gt;
+
+&lt;h2 id=&quot;fourier-series-expression-for-any-arbitrary-function-in-various-interval&quot;&gt;Fourier series expression for any arbitrary function in various interval&lt;/h2&gt;
+
+&lt;p&gt;Thus far, the expansion interval has been restricted to \([\pi , \pi]\). To solve many physical problems, it is necessary to develop a fourier series that will be valid over a wide interval.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fourire series in [a , b]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If f(x) is periodic in interval [a , b]&lt;/p&gt;
+
+&lt;p&gt;i;e \(f(x + a + b) = f(x)\)&lt;/p&gt;
+
+&lt;p&gt;the fourier series expansion of f(x) is,&lt;/p&gt;
+
+\[f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos\frac{2n.\pi.x}{b-a}+b_nsin\frac{2n.\pi.x}{b-a}] \\
+
+where\\
+
+a_0 = \frac{1}{b-a}\int_{a}^b f(x) dx.\\
+
+a_n = \frac{1}{b-a}\int_{a}^b f(x)cos\frac{2n.\pi.x}{b-a} dx.\\
+
+b_n = \frac{1}{b-a}\int_{a}^b f(x)sin\frac{2n.\pi.x}{b-a}. \\\]
+
+&lt;ul&gt;
+  &lt;li&gt;Fourier series in [-l , l]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Similarly the function f(x) is periodic in the interval [-l , l]&lt;/p&gt;
+
+&lt;p&gt;i;e&lt;/p&gt;
+
+\[f(x + 2l) = f(x)\]
+
+&lt;p&gt;the fourior series expansion of f(x) is,&lt;/p&gt;
+
+\[f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos\frac{2n.\pi.x}{l+l}+b_nsin\frac{2n.\pi.x}{l+l}] \\
+
+where\\
+
+a_0 = \frac{1}{l}\int_{-l}^l f(x) dx.\\
+
+a_n = \frac{1}{l}\int_{-l}^l f(x)cos\frac{n.\pi.n}{l} dx.\\
+
+b_n = \frac{1}{l}\int_{-l}^l f(x)sin\frac{n.\pi.n}{l} dx.\\\]</content><author><name>Durga Pokharel</name></author><category term="Even" /><category term="Odd" /><summary type="html">What is fourior Series</summary></entry><entry><title type="html">IS Fourier Series Used In Real Life?</title><link href="http://localhost:4000/2020/11/30/is-fourier-series-used-in-real-life/" rel="alternate" type="text/html" title="IS Fourier Series Used In Real Life?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/is-fourier-series-used-in-real-life</id><content type="html" xml:base="http://localhost:4000/2020/11/30/is-fourier-series-used-in-real-life/">&lt;h1 id=&quot;some-real-world-application-of-fourier-series-&quot;&gt;Some real world application of fourier series:-&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Signal Processing&lt;/li&gt;
+  &lt;li&gt;Approximation Properties&lt;/li&gt;
+  &lt;li&gt;Control Theory&lt;/li&gt;
+  &lt;li&gt;Partial differential equation&lt;/li&gt;
+  &lt;li&gt;Image Processing&lt;/li&gt;
+  &lt;li&gt;Heat Distribution Mapping&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Durga Pokharel</name></author><category term="Even" /><category term="Odd" /><summary type="html">Some real world application of fourier series:-</summary></entry><entry><title type="html">Is Complex Fourier Is Same With Real Fourier?</title><link href="http://localhost:4000/2020/11/30/is-complex-fourier-is-same-with-real-fourier/" rel="alternate" type="text/html" title="Is Complex Fourier Is Same With Real Fourier?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/is-complex-fourier-is-same-with-real-fourier</id><content type="html" xml:base="http://localhost:4000/2020/11/30/is-complex-fourier-is-same-with-real-fourier/">&lt;h1 id=&quot;complex-form-of-fourier-series&quot;&gt;Complex form of fourier series&lt;/h1&gt;
+
+&lt;p&gt;The complex form of fourier series is obtained by exaprassiong 
+\(cos\frac{n\pi.x}{l}\) and \(sin\frac{n\pi.x}{l}\) in expontial form that is,
+\(f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos\frac{n.\pi.x}{l}+b_nsin\frac{n.\pi.x}{l}]\\
+f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[\frac{\epsilon^(\frac{n.\pi.x}{l}+\epsilon^(\frac{-n.\pi.x}{l}}{2}]a_n+ \sum_{i=1}^\infty[\frac{\epsilon^(\frac{n.\pi.x}{l}-\epsilon^(\frac{-n.\pi.x}{l}}{2i}]b_n\)&lt;/p&gt;
+
+&lt;h1 id=&quot;even-odd-function-&quot;&gt;Even Odd function:-&lt;/h1&gt;
+
+&lt;p&gt;In simple we know that function is even if&lt;/p&gt;
+
+&lt;p&gt;\(f(-x) = f(x)\).&lt;/p&gt;
+
+&lt;p&gt;and function is odd if&lt;/p&gt;
+
+&lt;p&gt;\(f(-x) = -f(x)\).&lt;/p&gt;
+
+&lt;p&gt;example of even is cos function and example of odd functio is sin function.The fourier coeffient \(b_n\) zero it have value for 
+\(a_0\) and \(a_n\) is odd and fourier cofficent \(a_0\) and 
+\(a_n\) zero have value for \(b_n\) is even.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Even" /><category term="Odd" /><summary type="html">Complex form of fourier series</summary></entry><entry><title type="html">Do You Know About History Of Matrix?</title><link href="http://localhost:4000/2020/11/30/do-you-know-about-history-of-matrix/" rel="alternate" type="text/html" title="Do You Know About History Of Matrix?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/do-you-know-about-history-of-matrix</id><content type="html" xml:base="http://localhost:4000/2020/11/30/do-you-know-about-history-of-matrix/">&lt;h1 id=&quot;what-is-matrices-&quot;&gt;What is Matrices:-&lt;/h1&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;Certain branches of mathematics such as Linear Algebra and Group Theory use block of matrices while dealing with the problems of social sciences, physical science, biological science and engineering sciences. The ancient Chinese appreciated the advantages of array manipulation in dealing with systems of linear equations, which might have germinated a genuine theory of matrices. From the middle 1600s to the middle 1800s, while Europe was flowering in mathematical development, the study of array manipulation was exclusively along with the study of determinatnts. It was not untill the work of the British mathematician Arthur Cayley(1821-1895) that the matrix was singled out as a separate entity, distinct form the notation of a determinatnt. this laid the foundation for the modern theory of matrix analysis and linear algebra. today, matrix theory occupies a central position in pure as well as in applied mathematics.&lt;/p&gt;
+
+&lt;p&gt;In this blog, I shall be concerned matrices as a rectangular arrays of real or complex numbers(called scalars) and algebraic operations defined on them.&lt;/p&gt;
+
+&lt;h2 id=&quot;matrix-&quot;&gt;Matrix:-&lt;/h2&gt;
+
+&lt;p&gt;A &lt;strong&gt;Matrix&lt;/strong&gt; is a rectangular array of numbers arranged in formation of rows (horizontal lines) and columns (vertical lines) enclosed within the square brackets [ ] or parenthesis ( ).&lt;/p&gt;
+
+&lt;p&gt;A matrix is said to be real or complex according as its elements are real or complex.&lt;/p&gt;
+
+&lt;p&gt;for instances,&lt;/p&gt;
+
+\[i).  \left[\begin{array}{cc} 3 \end{array}\right] \\\]
+
+\[ii). \left[\begin{array}{cc} 3&amp;amp;4&amp;amp;5 \\ 1 &amp;amp; 2 &amp;amp;2 \end{array}\right]\]
+
+\[iii).\left[\begin{array}{cc} 3 &amp;amp; 4 &amp;amp; 5  \\ 1 &amp;amp; 2 &amp;amp; 2 \\ 2 &amp;amp; 3 &amp;amp; 4  \end{array}\right]\]
+
+\[iv).\left[\begin{array}{cc} a &amp;amp; b   \\ p &amp;amp; q  \\ r &amp;amp; s  \end{array}\right]\]</content><author><name>Durga Pokharel</name></author><category term="Column" /><category term="Row" /><summary type="html">What is Matrices:-</summary></entry><entry><title type="html">Can sin(x) Uniformly Convergence On [a, b] ?</title><link href="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/" rel="alternate" type="text/html" title="Can sin(x) Uniformly Convergence On [a, b] ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-%5Ba,%20b%5D</id><content type="html" xml:base="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/">&lt;p&gt;Show that the function&lt;/p&gt;
 
 &lt;p&gt;\(f(x) = \sin(x)\)
 is uniformly continuous on 
@@ -186,56 +341,7 @@ f(x) \in f^-(B_2)\]
 
 &lt;p&gt;Negation:&lt;/p&gt;
 
-\[x^2 – x  &amp;lt; 0\  and\   x &amp;lt; 0\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Condider the following two statement</summary></entry><entry><title type="html">Is Graph is used in Physics and Chemistry?</title><link href="http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/" rel="alternate" type="text/html" title="Is Graph is used in Physics and Chemistry?" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-graph-is-used-in-physics-chemistry/">&lt;h2 id=&quot;some-application-of-graph-in-real-world&quot;&gt;Some application of &lt;strong&gt;Graph&lt;/strong&gt; In real World.&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If  a graph represent a &lt;strong&gt;road network&lt;/strong&gt; the height could represents the length of each road.There may be different heights assocoated with edge including distance,traveltimes or monetory cost. Such a weighted graphs are commonly used to program GPS and travel planning,search engine that compaces flight times and cost.&lt;/li&gt;
-  &lt;li&gt;It is also used in &lt;strong&gt;mathematics&lt;/strong&gt; as it is useful in geometry and certain part of topology.&lt;/li&gt;
-  &lt;li&gt;It is useful in &lt;strong&gt;Biology&lt;/strong&gt; too.Where vertex can represent certain spacies and egde represent migration paths or movement between species.Thir information is important when looking at the breeding patterns or tracking the spread.A diseases,parasites and how changes in the movement  can affect other spacies too.&lt;/li&gt;
-  &lt;li&gt;Graph theory is also used in &lt;strong&gt;physics&lt;/strong&gt; and &lt;strong&gt;chemistry&lt;/strong&gt; too.
-In condensed matter physics ,three dimensional structure  can be studided quantitatively by gathering statistics on graph theorethic properties.Chemical graph theory uses the molecular phase
- as means of model moleculer.Graphs and network  are excellent model to study and understand phase transition and  critical phenomena.
-Removal of nodes leads to  critical transition where network breaks  into small clusters which is studied as a phase transition.&lt;/li&gt;
-  &lt;li&gt;Graph theory is also used in &lt;strong&gt;Computer sciences&lt;/strong&gt; .It is used to represent networks of commonications,dataorganization,computational devices ,the flow of computation etc .For example the line strecture of  a website can be represent webpages and directed edges lines from one page to another.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Durga Pokharel</name></author><category term="Vertex" /><category term="Arc" /><summary type="html">Some application of Graph In real World.</summary></entry><entry><title type="html">Is Y Is Inverse Of Every Real Number?</title><link href="http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number/" rel="alternate" type="text/html" title="Is Y Is Inverse Of Every Real Number?" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-y-is-inverse-of-every-real-number/">&lt;p&gt;We know that the statement&lt;/p&gt;
-
-&lt;p&gt;\(\lim\limits_{x\to \infty}f(x)\) 
-exsixts has the following meaning.Negate the statement.
-\(\exists(\forall A)(\forall t &amp;gt; 0) (\exists \delta &amp;gt; 0 ) (\forall x) ( 0 &amp;lt; |x – a| &amp;lt; \delta  \Rightarrow  |f(x) – A| &amp;lt; \varepsilon\)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The negative of the statement is&lt;/p&gt;
-
-\[\forall(\exists A) ( \exists t &amp;gt; 0) (\forall \delta &amp;gt; 0) (\exists x) (0 &amp;lt; |x – a| &amp;lt; \delta  \Rightarrow |f(x) – A|  &amp;lt; \varepsilon\]
-
-&lt;p&gt;Write the following statement in symbol  form and then form its negation,  for each \(\varepsilon  &amp;gt; 0\), there exsists an N &amp;gt; 0
-s.t
-\(| fn(x) – f(x) |  &amp;lt; ϵ \ Whenever\  n &amp;gt; N and\ S x \in S.\)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-\[\forall \varepsilon &amp;gt; 0,\ \exists N &amp;gt; 0\]
-
-\[s.t\  |fn(x) – f(x) | &amp;lt; \varepsilon\]
-
-&lt;p&gt;&lt;strong&gt;Negation:&lt;/strong&gt;&lt;/p&gt;
-
-\[\exists \varepsilon &amp;gt; 0, \ \forall N &amp;gt; 0 \\ s.t\ |fn(x) – f(x) | &amp;gt; \varepsilon\\ \  whenever\ n &amp;gt; N \ and\  x \in S.\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">We know that the statement</summary></entry><entry><title type="html">Is Every Real Number Has Additive Inverse?’</title><link href="http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/" rel="alternate" type="text/html" title="Is Every Real Number Has Additive Inverse?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-every-real-number-has-additive-inverse/">&lt;p&gt;Distinguish between two statements&lt;br /&gt;
-\((\forall x \in R)\ ( \exists y \in R)\  (x + y  = 0 )\ and\ 
-( \exists y \in R)\ ( \forall x \in R)\  (x + Y = 0)\)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Here&lt;/p&gt;
-
-\[(\forall X \in R)( \exists Y \in R) (X + Y  = 0 )\]
-
-&lt;p&gt;This statement is to mean that for every real number  has a additive inverse this statement is true.&lt;/p&gt;
-
-\[(\exists y \in R)(\forall x \in R) (x + Y = 0)\]
-
-&lt;p&gt;Is  not true, since no y will be additive inverse for every real numbers.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Distinguish between two statements \((\forall x \in R)\ ( \exists y \in R)\ (x + y = 0 )\ and\ ( \exists y \in R)\ ( \forall x \in R)\ (x + Y = 0)\) Solution:</summary></entry><entry><title type="html">Is The Topology Was Discoverd Along With Graph.?’</title><link href="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/" rel="alternate" type="text/html" title="Is The Topology Was Discoverd Along With Graph.?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/">&lt;h1 id=&quot;graph&quot;&gt;Graph&lt;/h1&gt;
+\[x^2 – x  &amp;lt; 0\  and\   x &amp;lt; 0\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Condider the following two statement</summary></entry><entry><title type="html">Is The Topology Was Discoverd Along With Graph.?’</title><link href="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/" rel="alternate" type="text/html" title="Is The Topology Was Discoverd Along With Graph.?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/">&lt;h1 id=&quot;graph&quot;&gt;Graph&lt;/h1&gt;
 &lt;p&gt;Graph Theory is the subject of study of graphs, which are mathematical structures  used to model pairwise relations between objects.&lt;/p&gt;
 
 &lt;p&gt;The paper written by leonhard Euler on &lt;strong&gt;“Seven Bridges of Konlgsberg”&lt;/strong&gt; and published in 1736 as regard as the first paper in the history of graph theory.More than centure after Euler’s paper on 
@@ -274,293 +380,4 @@ s.t
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/11.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/10.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Vertex" /><category term="Arc" /><summary type="html">Graph Graph Theory is the subject of study of graphs, which are mathematical structures used to model pairwise relations between objects.</summary></entry><entry><title type="html">Does the vector space contain more than one zero vector?</title><link href="http://localhost:4000/2020/10/23/does-the-vector-space-contain-more-than-one-zero-vector" rel="alternate" type="text/html" title="Does the vector space contain more than one zero vector?" /><published>2020-10-23T01:29:17+05:45</published><updated>2020-10-23T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/23/does-the-vector-space-contain-more-than-one-zero-vector.</id><content type="html" xml:base="http://localhost:4000/2020/10/23/does-the-vector-space-contain-more-than-one-zero-vector">&lt;h1 id=&quot;homework-assigment-1-of-linear-algebra&quot;&gt;Homework Assigment 1 of linear Algebra&lt;/h1&gt;
-&lt;p&gt;Solution set  1&lt;/p&gt;
-
-&lt;p&gt;Excercise.
-&lt;strong&gt;1.Does every vector space contain a zero vector? Justify.Let s = {0,1} and f = R in f(S, R) . Show that f = g and f + g = h where f(t) = 2t + 1 , $ g(t) = 1 + 4t - 2t^2$ and h(t) = 5t + 1.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Solution:Yes, every vector space contaion a Zero vector . Zero vector is a identity  under addition. To be vector space it is necessary to satisfy identity property.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Second part&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Here s = { 0, 1} and f  = R in F (S, R)&lt;/p&gt;
-
-&lt;p&gt;also,&lt;br /&gt;
- f(t) = 2t + 1, g(t) = 1 + 4t – 2$t^2$ and h(t) = 5t + 1 .&lt;/p&gt;
-
-&lt;p&gt;Take t = 0&lt;/p&gt;
-
-&lt;p&gt;f(0) = 2.0 + 1 = 1&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	g(0) = 1 + 4.0 – 2.(0)^2 = 1
-    
-	h(0) = 50 + 1 = 2 
-    
-    hence f(0) = g(0) so f(t) = g(t)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Take  t = 1&lt;/p&gt;
-
-&lt;p&gt;f(1) = 2.1 + 1 = 3&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	g(1) = 1 + 4.1 – 2.(1)^2 = 3
-    
-	h(1) = 51 + 1 = 6  
-    
-    hence f(1) + g(1)  = h(1)
-    
-    so f(t) + g(t) = h(t)  verified.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;2.May a vector space have more than one zero vector?justify. Let $v = {(a_1, a_2):a_1, a_2 \in R}$. for $(a_1, a_2)$, $(b_1, b_2)$ = $(a_1 + 2b_1,  a_2 + 3b_2)$ and $c(a_1, a_2)$ = $(ca_1, a_2)$.Is v a vector space over f with these operations?justify your answer.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Solution:&lt;br /&gt;
-Let a vector space have two zeros say 0 and 0^’ . From $v_{s3}$  0 is the identity  under addition&lt;br /&gt;
- Hence $ \forall  x \in V$&lt;br /&gt;
-             x + 0 = 0 + x = x…………(1)&lt;br /&gt;
-             also from $v_{s3}$   0’ is identity under addition.&lt;br /&gt;
-             x + 0’ = 0’ + x = x……….(2)&lt;br /&gt;
-            From (1) and (2)&lt;br /&gt;
-            x + 0 = x +$0^’$  = x .&lt;br /&gt;
-            Hence there is unique zeros in vector space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Second part&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Here given&lt;br /&gt;
-v = ${(a_1, a_2):a_1, a_2 \in R}$ for $(a_1, a_2)$, $(b_1, b_2) \in V$ and $c \in R$ &lt;br /&gt;
-Define $(a_1, a_2) + (b_1 , b_2)$ = $(a_1 + 2b_1,  a_2 + 3b_2)$ and $c(a_1, a_2)$  =  $(ca_1, a_2)$&lt;br /&gt;
-$V_{s1}:$ for $(a_1, a_2)$, $(b_1, b_2) \in V$   $(a_1, a_2) + (b_1, b_2)$  =  $(a_1 + 2a_2, b_1 + 3b_2)$ $\neq$ $(a_2 + 2a_1, b_2 + 3b_1)$ $\neq$ $(b_1, b_2) + (a_1, a_2)$&lt;br /&gt;
-$V_{s1}$ does not hold.&lt;br /&gt;
-$V_{s2}$: for $(a_1, a_2)$, $(b_1, b_2) \in V$ and $ (c_1, c_2) \in V $&lt;br /&gt;
-          $[(a_1, a_2) + (b_1, b_2)] + (c_1, c_2)$  = $[ a_1 + 2b_1, a_2 + 3b_2] + (c_1, c_2)$ $ \neq$ $ (a_1 + 2b_1 + c_1,  a_2 + 3b_2 + 3b_3) $ $\neq$ $(a_1, a_2)$ + $[ b_1 + 2c_1, b_2 + 3c_2]$ $ \neq $ $(a_1, b_2)$ + $[(b_1, b_2) + (c_1, c_2)]$&lt;br /&gt;
-          $V_{s2}$ does not hold.&lt;br /&gt;
-$V_{s3}$:if there exsist a element  z = $(d_1, d_2) \in V$ such that $(a_1, a_2) + (d_1, d_2)$ = $(a_1, a_2)$&lt;br /&gt;
-	$(a_1 + 2d_1, a_2 + 3d_2) $ = $(a_1, a_2)$&lt;br /&gt;
-                   	 $ a_1 + 2d_1$  = $a_1$ $\Rightarrow d_1 = 0$&lt;br /&gt;
- 	$a_2 + 3d_2$  = $a_2 \Rightarrow d_2 = 0$&lt;br /&gt;
-    This show that $(a_1, a_2) + (0, 0)$ = $(a_1, a_2)$&lt;br /&gt;
-$v_{s4}$:Let $ \forall$  $(a_1, b_1)\(\exists (-a_1, -a_2) \in V$\  
-such that$ (a_1, a_2) + (-a_1, -a_2)$ = $[a_1 +(-2a_1), a_2 + (-3a_2)]$ = $(-a_1, -2a_2)$ $\neq (0, 0)$ .\
-Hence$ v_{s4}$ does not satisfy.\
-$V_{s5}$: $1 \in  F$ $ 1.(a_1, b_1)$ = $(1.a_1, b_1)$ =$ (a_1, b_1)$\
-$V_{s6}$: $\forall x, y \in F\)xy(a_1, b_1)$ = $ x(ya_1, b)$ = $x[y(a_1, b1)]$&lt;br /&gt;
-$V_{s7}$:$ \forall x, y \in F$ (x+y) $(a_1, b_1)$  = $[(x+y)a_1, b_1]$ = $(xa_1  + ya_1, b_1)$&lt;br /&gt;
-                       also $x(a_1, b_1)$ + $y(a_1, b_2)$ = $(xa_1, b_1)$ + $(ya_1, b_1)$  = $(xa_1 + ya_1, b_1 + b_2)$ = $(xa_1 + ya_1, 2b_1)$&lt;br /&gt;
-                    (x+y)$(a_1, b_1) $ ≠ $x(a_1, b_1) + y(a_1, b_1)$&lt;br /&gt;
-                    Hence $v_{s7}$ does not satisfy.&lt;br /&gt;
-$V_{s8}$: $ \forall  x \in F$  $  x[(a_1, b_1) + (a_2, b_2)]$  = $x(a_1, b_1) + x(a_2, b_2) $ = $(xa_1, b_1) + (xa_2, b_2)$&lt;br /&gt;
-All the condition of vector space does not satisfy hence it is not vector space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.Does ax = bx imply a = b in any vector space? Justify.let v = ${(a_1, a_2):a_1, a_2 \in f}$ where f is field. Define addition of elements of v coordinate wise, and  for $ c \in f$ and $(a_1, a_2) \in V$ . Define $c(a_1, a_2)$ = $(a_1, 0)$ .Is vector space over F with these operations? Justify your answer by taking all condition of vector space.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Solution:  In any vector space ax = bx implies that a = b false&lt;br /&gt;
-It is only true if we take x = 0 &lt;br /&gt;
-i.e ; ax = bx \&lt;br /&gt;
-x(a – b) = 0 either x = 0 or ( a-b) = 0 &lt;br /&gt;
-take x = 0 and any a≠b for x.&lt;/p&gt;
-
-&lt;p&gt;Let us suppose $(a_1, a_2)$, $(b_1, b_2) \in V $ then&lt;br /&gt;
-$V_{s1}$: $(a_1, a_2)$ + $(b_1, b_2)$ =$ (a_1 + b_1, a_2 + b_2)$ = $(b_1 + a_1, b_2 + a_2)$ = $(b_1, b_2) + (a_1, a_2)$&lt;br /&gt;
-$V_{s2}$: $ [(a_1, a_2) + (b_1, b_2)] + (c_1, c_2) $ = $ (a_1, a_2) + [(b_1 , b_2) + (c_1, c_2)]$ $ \forall (c_1, c_2) \in f$&lt;br /&gt;
-$V_{s3}$: $ \exists  (d_1, d_2) \in V $ s.t $(a_1, a_2) + (d_1, d_2) $ = $(a_1, a_2)$ &lt;br /&gt;
- 			$ (a_1, a_2) + (0, 0) $ =$ (a_1, a_2) $ &lt;br /&gt;
-	$ (d_1, d_2)$ = $(0, 0)$&lt;br /&gt;
-$V_{s4}$:$ \forall (a_1, a_2) \in V  \exists (-a_1, -a_2) \in V $&lt;br /&gt;
-    s.t $ (a_1, a_2) + (-a_1, -a_2)$ = $(0, 0)$
-$V_{s5}$: $\forall \in F 1.(a_1, a_2) $ = $(a_1 ,0)$ = $(a_1, 0)$ ≠ $(a_1, a_2)$&lt;br /&gt;
-Hence $ v_{s5}$ does not satisfy.
-$V_{s6}$:$ \forall x, y \in F $ $ xy(a_1, a_2)$  = $x(ya_1, 0)$ 
-$V_{s7}$: $\forall x, y \in F $&lt;br /&gt;
-$(x + y)(a_1, a_2) $  &lt;br /&gt;
-		= $[(x + y)a_1, 0]$
-		=$ [xa_1 + ya_1, 0]$
-		=$(xa_1, 0) + (ya_1, 0)$&lt;/p&gt;
-
-&lt;p&gt;$V_{s8}$: $\forall x \in f $&lt;br /&gt;
-$x[(a_1, a_2) + (b_1, b_2)]$
-		= $x[a_1 + b_1, a_2 + b_2]$
-		=$[x(a_1 + b_1), 0]$
-		=$(xa_1, 0) + (xb_1, 0)$
-		=$ x(a_1, a_2) + x(b_1, b_2)$&lt;br /&gt;
-$V_{s5}$ does not satisfy it is not vector space.&lt;br /&gt;
-&lt;strong&gt;4.Does ax = bx imply x = y in any vector space? justify. let v denote the set of ordered pairs of real numbers.if $(a_1, a_2)$ and $(b_1, b_2)$ are element of v and $c \in R$ , define $(a_1 , a_2)$ + $(b_1 , b_2)$ =$ (a_1.b_1, a_2 + b_2)$ and $ c(a_1, a_2)$ = $(a_1, ca_2)$ . Is v a vector space over R with these operations ? Justify your answer by showing all conditions of vector space&lt;/strong&gt;&lt;br /&gt;
-Solution&lt;br /&gt;
- In any vector space ax = ay implies that  x = y is false.&lt;br /&gt;
- It is only true if we take a = 0&lt;br /&gt;
-		i.e;  ax = ay     a(x – y)  = $0 \in V$ &lt;br /&gt;
-		either a = 0  , or ( x – y) = 0    if we take a = 0 and any x ≠ y for a.&lt;br /&gt;
-&lt;strong&gt;Second part&lt;/strong&gt;&lt;br /&gt;
-Here  v denote the set of ordered pairs of real numbers. If $(a_1, a_2) $and $(b_1, b_2)$ are element of v and $c \in R $ ,define $(a_1 , a_2)$ + $(b_1 , b_2)$ = $(a_1.b_1, a_2 + b_2)$ and $ c(a_1, a_2)$ = $(a_1, c.a_2)$.&lt;br /&gt;
-$V_{s1}$:$ (a_1, a_2) + (b_1 , b_2)$   = $(a_1.b_1, a_2 + b_2)$  =  $(b_1.a_1 , b_2 + a_2)$  =$ (b_1, b_2) + (a_1, a_2)$&lt;br /&gt;
-$V_{s2}$: $ \in  [(a_1, a_2)  + (b_1, b_2)] + (c_1, c_2)$  = $ (a_1.b_1, a_2 + b_2) + (c_1, c_2)$  =  $(a_1.b_1.c_1 , a_2 + b_2 + c_2)$  =  $(a_1, a_2) + (b_1.c_1 , b_2 + c_2)$ = $(a_1, a_2) + [(b_1, b_2) + (c_1 , c_2)]$&lt;br /&gt;
-$V_{s3}$:  $\exists$$ (d_1, d_2) \in V $&lt;br /&gt;
-s.t$ (a_1, a_2) + (d_1, d_2)$ = $(a_1, a_2)$&lt;br /&gt;
-Or,$ (a_1.b_1 , a_2 + b_2 )$ =$ (a_1 , a_2) \Rightarrow  a_1.b_1 = a_1  \Rightarrow b_1 = 1$&lt;br /&gt;
-Also,$ a_2 + b_2$ = $a_2  \Rightarrow  b_2 = 0$&lt;br /&gt;
-Hence$ (d_1, d_2)$ = $(1, 0)$&lt;br /&gt;
-so, $(a_1, a_2) + (d_1, d_2)$ ≠ $(a_1 , a_2)$&lt;br /&gt;
-$v_{s3}$ does not satisfy.&lt;br /&gt;
-$V_{s4}$: $ \forall (a_1 , a_2) \exists (-a_1, -a_2) \in V $
-s.t  $(a_1, a_2) + (-a_1 , -a_2)$ = $[a_1.(-a_1) , b_1 + (-b_1) ]$ =$ (-a_1^2, 0)≠0$&lt;br /&gt;
-Hence $v_{s4}$ also not satisfy.&lt;br /&gt;
-$V_{s5}$: for $1\in R$ $ 1.(a_1, a_2)  = (a_1, 1.a_2) = (a_1, a_2)$&lt;br /&gt;
-$V_{s6}$: $ \forall x, y \in R $&lt;br /&gt;
-$xy(a_1, a_2)$ =$ x(a_1, ya_2)$ = $x[y(a_1, a_2)$&lt;br /&gt;
-$V_{s7}$:$ \forall x, y \in R$ &lt;br /&gt;
-$(x + y) [(a_1, a_2) + (b_1 , b_2)] $=$ (x + y)(a_1, a_2) + (x + y) (b_1, b_2)$&lt;br /&gt;
-	L.H.S	= $(x + y)(a_1.b_1, a_2 + b_2)$&lt;br /&gt;
-    = $ [a_1.b_1  , (x + y)(a_2 + b_2)] $&lt;br /&gt;
-    =$[a_1.b_1 , (x + y) a_2 + (x + y) b_2]$&lt;br /&gt;
-	R.H.S  = $[ a_1 , (x + y)a_2] + [b_1 , (x + y)b_2]$&lt;br /&gt;
-    = $[a_1.b_1 , (x + y)a_2 + (x + y) b_2]$&lt;br /&gt;
-    L.H.S = R.H.S&lt;br /&gt;
-$V_{s8}$:  $\forall  x \in R $&lt;br /&gt;
-$x[(a_1, a_2) + (b_1, b_2)]$  =$ x(a_1, a_2) + y(b_1, b_2)$
-	L.H.S&lt;br /&gt;
-    = $ x[ a_1.b_1 , a_2 + b_2]$&lt;br /&gt;
-    = $ [a_1.b_1 , x(a_2 + b_2)]$&lt;br /&gt;
-    = $[a_1.b_1 , xa_2 + xb_2]$&lt;br /&gt;
-	R.H.S&lt;br /&gt;
-    = $(a_1 , xa_2) + (b_1 , xb_2)$ = $(a_1.b_1 , xa_2 + xb_2)$&lt;br /&gt;
-    L.H.S = R.H.S &lt;br /&gt;
-    Here$ v_{s3}$ and$ v_{s4} $ are not satisfy .Hence it is not vector space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;5.&lt;br /&gt;
-a. Is the empty set a subspace of every vector space ? Justify and let  s = ${(a, b, (a + b):a, b \in R)}$ . Is a subspace of $R^3$ under the usual operation.&lt;br /&gt;
-b. Let I = (-a , a) a &amp;gt; 0 be an open interval in R let v = Rt the space of all real valued function  define on I. Let $ v_e$ = ${f\in v : f(-x) = f(x)}$ $ \forall x \in I $ the set of all even function on I. And let $v_o$ =$ {f \in v :f(-x) = -f(x)\forall x \in I} $ ,the set of all odd function on I.Then show that v = $ v_e \bigoplus v_0.$&lt;/strong&gt; &lt;br /&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt;&lt;br /&gt;
-The answer is no.The empty set is empty in the sence that it does not contain any elements.Thus a zero vector is not member of the empty set. Without zero we can not say that it is subspace of vector space.&lt;br /&gt;
- Here s = $[a, b, (a + b): a, b \in R] $ &lt;br /&gt;
- $\forall a   \exists –a $&lt;br /&gt;
- $V_{ss1}: a + (-a) = 0 \in s $&lt;br /&gt;
-$V_{ss2}: a + b \in s$&lt;br /&gt;
-$V_{ss3}: for c \in R $&lt;br /&gt;
-s.t$ ca \in  s$ .&lt;br /&gt;
-Hence three condition of vector sub space are satisfy so, s is vector subspace.&lt;br /&gt;
-&lt;strong&gt;For solution of b&lt;/strong&gt;.&lt;br /&gt;
-Here given two function are define by $v_e$ = $[f \in v : f(-x) = f(x) \forall x \in I]$  and $v_0 $=$ [f \in v :f(-x) = -f(x) \forall  x\in I]$&lt;br /&gt;
-First we show that $v_e$ and $v_o$ are subspace of vector space.&lt;br /&gt;
-&lt;strong&gt;For even:&lt;/strong&gt;&lt;br /&gt;
-Here  $v_e$ = $[ f \in v : f(-x) = f(x) \forall x \in I]$&lt;br /&gt;
-$V_{ss1}$: Since constant function is even . 0 is even function.&lt;br /&gt;
- $ 0 \in v_e $&lt;br /&gt;
-$V_{ss2}$: $ \forall x \in I$&lt;br /&gt;
- Let $f_1(x)$, $f_2(x) \in v_e$&lt;br /&gt;
- Define, $f(x) =  f_1(x) + f_2(x)$&lt;br /&gt;
- Now,$f(-x) =  f_1(-x) + f_2(-x)$&lt;br /&gt;
-=$f_1(x) + f_2(x)$&lt;br /&gt;
-=$f(x)$&lt;br /&gt;
-$V_{ss3}$: $\forall c \in R $&lt;br /&gt;
-$E(x) = c f(x)$  $ (E(x),f(x) \in v_e, a\in f)$&lt;br /&gt;
-Now, $ E(-x) = cf(-x) = cf(x) = E(x)$&lt;br /&gt;
-Therefore $E(x) = E(-x)$&lt;br /&gt;
-Hence $cf(x) \in v_e$&lt;br /&gt;
-Therefore the set of all even function on I i.e; $v_e$ is subspace of V.\&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;For odd:&lt;/strong&gt;&lt;br /&gt;
-Here $v_o = [f \in v :f(-x) = -f(x) \forall x\in  I]$&lt;br /&gt;
-$V_{ss1}$: Since constant function is odd . 0 is odd function.&lt;br /&gt;
- $ 0 \in v_0 $&lt;br /&gt;
-$V_{ss2}$: $ \forall x \in I$&lt;br /&gt;
- Let $f_1(x)$, $f_2(x) \in v_o$&lt;br /&gt;
- Define, $f(x) =  f_1(x) + f_2(x)$&lt;br /&gt;
- Now,$f(-x) =  f_1(-x) + f_2(-x)$&lt;br /&gt;
-=$-[f_1(x) + f_2(x)]$&lt;br /&gt;
-=$-f(x)$&lt;br /&gt;
-$V_{ss3}$: $\forall c \in R $&lt;br /&gt;
-$O(x) = c f(x)$  $ (O(x),f(x) \in v_o, a\in f)$&lt;br /&gt;
-Now, $ O(-x) = cf(-x) = -cf(x) = -O(x)$&lt;br /&gt;
-Therefore $O(-x) =-O(x)$&lt;br /&gt;
-Hence $cf(x) \in v_o$&lt;br /&gt;
-From above result we can say that $v_0$ is the subspace of V for direct we have to show that
-$ V_e \cap v_o = 0$&lt;br /&gt;
-$V_e + V_o = V$&lt;br /&gt;
-Also, we need to ahow that these property are unique for this we proceeed as follows,&lt;br /&gt;
-Let U be any elenment of $ V_e \cap v_o$ .It means that U is both even and odd function.&lt;br /&gt;
-Now, for even function.&lt;br /&gt;
-$U(-x) = U(-x) $……(1)&lt;br /&gt;
-for odd function.&lt;br /&gt;
-$U(-x) = -U(x)$…….(2)&lt;br /&gt;
-From (1) and (2) we can write,&lt;br /&gt;
-$U(x) = -U(x)$&lt;br /&gt;
-$2U(x) = 0$&lt;br /&gt;
-$U(x) = 0$.…..(3)
-It means that $ V_e \cap v_o = {0}$.Intersection contains only zero element.&lt;br /&gt;
-Also,Let $ f \in N$&lt;br /&gt;
-Clearly,&lt;br /&gt;
-$f(x) = \frac{f(x) + f(-x)}{2} + \frac{f(x) - f(-x)}{2}$&lt;br /&gt;
-$= g(x) + h(x)$&lt;br /&gt;
-Where,&lt;br /&gt;
-$g(x) = \frac{f(x) + f(-x)}{2}$&lt;br /&gt;
-$h(x) = \frac{f(x) - f(-x)}{2}$&lt;br /&gt;
-Now,&lt;br /&gt;
-$g(-x) = \frac{f(-x) + f-(-x)}{2}$&lt;br /&gt;
-$=\frac{f(-x) + f(x)}{2}$&lt;br /&gt;
-$g(x)$&lt;br /&gt;
-so g(x) is even&lt;br /&gt;
-and,$h(-x) = \frac{f(-x) - f[-(-x)]}{2}$&lt;br /&gt;
-$= \frac{f(-x) - f(x)}{2}$&lt;br /&gt;
-$-h(x)$&lt;br /&gt;
-Therefore  $ f = g + h $ . Where g is even and h is odd.&lt;br /&gt;
-Uniqueness&lt;br /&gt;
-Clearly,&lt;br /&gt;
-$p(x) = \frac{p(x) + p(-x)}{2} + \frac{p(x) - p(-x)}{2}$&lt;br /&gt;
-$ = m(x) + n(x) $&lt;br /&gt;
-Now,
-$m(-x)= \frac{p(-x) + p(x)}{2}$&lt;br /&gt;
-$ = \frac{p(x) + p(-x)}{2}$&lt;br /&gt;
-$ = m(x)$ .So m(x) is even.&lt;br /&gt;
-Similarly,&lt;br /&gt;
-$(-x) =\frac{p(-x)  p(x)}{2}$&lt;br /&gt;
-$-[\frac{p(x) - p(-x)}{2}]$&lt;br /&gt;
-$ = - n(x) $&lt;br /&gt;
-Therefore n(-x) = n(x).So n is the odd function.&lt;br /&gt;
-p = m + n.Where m is even and n is odd function.&lt;br /&gt;
-From above result we see,&lt;br /&gt;
-$v_e \bigoplus v_0.$…..(4)&lt;br /&gt;
-From (3) and (4) we can say that$ v_e \bigoplus v_0.$&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Vectorspace" /><category term="Basis" /><summary type="html">Homework Assigment 1 of linear Algebra Solution set 1</summary></entry><entry><title type="html">Is The Trace of square matrix product of its diagonal element?</title><link href="http://localhost:4000/2020/10/23/how-to-find-if-the-trace-of-square-matrix-product-of-diagonal-entries/" rel="alternate" type="text/html" title="Is  The Trace of square matrix product of its diagonal element?" /><published>2020-10-23T01:29:17+05:45</published><updated>2020-10-23T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/23/how-to-find-if-the-trace-of-square-matrix-product-of-diagonal-entries</id><content type="html" xml:base="http://localhost:4000/2020/10/23/how-to-find-if-the-trace-of-square-matrix-product-of-diagonal-entries/">&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; Is the trace of square matrice the product of its diagonal entries ? Justify. Determine whether the set \(w = [ (a_1 , a_2 , a_3) \in R_3 : a_1 + 2a_2 – 3a_3 = 2]\) is subspace or not of \(R^3\) with justification.\&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt;&lt;br /&gt;
-First part:&lt;br /&gt;
-No, the trace of square matrix is not the product of it’s diagonal entries. The trace of a square matrix of order \(m \times n\) is the sum of its principal diagonal entries.&lt;br /&gt;
-i.e; Tr(M) = \(M_{11} + M_{22} + M_{33} + .......+ M_{nn}\)&lt;br /&gt;
-Second part:&lt;br /&gt;
-			Here, \(w =  [ (a_1 , a_2 , a_3) \in R^3 : a_1 + 2a_2 – 3a_3 = 2]\). We have to show that w is  subspace of \(R^3\)&lt;br /&gt;
-			For this , we take \((c_1 , c_2) \in R\) and \(v_1 = (x_1 , x_2 , x_3)\) and \(v_2 = (y_1 , y_2 , y_3) \in w\)&lt;br /&gt;
-			So, \(x_1 + 2x_2 – 3x_3  = -2\) ……………(i)&lt;br /&gt;
-			 \(y_1 + 2y_2 – 3y_3  = -2\)……………(ii)&lt;br /&gt;
-			since,&lt;br /&gt;
-            \(c_1v_1 + c_2v_2\) \ 
-			= \(c_1(x_1 , x_2, x_3) + c_2(y_1 , y_2 , y_3)\) &lt;br /&gt;
- 	 = \((c_1x_1 + c_2y_1, c_1x_2 + c_2y_2 , c_1x_3 + c_2y_3)\) &lt;br /&gt;
-                           Which is a traid form.&lt;br /&gt;
-                          By definition of w. \ 
-                         \((c_1x_1 + c_2y_1) + 2(c_1x_2 + c_2y_2) – 3(c_1x_3 + c_2y_3)  = 2\)&lt;br /&gt;
-                        Or \((c_1x_1 + 2c_1x_2 – 3c_1x_3 ) + (c_2y_1 + 2c_2y_2 – 3c_2y_3) = 2\)&lt;br /&gt;
-	Or \(c_1(x_1 + 2x_2 – 3x_3 ) + c_2(y_1 + 2y_2 – 3y_3) = 2\)\ 
-	Or \(2c_1 + 2c_2 = 2 ≠ 0.c_1 + 0.c_2 = 0\)
-	Or \(c_1 + c_2 = 1\).&lt;br /&gt;
-    Hence w is not subspace of \(R^3\).&lt;br /&gt;
-    &lt;strong&gt;Alternatively&lt;/strong&gt;&lt;br /&gt;
-    Given, \(w =  [ (a_1 , a_2 , a_3) \in R^3 : a_1 + 2a_2 – 3a_3 = 2]\).&lt;br /&gt;
-    If we choose&lt;br /&gt;
-    \(u = (a_1, a_2, a_3) = (1, 2, 1) \in R^3\) &lt;br /&gt;
-    \(v = (a_1, a_2, a_3) = (0, 1, 0)\)&lt;br /&gt;
-    Where, \(u, v \in w\)&lt;br /&gt;
-    For subspace,&lt;br /&gt;
-    \(v_{ss1}\): if \((a_1, a_2, a_3) = (0, 0, 0) \in R^3\)&lt;br /&gt;
-    \(= 0 + 2 \times 0 - 3 \times 0\)&lt;br /&gt;
-    \(= 0 + 0 + 0\)&lt;br /&gt;
-    \(= 0 \neq 2\) &lt;br /&gt;
-    \(v_{ss2}\) :for \(u, v \in w\)&lt;br /&gt;
-    \(u + w = (1, 2, 1) + (0, 1, 0)\)&lt;br /&gt;
-    \(= (1, 3, 1)\)&lt;br /&gt;
-    Now, \(a_1 + 2a_2 -3a_3\)&lt;br /&gt;
-    \(=1 + 2\times 3 - 3 \times 1\)&lt;br /&gt;
-    \(= 1 + 6 -3\)&lt;br /&gt;
-    \(= 4 \neq 2\)&lt;br /&gt;
-    \(v_{ss3}\):for \(c \in R$\\) cu = c(a_1, a_2, a_3) \(\
-    if we choose c = 3 and\) (a_1, a_2, a_3) = (1, 2, 1) \(\\) cu = 3(1, 2, 1) \(\\) =(3, 6, 3) \(\
-    such that,\) a_1 + 2a_2 - 3a_3 = 3 + 2 \times 6 - 3 \times3 \(\\)6\(\\)3(2)\(\
-    Hence\) v_{ss3} \(holds. Hence the set w is not satisfied all the property of vector subspace hence w is not subspace of\)R^3$$.&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Vectorspace" /><category term="Basis" /><summary type="html">Question: Is the trace of square matrice the product of its diagonal entries ? Justify. Determine whether the set \(w = [ (a_1 , a_2 , a_3) \in R_3 : a_1 + 2a_2 – 3a_3 = 2]\) is subspace or not of \(R^3\) with justification.\</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/10.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Vertex" /><category term="Arc" /><summary type="html">Graph Graph Theory is the subject of study of graphs, which are mathematical structures used to model pairwise relations between objects.</summary></entry></feed>

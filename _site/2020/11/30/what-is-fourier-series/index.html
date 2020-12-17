@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Is If x Belong To The Domain Than f(x) belong To The Range ? - Durga Pokharel</title>
-<meta name="description" content="Let   \(F : x \Rightarrow y\)">
+<!-- begin _includes/seo.html --><title>What Is Fourier Series? - Durga Pokharel</title>
+<meta name="description" content="What is fourior Series">
 
 
   <meta name="author" content="Durga Pokharel">
@@ -22,28 +22,28 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Durga Pokharel">
-<meta property="og:title" content="Is If x Belong To The Domain Than f(x) belong To The Range ?">
-<meta property="og:url" content="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">
+<meta property="og:title" content="What Is Fourier Series?">
+<meta property="og:url" content="http://localhost:4000/2020/11/30/what-is-fourier-series/">
 
 
-  <meta property="og:description" content="Let   \(F : x \Rightarrow y\)">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/header_images/3.png">
+  <meta property="og:description" content="What is fourior Series">
 
 
 
-
-
-  <meta property="article:published_time" content="2020-11-18T01:29:17+05:45">
+  <meta property="og:image" content="http://localhost:4000/assets/header_images/8.png">
 
 
 
 
 
+  <meta property="article:published_time" content="2020-11-30T01:29:17+05:45">
 
-<link rel="canonical" href="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2020/11/30/what-is-fourier-series/">
 
 
 
@@ -196,19 +196,18 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('/assets/header_images/3.png');"
+  style=" background-image: url('/assets/header_images/8.png');"
 >
   
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Is If x Belong To The Domain Than f(x) belong To The Range ?
+          What Is Fourier Series?
 
         
       </h1>
       
-        <p class="page__lead">Let 
- \(F : x \Rightarrow y\)
+        <p class="page__lead"><h1 id="what-is-fourior-series">What is fourior Series</h1>
 
 </p>
       
@@ -219,7 +218,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-18T01:29:17+05:45">November 18, 2020</time>
+        <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time>
       </span>
     
 
@@ -232,7 +231,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -364,9 +363,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Is If x Belong To The Domain Than f(x) belong To The Range ?">
-    <meta itemprop="description" content="Let  \(F : x \Rightarrow y\)">
-    <meta itemprop="datePublished" content="2020-11-18T01:29:17+05:45">
+    <meta itemprop="headline" content="What Is Fourier Series?">
+    <meta itemprop="description" content="What is fourior Series">
+    <meta itemprop="datePublished" content="2020-11-30T01:29:17+05:45">
     
 
     <div class="page__inner-wrap">
@@ -374,56 +373,71 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Let 
- \(F : x \Rightarrow y\)</p>
+        <h1 id="what-is-fourior-series">What is fourior Series</h1>
 
-<p>be a function. Then prove that</p>
+<p>It is the method of expressing any given function in terms of sine and cosine series. The Fourier theorem’s can be expressed as “ any single valued function defined in the interval \([\pi,\pi]\) may be represented over this interval by trigonometric series.</p>
 
-\[i.  A_1 \subset A_2   \Rightarrow  F(A_1)  \subset  F(A_2) \\  
-ii. F(\cup_i A_i)  = \cup_i F(A_i) \\ 
-iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
+\[f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos(nx) + b_nsin(nx)]\]
 
-<p>Solution:</p>
+<p>Where</p>
 
-<p>\(Let \ f: x \rightarrow y\) be a funxtion.</p>
+<p>\(a_0, a_n , b_n\)  are called fourier coefficent, and  \(a_0, a_n, b_n\)</p>
 
-<p>i.</p>
+<p>are determined by the following formula,</p>
 
-<p>\(Let\ y \in f(A_1)\) 
-\(Then\ \exists x \in A_1 : y = f(x)\).
-\(But\ A_1 \subset A_2\)
-\(we\ can\ say\ , x \in A_2\) 
-\(Hence\ y = f(x)\)</p>
+\[1.\ a_0 = \frac{1}{\pi}\int_{-\pi}^\pi f(x) dx. \\
 
-<p>ii.</p>
+2.\ a_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)cos(nx) dx. \\
 
-\[Let\  y \in f ( \cup_i A_i) then\ \exists x \in \cup_i A_i : y = f(x)\]
+3.\ b_n = \frac{1}{\pi}\int_{-\pi}^\pi f(x)sin(nx) dx.\\\]
 
-\[Since\  x \in (\cup_iA_i) \Rightarrow  x \in A_i\ for\ some\ i\]
+<p>Where  n = 1, 2, 3, …..</p>
 
-\[so\  y = f(x) \in f(A_i)\  and\ hence\  y \in \cup_i(A_i)\]
+<h2 id="fourier-series-expression-for-any-arbitrary-function-in-various-interval">Fourier series expression for any arbitrary function in various interval</h2>
 
-<p>Conversely</p>
+<p>Thus far, the expansion interval has been restricted to \([\pi , \pi]\). To solve many physical problems, it is necessary to develop a fourier series that will be valid over a wide interval.</p>
 
-\[Let\  y \in \cup_if(A_i)\ then\ y \in f(A_i) for\ some\ i\]
+<ul>
+  <li>Fourire series in [a , b]</li>
+</ul>
 
-\[so\  \exists x \in A_i : y = f(x)\]
+<p>If f(x) is periodic in interval [a , b]</p>
 
-\[and\ x \in \Rightarrow x \in \cup_i(A_i)\]
+<p>i;e \(f(x + a + b) = f(x)\)</p>
 
-\[so\ that\  f(x) \in f(\cup_i A_i)\]
+<p>the fourier series expansion of f(x) is,</p>
 
-<p>iii.</p>
+\[f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos\frac{2n.\pi.x}{b-a}+b_nsin\frac{2n.\pi.x}{b-a}] \\
 
-\[Let\ y \in f(\cup_i A_i)\ then\ \exists x \in \cap_i A_i : y = f(x)\]
+where\\
 
-\[Since\ x \in \cap_i A_i\]
+a_0 = \frac{1}{b-a}\int_{a}^b f(x) dx.\\
 
-\[we\ can\ write\  x \in A_i\ for\  all\ i\]
+a_n = \frac{1}{b-a}\int_{a}^b f(x)cos\frac{2n.\pi.x}{b-a} dx.\\
 
-\[so\  f(x)  \in f(A_i)\ for\ all\  i\]
+b_n = \frac{1}{b-a}\int_{a}^b f(x)sin\frac{2n.\pi.x}{b-a}. \\\]
 
-\[Hence\ f(x) \in \cap_if(A_i)\]
+<ul>
+  <li>Fourier series in [-l , l]</li>
+</ul>
+
+<p>Similarly the function f(x) is periodic in the interval [-l , l]</p>
+
+<p>i;e</p>
+
+\[f(x + 2l) = f(x)\]
+
+<p>the fourior series expansion of f(x) is,</p>
+
+\[f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[a_ncos\frac{2n.\pi.x}{l+l}+b_nsin\frac{2n.\pi.x}{l+l}] \\
+
+where\\
+
+a_0 = \frac{1}{l}\int_{-l}^l f(x) dx.\\
+
+a_n = \frac{1}{l}\int_{-l}^l f(x)cos\frac{n.\pi.n}{l} dx.\\
+
+b_n = \frac{1}{l}\int_{-l}^l f(x)sin\frac{n.\pi.n}{l} dx.\\\]
 
         
       </section>
@@ -444,11 +458,11 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
     
       
       
-      <a href="/tags/#converse" class="page__taxonomy-item" rel="tag">Converse</a><span class="sep">, </span>
+      <a href="/tags/#even" class="page__taxonomy-item" rel="tag">Even</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#inverse" class="page__taxonomy-item" rel="tag">Inverse</a>
+      <a href="/tags/#odd" class="page__taxonomy-item" rel="tag">Odd</a>
     
     </span>
   </p>
@@ -469,14 +483,18 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
     
       
       
-      <a href="/categories/#measure-theory" class="page__taxonomy-item" rel="tag">Measure-theory</a>
+      <a href="/categories/#differential" class="page__taxonomy-item" rel="tag">Differential</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#equation" class="page__taxonomy-item" rel="tag">Equation</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-18T01:29:17+05:45">November 18, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time></p>
 
 
       </footer>
@@ -484,22 +502,22 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Is+If+x+Belong+To+The+Domain+Than+f%28x%29+belong+To+The+Range+%3F%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F18%2Fis-if-x-belong-to-domain-then-f%28x%29-belong-to-the-range%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=What+Is+Fourier+Series%3F%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F30%2Fwhat-is-fourier-series%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F18%2Fis-if-x-belong-to-domain-then-f%28x%29-belong-to-the-range%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F30%2Fwhat-is-fourier-series%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F18%2Fis-if-x-belong-to-domain-then-f%28x%29-belong-to-the-range%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F30%2Fwhat-is-fourier-series%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/" class="pagination--pager" title="If x Subset Of Y Then Inverse Of x Also Subset Of Y?
+      <a href="/2020/11/30/is-fourier-series-used-in-real-life/" class="pagination--pager" title="IS Fourier Series Used In Real Life?
 ">Previous</a>
     
     
-      <a href="/2020/11/30/do-you-know-about-history-of-matrix/" class="pagination--pager" title="Do You Know About History Of Matrix?
+      <a href="/2020/12/15/how-to-convert-decimal-to-binary-in-python/" class="pagination--pager" title="How To Convert Decimal To Binary In Python?
 ">Next</a>
     
   </nav>
@@ -561,57 +579,6 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
 
 
     <p class="archive__item-excerpt" itemprop="description">Conversion From Decimal to Binary in python.
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/header_images/6.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/2020/11/30/what-is-fourier-series/" rel="permalink">What Is Fourier Series?
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">What is fourior Series
 
 </p>
   </article>
@@ -714,6 +681,57 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
 
 
     <p class="archive__item-excerpt" itemprop="description">Complex form of fourier series
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/header_images/8.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2020/11/30/do-you-know-about-history-of-matrix/" rel="permalink">Do You Know About History Of Matrix?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">What is Matrices:-
 
 </p>
   </article>

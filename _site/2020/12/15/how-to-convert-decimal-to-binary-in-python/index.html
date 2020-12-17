@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Is If x Belong To The Domain Than f(x) belong To The Range ? - Durga Pokharel</title>
-<meta name="description" content="Let   \(F : x \Rightarrow y\)">
+<!-- begin _includes/seo.html --><title>How To Convert Decimal To Binary In Python? - Durga Pokharel</title>
+<meta name="description" content="Conversion From Decimal to Binary in python.">
 
 
   <meta name="author" content="Durga Pokharel">
@@ -22,28 +22,28 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Durga Pokharel">
-<meta property="og:title" content="Is If x Belong To The Domain Than f(x) belong To The Range ?">
-<meta property="og:url" content="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">
+<meta property="og:title" content="How To Convert Decimal To Binary In Python?">
+<meta property="og:url" content="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">
 
 
-  <meta property="og:description" content="Let   \(F : x \Rightarrow y\)">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/header_images/3.png">
+  <meta property="og:description" content="Conversion From Decimal to Binary in python.">
 
 
 
-
-
-  <meta property="article:published_time" content="2020-11-18T01:29:17+05:45">
+  <meta property="og:image" content="http://localhost:4000/assets/header_images/6.png">
 
 
 
 
 
+  <meta property="article:published_time" content="2020-12-15T01:29:17+05:45">
 
-<link rel="canonical" href="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">
 
 
 
@@ -196,19 +196,18 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: url('/assets/header_images/3.png');"
+  style=" background-image: url('/assets/header_images/6.png');"
 >
   
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Is If x Belong To The Domain Than f(x) belong To The Range ?
+          How To Convert Decimal To Binary In Python?
 
         
       </h1>
       
-        <p class="page__lead">Let 
- \(F : x \Rightarrow y\)
+        <p class="page__lead"><h2 id="conversion-from-decimal-to-binary-in-python">Conversion From Decimal to Binary in python.</h2>
 
 </p>
       
@@ -219,7 +218,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-18T01:29:17+05:45">November 18, 2020</time>
+        <time datetime="2020-12-15T01:29:17+05:45">December 15, 2020</time>
       </span>
     
 
@@ -364,9 +363,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Is If x Belong To The Domain Than f(x) belong To The Range ?">
-    <meta itemprop="description" content="Let  \(F : x \Rightarrow y\)">
-    <meta itemprop="datePublished" content="2020-11-18T01:29:17+05:45">
+    <meta itemprop="headline" content="How To Convert Decimal To Binary In Python?">
+    <meta itemprop="description" content="Conversion From Decimal to Binary in python.">
+    <meta itemprop="datePublished" content="2020-12-15T01:29:17+05:45">
     
 
     <div class="page__inner-wrap">
@@ -374,56 +373,48 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Let 
- \(F : x \Rightarrow y\)</p>
+        <h2 id="conversion-from-decimal-to-binary-in-python">Conversion From Decimal to Binary in python.</h2>
 
-<p>be a function. Then prove that</p>
+<p>Creation of python program to convert decimal to binary.
+For this take decimal number as input. Initialize current decimal as given decimal. Initialize remender as zero. Create a place to store binary number. We don’t know about how many step are taken to convert so I choosed while loop. If current decimal is divisiable by 2 then remender is zero. Now I took current decimal  as quotient of original decimal number. I kept remender in place where I create the place to store it. Else I kept remender 1 in list. Similar process I repeat below.</p>
 
-\[i.  A_1 \subset A_2   \Rightarrow  F(A_1)  \subset  F(A_2) \\  
-ii. F(\cup_i A_i)  = \cup_i F(A_i) \\ 
-iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
+<p>dec = int(input(“Enter a decimal number. “))</p>
 
-<p>Solution:</p>
+<p>curr_dec = dec</p>
 
-<p>\(Let \ f: x \rightarrow y\) be a funxtion.</p>
+<p>rem = 0</p>
 
-<p>i.</p>
+<p>binary = []</p>
 
-<p>\(Let\ y \in f(A_1)\) 
-\(Then\ \exists x \in A_1 : y = f(x)\).
-\(But\ A_1 \subset A_2\)
-\(we\ can\ say\ , x \in A_2\) 
-\(Hence\ y = f(x)\)</p>
+<p>while True:</p>
 
-<p>ii.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if curr_dec % 2 == 0:
+    
+    rem = 0
+    
+    curr_dec = int(curr_dec/2)
+    
+    binary.append(rem)
+    
+else:
+    rem = 1
+    
+    curr_dec = int(curr_dec/2)
+    
+    binary.append(rem)
+    
+if curr_dec  == 1:
+    
+    binary.append(1)
+    
+    break
+</code></pre></div></div>
 
-\[Let\  y \in f ( \cup_i A_i) then\ \exists x \in \cup_i A_i : y = f(x)\]
+<p>print(binary)</p>
 
-\[Since\  x \in (\cup_iA_i) \Rightarrow  x \in A_i\ for\ some\ i\]
+<p>binary = binary[::-1]</p>
 
-\[so\  y = f(x) \in f(A_i)\  and\ hence\  y \in \cup_i(A_i)\]
-
-<p>Conversely</p>
-
-\[Let\  y \in \cup_if(A_i)\ then\ y \in f(A_i) for\ some\ i\]
-
-\[so\  \exists x \in A_i : y = f(x)\]
-
-\[and\ x \in \Rightarrow x \in \cup_i(A_i)\]
-
-\[so\ that\  f(x) \in f(\cup_i A_i)\]
-
-<p>iii.</p>
-
-\[Let\ y \in f(\cup_i A_i)\ then\ \exists x \in \cap_i A_i : y = f(x)\]
-
-\[Since\ x \in \cap_i A_i\]
-
-\[we\ can\ write\  x \in A_i\ for\  all\ i\]
-
-\[so\  f(x)  \in f(A_i)\ for\ all\  i\]
-
-\[Hence\ f(x) \in \cap_if(A_i)\]
+<p>print(binary)</p>
 
         
       </section>
@@ -444,11 +435,11 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
     
       
       
-      <a href="/tags/#converse" class="page__taxonomy-item" rel="tag">Converse</a><span class="sep">, </span>
+      <a href="/tags/#initialize" class="page__taxonomy-item" rel="tag">Initialize</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#inverse" class="page__taxonomy-item" rel="tag">Inverse</a>
+      <a href="/tags/#loop" class="page__taxonomy-item" rel="tag">Loop</a>
     
     </span>
   </p>
@@ -469,14 +460,14 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
     
       
       
-      <a href="/categories/#measure-theory" class="page__taxonomy-item" rel="tag">Measure-theory</a>
+      <a href="/categories/#python-programming-language" class="page__taxonomy-item" rel="tag">Python-Programming-Language</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-18T01:29:17+05:45">November 18, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-12-15T01:29:17+05:45">December 15, 2020</time></p>
 
 
       </footer>
@@ -484,23 +475,22 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Is+If+x+Belong+To+The+Domain+Than+f%28x%29+belong+To+The+Range+%3F%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F18%2Fis-if-x-belong-to-domain-then-f%28x%29-belong-to-the-range%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=How+To+Convert+Decimal+To+Binary+In+Python%3F%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F12%2F15%2Fhow-to-convert-decimal-to-binary-in-python%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F18%2Fis-if-x-belong-to-domain-then-f%28x%29-belong-to-the-range%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F12%2F15%2Fhow-to-convert-decimal-to-binary-in-python%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2F11%2F18%2Fis-if-x-belong-to-domain-then-f%28x%29-belong-to-the-range%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2F12%2F15%2Fhow-to-convert-decimal-to-binary-in-python%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/" class="pagination--pager" title="If x Subset Of Y Then Inverse Of x Also Subset Of Y?
+      <a href="/2020/11/30/what-is-fourier-series/" class="pagination--pager" title="What Is Fourier Series?
 ">Previous</a>
     
     
-      <a href="/2020/11/30/do-you-know-about-history-of-matrix/" class="pagination--pager" title="Do You Know About History Of Matrix?
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -515,57 +505,6 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/header_images/8.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/2020/12/15/how-to-convert-decimal-to-binary-in-python/" rel="permalink">How To Convert Decimal To Binary In Python?
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-12-15T01:29:17+05:45">December 15, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Conversion From Decimal to Binary in python.
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -714,6 +653,57 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
 
 
     <p class="archive__item-excerpt" itemprop="description">Complex form of fourier series
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/header_images/8.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2020/11/30/do-you-know-about-history-of-matrix/" rel="permalink">Do You Know About History Of Matrix?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">What is Matrices:-
 
 </p>
   </article>
