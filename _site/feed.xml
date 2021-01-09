@@ -1,45 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-17T17:56:58+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Convert Decimal To Binary In Python?</title><link href="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/" rel="alternate" type="text/html" title="How To Convert Decimal To Binary In Python?" /><published>2020-12-15T01:29:17+05:45</published><updated>2020-12-15T01:29:17+05:45</updated><id>http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python</id><content type="html" xml:base="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">&lt;h2 id=&quot;conversion-from-decimal-to-binary-in-python&quot;&gt;Conversion From Decimal to Binary in python.&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-21T09:58:07+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Convert Decimal To Binary In Python?</title><link href="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/" rel="alternate" type="text/html" title="How To Convert Decimal To Binary In Python?" /><published>2020-12-15T01:29:17+05:45</published><updated>2020-12-15T01:29:17+05:45</updated><id>http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python</id><content type="html" xml:base="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">&lt;h1 id=&quot;conversion-from-decimal-to-binary-in-python&quot;&gt;Conversion From Decimal to Binary in Python.&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As we have studied in our early school days, decimal is a number system with base 10 which means that we will have 10 numbers sequentially starting from zero. Binary system is a number system with a base of two which means that we have to represent every number with 0 and 1. Simillary in octal system highest possible digit is 7. In binary system, we have two digits and according to set theory, number of arrangements that can be made with n digits is \(2^n\) (each arrangement must be a length n) so we will have 4 possible numbers in binary system of length two.&lt;/p&gt;
+
+&lt;p&gt;My target here is to learn basic python by trying to solve my grade 7 homework.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-do-it-&quot;&gt;How to do it ?&lt;/h2&gt;
+&lt;p&gt;As our basic concept of collecting remainders from a number after dividing by 2, we have to stop dividing quotient after we reached 1.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-python&quot;&gt;In Python&lt;/h2&gt;
 
 &lt;p&gt;Creation of python program to convert decimal to binary.
 For this take decimal number as input. Initialize current decimal as given decimal. Initialize remender as zero. Create a place to store binary number. We don’t know about how many step are taken to convert so I choosed while loop. If current decimal is divisiable by 2 then remender is zero. Now I took current decimal  as quotient of original decimal number. I kept remender in place where I create the place to store it. Else I kept remender 1 in list. Similar process I repeat below.&lt;/p&gt;
 
-&lt;p&gt;dec = int(input(“Enter a decimal number. “))&lt;/p&gt;
-
-&lt;p&gt;curr_dec = dec&lt;/p&gt;
-
-&lt;p&gt;rem = 0&lt;/p&gt;
-
-&lt;p&gt;binary = []&lt;/p&gt;
-
-&lt;p&gt;while True:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if curr_dec % 2 == 0:
-    
-    rem = 0
-    
-    curr_dec = int(curr_dec/2)
-    
-    binary.append(rem)
-    
-else:
-    rem = 1
-    
-    curr_dec = int(curr_dec/2)
-    
-    binary.append(rem)
-    
-if curr_dec  == 1:
-    
-    binary.append(1)
-    
-    break
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;print(binary)&lt;/p&gt;
-
-&lt;p&gt;binary = binary[::-1]&lt;/p&gt;
-
-&lt;p&gt;print(binary)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Initialize" /><category term="Loop" /><summary type="html">Conversion From Decimal to Binary in python.</summary></entry><entry><title type="html">What Is Fourier Series?</title><link href="http://localhost:4000/2020/11/30/what-is-fourier-series/" rel="alternate" type="text/html" title="What Is Fourier Series?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/what-is-fourier-series</id><content type="html" xml:base="http://localhost:4000/2020/11/30/what-is-fourier-series/">&lt;h1 id=&quot;what-is-fourior-series&quot;&gt;What is fourior Series&lt;/h1&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter a decimal number. &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dec&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="Number-system" /><category term="Biginner" /><summary type="html">Conversion From Decimal to Binary in Python.</summary></entry><entry><title type="html">What Is Fourier Series?</title><link href="http://localhost:4000/2020/11/30/what-is-fourier-series/" rel="alternate" type="text/html" title="What Is Fourier Series?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/what-is-fourier-series</id><content type="html" xml:base="http://localhost:4000/2020/11/30/what-is-fourier-series/">&lt;h1 id=&quot;what-is-fourior-series&quot;&gt;What is fourior Series&lt;/h1&gt;
 
 &lt;p&gt;It is the method of expressing any given function in terms of sine and cosine series. The Fourier theorem’s can be expressed as “ any single valued function defined in the interval \([\pi,\pi]\) may be represented over this interval by trigonometric series.&lt;/p&gt;
 

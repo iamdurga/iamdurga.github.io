@@ -144,8 +144,8 @@ var store = [{
         "teaser": "http://localhost:4000/assets/header_images/6.png"
       },{
         "title": "How To Convert Decimal To Binary In Python?",
-        "excerpt":"Conversion From Decimal to Binary in python. Creation of python program to convert decimal to binary. For this take decimal number as input. Initialize current decimal as given decimal. Initialize remender as zero. Create a place to store binary number. We don’t know about how many step are taken to...","categories": ["Python-Programming-Language"],
-        "tags": ["Initialize","Loop"],
+        "excerpt":"Conversion From Decimal to Binary in Python. Introduction As we have studied in our early school days, decimal is a number system with base 10 which means that we will have 10 numbers sequentially starting from zero. Binary system is a number system with a base of two which means...","categories": ["Python-Biginner"],
+        "tags": ["Number-system","Biginner"],
         "url": "http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/",
         "teaser": "http://localhost:4000/assets/header_images/8.png"
       }]

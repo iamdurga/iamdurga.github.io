@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>How To Convert Decimal To Binary In Python? - Durga Pokharel</title>
-<meta name="description" content="Conversion From Decimal to Binary in python.">
+<meta name="description" content="Conversion From Decimal to Binary in Python.">
 
 
   <meta name="author" content="Durga Pokharel">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">
 
 
-  <meta property="og:description" content="Conversion From Decimal to Binary in python.">
+  <meta property="og:description" content="Conversion From Decimal to Binary in Python.">
 
 
 
@@ -207,7 +207,7 @@
         
       </h1>
       
-        <p class="page__lead"><h2 id="conversion-from-decimal-to-binary-in-python">Conversion From Decimal to Binary in python.</h2>
+        <p class="page__lead"><h1 id="conversion-from-decimal-to-binary-in-python">Conversion From Decimal to Binary in Python.</h1>
 
 </p>
       
@@ -231,7 +231,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -364,7 +364,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="How To Convert Decimal To Binary In Python?">
-    <meta itemprop="description" content="Conversion From Decimal to Binary in python.">
+    <meta itemprop="description" content="Conversion From Decimal to Binary in Python.">
     <meta itemprop="datePublished" content="2020-12-15T01:29:17+05:45">
     
 
@@ -373,48 +373,42 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="conversion-from-decimal-to-binary-in-python">Conversion From Decimal to Binary in python.</h2>
+        <h1 id="conversion-from-decimal-to-binary-in-python">Conversion From Decimal to Binary in Python.</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>As we have studied in our early school days, decimal is a number system with base 10 which means that we will have 10 numbers sequentially starting from zero. Binary system is a number system with a base of two which means that we have to represent every number with 0 and 1. Simillary in octal system highest possible digit is 7. In binary system, we have two digits and according to set theory, number of arrangements that can be made with n digits is \(2^n\) (each arrangement must be a length n) so we will have 4 possible numbers in binary system of length two.</p>
+
+<p>My target here is to learn basic python by trying to solve my grade 7 homework.</p>
+
+<h2 id="how-to-do-it-">How to do it ?</h2>
+<p>As our basic concept of collecting remainders from a number after dividing by 2, we have to stop dividing quotient after we reached 1.</p>
+
+<h2 id="in-python">In Python</h2>
 
 <p>Creation of python program to convert decimal to binary.
 For this take decimal number as input. Initialize current decimal as given decimal. Initialize remender as zero. Create a place to store binary number. We don’t know about how many step are taken to convert so I choosed while loop. If current decimal is divisiable by 2 then remender is zero. Now I took current decimal  as quotient of original decimal number. I kept remender in place where I create the place to store it. Else I kept remender 1 in list. Similar process I repeat below.</p>
 
-<p>dec = int(input(“Enter a decimal number. “))</p>
-
-<p>curr_dec = dec</p>
-
-<p>rem = 0</p>
-
-<p>binary = []</p>
-
-<p>while True:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if curr_dec % 2 == 0:
-    
-    rem = 0
-    
-    curr_dec = int(curr_dec/2)
-    
-    binary.append(rem)
-    
-else:
-    rem = 1
-    
-    curr_dec = int(curr_dec/2)
-    
-    binary.append(rem)
-    
-if curr_dec  == 1:
-    
-    binary.append(1)
-    
-    break
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">dec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a decimal number. "</span><span class="p">))</span>
+<span class="n">curr_dec</span> <span class="o">=</span> <span class="n">dec</span>
+<span class="n">rem</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">binary</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">curr_dec</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">rem</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">curr_dec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">curr_dec</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">binary</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">rem</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">rem</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">curr_dec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">curr_dec</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">binary</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">rem</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">curr_dec</span>  <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">binary</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">break</span>
+<span class="k">print</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>
+<span class="n">binary</span> <span class="o">=</span> <span class="n">binary</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span> 
 </code></pre></div></div>
-
-<p>print(binary)</p>
-
-<p>binary = binary[::-1]</p>
-
-<p>print(binary)</p>
 
         
       </section>
@@ -435,11 +429,11 @@ if curr_dec  == 1:
     
       
       
-      <a href="/tags/#initialize" class="page__taxonomy-item" rel="tag">Initialize</a><span class="sep">, </span>
+      <a href="/tags/#biginner" class="page__taxonomy-item" rel="tag">Biginner</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#loop" class="page__taxonomy-item" rel="tag">Loop</a>
+      <a href="/tags/#number-system" class="page__taxonomy-item" rel="tag">Number-system</a>
     
     </span>
   </p>
@@ -460,7 +454,7 @@ if curr_dec  == 1:
     
       
       
-      <a href="/categories/#python-programming-language" class="page__taxonomy-item" rel="tag">Python-Programming-Language</a>
+      <a href="/categories/#python-biginner" class="page__taxonomy-item" rel="tag">Python-Biginner</a>
     
     </span>
   </p>
