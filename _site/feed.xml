@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-21T09:58:07+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Convert Decimal To Binary In Python?</title><link href="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/" rel="alternate" type="text/html" title="How To Convert Decimal To Binary In Python?" /><published>2020-12-15T01:29:17+05:45</published><updated>2020-12-15T01:29:17+05:45</updated><id>http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python</id><content type="html" xml:base="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python/">&lt;h1 id=&quot;conversion-from-decimal-to-binary-in-python&quot;&gt;Conversion From Decimal to Binary in Python.&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-24T19:01:56+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Convert Non Perfect Number Into Perfect Number Using Python?</title><link href="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number/" rel="alternate" type="text/html" title="How To Convert Non Perfect Number Into Perfect Number Using Python?" /><published>2021-02-22T01:29:17+05:45</published><updated>2021-02-22T01:29:17+05:45</updated><id>http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number</id><content type="html" xml:base="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number/">&lt;h1 id=&quot;conversion-from-non-perfect-number-into-perfect-number&quot;&gt;Conversion From Non Perfect Number Into Perfect Number.&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal numbers. For example, 25 is a perfect number because it is the product of two 5. Perfect numbers are always positive. We have many formulae for the perfect number we are using these formulae since school.&lt;/p&gt;
+
+&lt;p&gt;My goal here is to tried to write basic python code to the non perfect numbers how can we change it to the perfect number.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-do-it-&quot;&gt;How to do it ?&lt;/h2&gt;
+&lt;p&gt;As our basic concept is applying while loop and find out nearest perfect number from our number and how much we need to add or substract to change perfect number.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-python&quot;&gt;In Python&lt;/h2&gt;
+
+&lt;p&gt;Creation of python program to convert a non-perfect number into the perfect number.
+For this take a number as an input and apply the general formula which we used to check whether it is a perfect square or not at the school level. If our given number is already perfect we do not need to go further process. If our given number is not perfect we initialize &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;before&lt;/code&gt; as 0 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;after&lt;/code&gt; as 1 and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curr_num&lt;/code&gt; as 1. Now we start while loop and again used the formula which is used to check perfect square or not in the integer type. If croot’s square equal to the current number we do not need to go for the internal loop. If that not we compare our given number with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curr-num&lt;/code&gt; if our number is less than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curr_num&lt;/code&gt; we change before equal &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curr_num&lt;/code&gt; if the number is greater than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curr_num&lt;/code&gt; we change &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;after&lt;/code&gt; which is equal to current. In each iteration our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curr_num&lt;/code&gt; increases by 1, the rest of the code is given below.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Enter an integer'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Your number is already perfect.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;croot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;croot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#print(curr_num,before,after)
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'perfect number around&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; are &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;after&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'your nearest perfect number around &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'we have to subtract &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;before&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; to make &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; perfect number.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'perfect number around &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;  are &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'your nearest perfect number around &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;after&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f'we have to add &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; to make &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; perfect number.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;curr_num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="Number-system" /><category term="Biginner" /><summary type="html">Conversion From Non Perfect Number Into Perfect Number.</summary></entry><entry><title type="html">How To Convert Decimal To Binary In Python?</title><link href="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python-copy/" rel="alternate" type="text/html" title="How To Convert Decimal To Binary In Python?" /><published>2020-12-15T01:29:17+05:45</published><updated>2020-12-15T01:29:17+05:45</updated><id>http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python%20copy</id><content type="html" xml:base="http://localhost:4000/2020/12/15/how-to-convert-decimal-to-binary-in-python-copy/">&lt;h1 id=&quot;conversion-from-decimal-to-binary-in-python&quot;&gt;Conversion From Decimal to Binary in Python.&lt;/h1&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;As we have studied in our early school days, decimal is a number system with base 10 which means that we will have 10 numbers sequentially starting from zero. Binary system is a number system with a base of two which means that we have to represent every number with 0 and 1. Simillary in octal system highest possible digit is 7. In binary system, we have two digits and according to set theory, number of arrangements that can be made with n digits is \(2^n\) (each arrangement must be a length n) so we will have 4 possible numbers in binary system of length two.&lt;/p&gt;
@@ -30,9 +73,11 @@ For this take decimal number as input. Initialize current decimal as given decim
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_dec&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;#print(binary)
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;binary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[::&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="Number-system" /><category term="Biginner" /><summary type="html">Conversion From Decimal to Binary in Python.</summary></entry><entry><title type="html">What Is Fourier Series?</title><link href="http://localhost:4000/2020/11/30/what-is-fourier-series/" rel="alternate" type="text/html" title="What Is Fourier Series?" /><published>2020-11-30T01:29:17+05:45</published><updated>2020-11-30T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/30/what-is-fourier-series</id><content type="html" xml:base="http://localhost:4000/2020/11/30/what-is-fourier-series/">&lt;h1 id=&quot;what-is-fourior-series&quot;&gt;What is fourior Series&lt;/h1&gt;
 
 &lt;p&gt;It is the method of expressing any given function in terms of sine and cosine series. The Fourier theorem’s can be expressed as “ any single valued function defined in the interval \([\pi,\pi]\) may be represented over this interval by trigonometric series.&lt;/p&gt;
@@ -287,91 +332,65 @@ f(x) \in f^-(B_2)\]
 
 &lt;p&gt;and hence&lt;/p&gt;
 
-\[x \in f^-(\cap_iB_i)\]</content><author><name>Durga Pokharel</name></author><category term="Range" /><category term="Domain" /><summary type="html">Let \(f : X \rightarrow Y\) be a function. If B is subset of y then its inverse image \(f^-B\) is the subset of x define by</summary></entry><entry><title type="html">Is Statement And Negation Of Statement Same Thing?</title><link href="http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/" rel="alternate" type="text/html" title="Is Statement And Negation Of Statement Same Thing?" /><published>2020-11-17T01:29:17+05:45</published><updated>2020-11-17T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing</id><content type="html" xml:base="http://localhost:4000/2020/11/17/is-statement-and-negation-of-statement-same-thing/">&lt;p&gt;Condider the following two statement&lt;/p&gt;
+\[x \in f^-(\cap_iB_i)\]</content><author><name>Durga Pokharel</name></author><category term="Range" /><category term="Domain" /><summary type="html">Let \(f : X \rightarrow Y\) be a function. If B is subset of y then its inverse image \(f^-B\) is the subset of x define by</summary></entry><entry><title type="html">If x Subset Of Y Then Inverse Of x Also Subset Of Y?</title><link href="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y-copy/" rel="alternate" type="text/html" title="If x Subset Of Y Then Inverse Of x Also Subset Of Y?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y%20copy</id><content type="html" xml:base="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y-copy/">&lt;p&gt;Let
+\(f : X \rightarrow Y\) be a function. If  B is subset of  y then its inverse image \(f^-B\) is the subset of  x define by&lt;/p&gt;
 
-\[( \exists x \in R)\  (\forall y\in s)\  (y &amp;lt; x)\\  ( \exists x \in  R) (\forall y\in s)\  ( y &amp;gt; x) \\ (\exists r\in R)\  (\forall y\in s)\ (|y| &amp;lt; r)\]
+\[f^-B = {x : f(x) \in B}\]
 
-&lt;p&gt;Determine  which of these statements is  true for each of the following choice of S&lt;/p&gt;
+&lt;p&gt;Now prove the following.&lt;/p&gt;
 
-&lt;p&gt;a (s) = [-3 , 10)    (b) S = Q&lt;/p&gt;
+\[i. B_1 \subset B_2 \Rightarrow f^-B_1  \subset f^- B_1\]
 
-&lt;p&gt;Solution:&lt;/p&gt;
+\[ii. f^-\cup_i B_i = \cup_i f^-B_i\]
 
-&lt;p&gt;Here&lt;/p&gt;
-
-\[( \exists x \in R) (\forall y\in s) (y &amp;lt; x)\\  ( \exists x \in  R) (\forall y\in s) ( y &amp;gt; x) \\
-(\exists r\in R) (\forall y\in s)(|y| &amp;lt; r)\]
-
-&lt;p&gt;a. All True                             b. All false&lt;/p&gt;
-
-&lt;p&gt;Write converse inverse and contrapositive of the statement.
-    “ if x &amp;lt; 0 then \(x^2 – x &amp;gt; 0\) “, Also write the negation of each statement.&lt;/p&gt;
+\[iii. f^-\cap_i B_i \subset \cap_i f^-B_i\]
 
 &lt;p&gt;Solution:&lt;/p&gt;
 
-&lt;p&gt;Given statement is&lt;/p&gt;
+&lt;p&gt;Let 
+\(F(x) : x \rightarrow y\)&lt;/p&gt;
 
-\[' if\  x &amp;lt; 0\  then\    x^2 – x &amp;gt; 0 '\]
+&lt;p&gt;be a function. If B is the subset of Y, then it’s inverse maps 
+\(f^-x\)
+is the subset of x define by&lt;/p&gt;
 
-&lt;p&gt;Converse:&lt;/p&gt;
+\[f^-B = { f(x) \in B}\]
 
-\[if\  x^2 – x &amp;gt; 0\   then\   x &amp;lt; 0.\]
+&lt;p&gt;i.&lt;/p&gt;
 
-&lt;p&gt;Nagation:&lt;/p&gt;
+\[let\ x \in f^-B_1\ then\ f(x) \in B_1\]
 
-\[x^2 – x &amp;gt; 0\  and\   x &amp;gt; 0\]
+\[since\  B_1 \subset B_1\]
 
-&lt;p&gt;Inverse&lt;/p&gt;
+\[we\ can\ write\ \\  
+f(x) \in f^-(B_2)\]
 
-\[if\ x &amp;gt; 0\ then\ ,  x^2 – x &amp;lt; 0.\]
+&lt;p&gt;ii.&lt;/p&gt;
 
-&lt;p&gt;Negation:&lt;/p&gt;
+\[Suppose\ ,  x \in f^-\cup_i(B_i)\]
 
-\[x &amp;gt; 0\  and\   x^2 – x &amp;gt; 0\]
+\[f(X) \in \cup_i(B_i)\]
 
-&lt;p&gt;Contrapositive:&lt;/p&gt;
+\[So\ f(x) \in B_i for\ some\ i\]
 
-\[if\  x^2 – x  &amp;lt; 0\  then\   x &amp;gt; 0\]
+&lt;p&gt;this implies that,&lt;/p&gt;
 
-&lt;p&gt;Negation:&lt;/p&gt;
+\[x \in f^-B_i\]
 
-\[x^2 – x  &amp;lt; 0\  and\   x &amp;lt; 0\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Condider the following two statement</summary></entry><entry><title type="html">Is The Topology Was Discoverd Along With Graph.?’</title><link href="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/" rel="alternate" type="text/html" title="Is The Topology Was Discoverd Along With Graph.?'" /><published>2020-10-25T01:29:17+05:45</published><updated>2020-10-25T01:29:17+05:45</updated><id>http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph</id><content type="html" xml:base="http://localhost:4000/2020/10/25/is-the-topology-was-discoverd-alog-with-graph/">&lt;h1 id=&quot;graph&quot;&gt;Graph&lt;/h1&gt;
-&lt;p&gt;Graph Theory is the subject of study of graphs, which are mathematical structures  used to model pairwise relations between objects.&lt;/p&gt;
+\[So\ x \in \cap_i f^-(B_i)\]
 
-&lt;p&gt;The paper written by leonhard Euler on &lt;strong&gt;“Seven Bridges of Konlgsberg”&lt;/strong&gt; and published in 1736 as regard as the first paper in the history of graph theory.More than centure after Euler’s paper on 
-&lt;strong&gt;“Seven Bridges of Konlgsberg”&lt;/strong&gt; while listing was introduced then concepet of  &lt;strong&gt;Topology&lt;/strong&gt; was introduced.&lt;strong&gt;Cayley&lt;/strong&gt; was let by an intrest in particular analytical forms arising from differential calculus.To study particular case of graphs.In particulat the team graph was introduced by Sylvester in a paper published in 1878.THe first textbook in graph theory  was written by Derves Konig,abd was published in 1936.&lt;/p&gt;
+&lt;p&gt;Conversely&lt;/p&gt;
 
-&lt;p&gt;Graph is simply a pictorial representation of object.It is also defined as the set and set of certaion relation.Mathematically we write graph as &lt;strong&gt;G = (V, A)&lt;/strong&gt;. Where &lt;strong&gt;V&lt;/strong&gt; is the set of vertices and &lt;strong&gt;A&lt;/strong&gt; is the set of arcs.&lt;/p&gt;
+\[Suppose\ x \in \cap_i f^-(B_i)\]
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/7.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+\[Then\  x \in f^-(B_i)\ for\ some\ i\]
 
-&lt;h2 id=&quot;types-of-graph&quot;&gt;Types of Graph&lt;/h2&gt;
-&lt;p&gt;simply there are two types of graph.These are listed below.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Directed Graph&lt;/li&gt;
-  &lt;li&gt;undirected Graph
-    &lt;h2 id=&quot;1-directed-graph&quot;&gt;1. Directed Graph&lt;/h2&gt;
-    &lt;p&gt;If  all arcs are orented from one particular vertex to the another particular vertex then graph becomes a directed graph.It is also defined as if there is direction are given to the arc of the graph then graph becomes directed graph.Directed graph is also written as digraph.following are the some figure where direction is given to the arcs.There are some terminology related to the digraph.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Tail&lt;/li&gt;
-  &lt;li&gt;Head&lt;/li&gt;
-  &lt;li&gt;Adjancency arc
-    &lt;h4 id=&quot;1tail&quot;&gt;1.Tail&lt;/h4&gt;
-    &lt;p&gt;The vertex from which the arc begin is called tail of the arc.&lt;/p&gt;
-    &lt;h4 id=&quot;2-head&quot;&gt;2. Head&lt;/h4&gt;
-    &lt;p&gt;The vertex at which the arc end is called head of arcs.&lt;/p&gt;
-    &lt;h4 id=&quot;3-adjacency--arc&quot;&gt;3. Adjacency  arc&lt;/h4&gt;
-    &lt;p&gt;If the arc share the common end node then this type of arc is called adjacency arc.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+\[So\ f(x) \in B_i \subset (\cap_iB_i)\]
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/9.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;therefore&lt;/p&gt;
 
-&lt;p&gt;In above figure 1 &lt;strong&gt;{a,b,c,d}&lt;/strong&gt; are vertices &lt;strong&gt;{(a, b),(b, d),(d, c)(a,c),(b, d)}&lt;/strong&gt; are arcs.Head set of figure 1 are &lt;strong&gt;(b, d, c, b, a)&lt;/strong&gt; and tail set of figure 1 are &lt;strong&gt;(a, b, d, c, a)&lt;/strong&gt;&lt;/p&gt;
+\[f(x) \in (\cap_i B_i)\]
 
-&lt;h2 id=&quot;2undirected-graph&quot;&gt;2.Undirected Graph&lt;/h2&gt;
-&lt;p&gt;A graph having no direction in between any vertex is called undirected graph.It is called simply a graph.In case of undirected graph we can take any vertex as a first vertex and any vertex as the second vertex.Some figure are given below.&lt;/p&gt;
+&lt;p&gt;and hence&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/11.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Math_blog/10.PNG&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Vertex" /><category term="Arc" /><summary type="html">Graph Graph Theory is the subject of study of graphs, which are mathematical structures used to model pairwise relations between objects.</summary></entry></feed>
+\[x \in f^-(\cap_iB_i)\]</content><author><name>Durga Pokharel</name></author><category term="Range" /><category term="Domain" /><summary type="html">Let \(f : X \rightarrow Y\) be a function. If B is subset of y then its inverse image \(f^-B\) is the subset of x define by</summary></entry></feed>
