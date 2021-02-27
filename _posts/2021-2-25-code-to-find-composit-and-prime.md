@@ -9,7 +9,7 @@ header:
   teaser: "assets/header_images/6.png"
   overlay_image: "assets/header_images8.png"
 ---
-# Conversion From Non Perfect Number Into Perfect Number.
+# How to findout prime or composit.
 
 ## Introduction
 As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither prime number nor composit number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.  

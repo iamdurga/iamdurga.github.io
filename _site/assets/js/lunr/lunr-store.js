@@ -162,7 +162,7 @@ var store = [{
         "teaser": "/assets/header_images/6.png"
       },{
         "title": "How To Find Composit And Prime Using Python?",
-        "excerpt":"Conversion From Non Perfect Number Into Perfect Number. Introduction As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither...","categories": ["Python-Biginner"],
+        "excerpt":"How to findout prime or composit. Introduction As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither prime number...","categories": ["Python-Biginner"],
         "tags": ["prime-composit","Biginner"],
         "url": "/2021/02/26/code-to-find-composit-and-prime/",
         "teaser": "/assets/header_images/6.png"
