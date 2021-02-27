@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>How To Convert Non Perfect Number Into Perfect Number Using Python? - Durga Pokharel</title>
+<!-- begin _includes/seo.html --><title>How To Find Composit And Prime Using Python? - Durga Pokharel</title>
 <meta name="description" content="Conversion From Non Perfect Number Into Perfect Number.">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Durga Pokharel">
-<meta property="og:title" content="How To Convert Non Perfect Number Into Perfect Number Using Python?">
-<meta property="og:url" content="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number/">
+<meta property="og:title" content="How To Find Composit And Prime Using Python?">
+<meta property="og:url" content="http://localhost:4000/2021/02/26/code-to-find-composit-and-prime/">
 
 
   <meta property="og:description" content="Conversion From Non Perfect Number Into Perfect Number.">
@@ -36,14 +36,14 @@
 
 
 
-  <meta property="article:published_time" content="2021-02-22T01:29:17+05:45">
+  <meta property="article:published_time" content="2021-02-26T01:29:17+05:45">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number/">
+<link rel="canonical" href="http://localhost:4000/2021/02/26/code-to-find-composit-and-prime/">
 
 
 
@@ -202,7 +202,7 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          How To Convert Non Perfect Number Into Perfect Number Using Python?
+          How To Find Composit And Prime Using Python?
 
         
       </h1>
@@ -218,7 +218,7 @@
       
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2021-02-22T01:29:17+05:45">February 22, 2021</time>
+        <time datetime="2021-02-26T01:29:17+05:45">February 26, 2021</time>
       </span>
     
 
@@ -231,7 +231,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          1 minute read
         
       </span>
     
@@ -363,9 +363,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How To Convert Non Perfect Number Into Perfect Number Using Python?">
+    <meta itemprop="headline" content="How To Find Composit And Prime Using Python?">
     <meta itemprop="description" content="Conversion From Non Perfect Number Into Perfect Number.">
-    <meta itemprop="datePublished" content="2021-02-22T01:29:17+05:45">
+    <meta itemprop="datePublished" content="2021-02-26T01:29:17+05:45">
     
 
     <div class="page__inner-wrap">
@@ -376,46 +376,30 @@
         <h1 id="conversion-from-non-perfect-number-into-perfect-number">Conversion From Non Perfect Number Into Perfect Number.</h1>
 
 <h2 id="introduction">Introduction</h2>
-<p>As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal numbers. For example, 25 is a perfect number because it is the product of two 5. Perfect numbers are always positive. We have many formulae for the perfect number we are using these formulae since school.</p>
+<p>As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither prime number nor composit number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.</p>
 
-<p>My goal here is to tried to write basic python code to the non perfect numbers how can we change it to the perfect number.</p>
+<p>My goal here is to tried to write basic python code to solve grade 4 problem .</p>
 
 <h2 id="how-to-do-it-">How to do it ?</h2>
-<p>As our basic concept is applying while loop and find out nearest perfect number from our number and how much we need to add or substract to change perfect number.</p>
+<p>My basic concept is I make a function name as prime or composit which take a testing number, if we call function then we can get desire result.</p>
 
 <h2 id="in-python">In Python</h2>
+<p>Here I tried to write a function that has the name <code class="language-plaintext highlighter-rouge">prime_or_composit</code> which can take n as a testing number. Initialize factors as zero. We apply for loop from range 1 to number divided by 2 + 1 times. We checked if a given number is divisible by the iteration variable. If the iteration variable divides the number and is greater than 2 then it prints that number as composite otherwise print number as prime.</p>
 
-<p>Creation of python program to convert a non-perfect number into the perfect number.
-For this take a number as an input and apply the general formula which we used to check whether it is a perfect square or not at the school level. If our given number is already perfect we do not need to go further process. If our given number is not perfect we initialize <code class="language-plaintext highlighter-rouge">before</code> as 0 <code class="language-plaintext highlighter-rouge">after</code> as 1 and <code class="language-plaintext highlighter-rouge">curr_num</code> as 1. Now we start while loop and again used the formula which is used to check perfect square or not in the integer type. If croot’s square equal to the current number we do not need to go for the internal loop. If that not we compare our given number with <code class="language-plaintext highlighter-rouge">curr-num</code> if our number is less than <code class="language-plaintext highlighter-rouge">curr_num</code> we change before equal <code class="language-plaintext highlighter-rouge">curr_num</code> if the number is greater than <code class="language-plaintext highlighter-rouge">curr_num</code> we change <code class="language-plaintext highlighter-rouge">after</code> which is equal to current. In each iteration our <code class="language-plaintext highlighter-rouge">curr_num</code> increases by 1, the rest of the code is given below.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Enter an integer'</span><span class="p">))</span>
-<span class="n">root</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">root</span><span class="o">**</span> <span class="mi">2</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Your number is already perfect.'</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">before</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">after</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">curr_num</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-        <span class="n">croot</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">curr_num</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">croot</span><span class="o">**</span> <span class="mi">2</span> <span class="o">==</span> <span class="n">curr_num</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">curr_num</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-                <span class="n">before</span> <span class="o">=</span> <span class="n">curr_num</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">after</span> <span class="o">=</span> <span class="n">curr_num</span>
-        <span class="c1">#print(curr_num,before,after)
-</span>        <span class="k">if</span> <span class="n">after</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">n</span> <span class="o">-</span> <span class="n">before</span> <span class="o">&lt;</span> <span class="n">after</span> <span class="o">-</span> <span class="n">n</span><span class="p">:</span>
-                <span class="k">print</span><span class="p">(</span><span class="s">f'perfect number around</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> are </span><span class="si">{</span><span class="n">before</span><span class="si">}</span><span class="s"> and </span><span class="si">{</span><span class="n">after</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-                <span class="k">print</span><span class="p">(</span><span class="s">f'your nearest perfect number around </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is </span><span class="si">{</span><span class="n">before</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-                <span class="k">print</span><span class="p">(</span><span class="s">f'we have to subtract </span><span class="si">{</span><span class="n">n</span> <span class="o">-</span> <span class="n">before</span><span class="si">}</span><span class="s"> to make </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> perfect number.'</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">print</span><span class="p">(</span><span class="s">f'perfect number around </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s">  are </span><span class="si">{</span><span class="n">before</span><span class="si">}</span><span class="s"> and </span><span class="si">{</span> <span class="n">after</span> <span class="si">}</span><span class="s">'</span><span class="p">)</span>
-                <span class="k">print</span><span class="p">(</span><span class="s">f'your nearest perfect number around </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is </span><span class="si">{</span> <span class="n">after</span><span class="si">}</span><span class="s">'</span><span class="p">)</span>
-                <span class="k">print</span><span class="p">(</span><span class="s">f'we have to add </span><span class="si">{</span><span class="n">after</span> <span class="o">-</span> <span class="n">n</span><span class="si">}</span><span class="s"> to make </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> perfect number.'</span><span class="p">)</span>
-                <span class="k">break</span>
-        <span class="n">curr_num</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">prime_or_composit</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="k">if</span> <span class="n">f</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">f"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is composit."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">f"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is prime."</span><span class="p">)</span>
+<span class="n">prime_or_composit</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Output of the above code is</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composit
 </code></pre></div></div>
 
         
@@ -441,7 +425,7 @@ For this take a number as an input and apply the general formula which we used t
     
       
       
-      <a href="/tags/#number-system" class="page__taxonomy-item" rel="tag">Number-system</a>
+      <a href="/tags/#prime-composit" class="page__taxonomy-item" rel="tag">prime-composit</a>
     
     </span>
   </p>
@@ -469,7 +453,7 @@ For this take a number as an input and apply the general formula which we used t
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-22T01:29:17+05:45">February 22, 2021</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-26T01:29:17+05:45">February 26, 2021</time></p>
 
 
       </footer>
@@ -477,18 +461,18 @@ For this take a number as an input and apply the general formula which we used t
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=How+To+Convert+Non+Perfect+Number+Into+Perfect+Number+Using+Python%3F%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F22%2Fhow-to_convert-non-perfect-number-to-perfect-number%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=How+To+Find+Composit+And+Prime+Using+Python%3F%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composit-and-prime%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F22%2Fhow-to_convert-non-perfect-number-to-perfect-number%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composit-and-prime%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F22%2Fhow-to_convert-non-perfect-number-to-perfect-number%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composit-and-prime%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2020/12/15/how-to-convert-decimal-to-binary-in-python-copy/" class="pagination--pager" title="How To Convert Decimal To Binary In Python?
+      <a href="/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/" class="pagination--pager" title="How To Convert Non Perfect Number Into Perfect Number Using Python?
 ">Previous</a>
     
     
@@ -507,6 +491,57 @@ For this take a number as an input and apply the general formula which we used t
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/header_images/6.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/" rel="permalink">How To Convert Non Perfect Number Into Perfect Number Using Python?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-02-22T01:29:17+05:45">February 22, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Conversion From Non Perfect Number Into Perfect Number.
+
+</p>
+  </article>
+</div>
+
         
           
 
@@ -655,57 +690,6 @@ For this take a number as an input and apply the general formula which we used t
 
 
     <p class="archive__item-excerpt" itemprop="description">Some real world application of fourier series:-
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/header_images/5.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/2020/11/30/is-complex-fourier-is-same-with-real-fourier/" rel="permalink">Is Complex Fourier Is Same With Real Fourier?
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Complex form of fourier series
 
 </p>
   </article>

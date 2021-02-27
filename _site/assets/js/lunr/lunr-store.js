@@ -158,6 +158,12 @@ var store = [{
         "title": "How To Convert Non Perfect Number Into Perfect Number Using Python?",
         "excerpt":"Conversion From Non Perfect Number Into Perfect Number. Introduction As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal...","categories": ["Python-Biginner"],
         "tags": ["Number-system","Biginner"],
-        "url": "/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number/",
+        "url": "/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/",
+        "teaser": "/assets/header_images/6.png"
+      },{
+        "title": "How To Find Composit And Prime Using Python?",
+        "excerpt":"Conversion From Non Perfect Number Into Perfect Number. Introduction As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither...","categories": ["Python-Biginner"],
+        "tags": ["prime-composit","Biginner"],
+        "url": "/2021/02/26/code-to-find-composit-and-prime/",
         "teaser": "/assets/header_images/6.png"
       }]
