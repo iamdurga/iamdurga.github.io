@@ -161,9 +161,15 @@ var store = [{
         "url": "/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/",
         "teaser": "/assets/header_images/6.png"
       },{
-        "title": "How To Find Composit And Prime Using Python?",
-        "excerpt":"How to findout prime or composit. Introduction As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither prime number...","categories": ["Python-Biginner"],
-        "tags": ["prime-composit","Biginner"],
-        "url": "/2021/02/26/code-to-find-composit-and-prime/",
+        "title": "How To Find Composite And Prime Using Python?",
+        "excerpt":"How to findout prime or composite. Introduction As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number...","categories": ["Python-Biginner"],
+        "tags": ["prime-composite","Biginner"],
+        "url": "/2021/02/26/code-to-find-composite-and-prime-copy/",
         "teaser": "/assets/header_images/6.png"
+      },{
+        "title": "How To Find HCF Using Python?",
+        "excerpt":"How to findout HCF. Introduction As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school...","categories": ["Python-Biginner"],
+        "tags": ["HCF","Biginner"],
+        "url": "/2021/03/05/How-to-find-hcf-using-python/",
+        "teaser": "/assets/header_images/1.png"
       }]

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>How To Find Composit And Prime Using Python? - Durga Pokharel</title>
-<meta name="description" content="How to findout prime or composit.">
+<!-- begin _includes/seo.html --><title>How To Find Composite And Prime Using Python? - Durga Pokharel</title>
+<meta name="description" content="How to findout prime or composite.">
 
 
   <meta name="author" content="Durga Pokharel">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Durga Pokharel">
-<meta property="og:title" content="How To Find Composit And Prime Using Python?">
-<meta property="og:url" content="http://localhost:4000/2021/02/26/code-to-find-composit-and-prime/">
+<meta property="og:title" content="How To Find Composite And Prime Using Python?">
+<meta property="og:url" content="http://localhost:4000/2021/02/26/code-to-find-composite-and-prime-copy/">
 
 
-  <meta property="og:description" content="How to findout prime or composit.">
+  <meta property="og:description" content="How to findout prime or composite.">
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/2021/02/26/code-to-find-composit-and-prime/">
+<link rel="canonical" href="http://localhost:4000/2021/02/26/code-to-find-composite-and-prime-copy/">
 
 
 
@@ -202,12 +202,12 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          How To Find Composit And Prime Using Python?
+          How To Find Composite And Prime Using Python?
 
         
       </h1>
       
-        <p class="page__lead"><h1 id="how-to-findout-prime-or-composit">How to findout prime or composit.</h1>
+        <p class="page__lead"><h1 id="how-to-findout-prime-or-composite">How to findout prime or composite.</h1>
 
 </p>
       
@@ -363,8 +363,8 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How To Find Composit And Prime Using Python?">
-    <meta itemprop="description" content="How to findout prime or composit.">
+    <meta itemprop="headline" content="How To Find Composite And Prime Using Python?">
+    <meta itemprop="description" content="How to findout prime or composite.">
     <meta itemprop="datePublished" content="2021-02-26T01:29:17+05:45">
     
 
@@ -373,33 +373,35 @@
 
       <section class="page__content" itemprop="text">
         
-        <h1 id="how-to-findout-prime-or-composit">How to findout prime or composit.</h1>
+        <h1 id="how-to-findout-prime-or-composite">How to findout prime or composite.</h1>
 
 <h2 id="introduction">Introduction</h2>
-<p>As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither prime number nor composit number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.</p>
+<p>As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number nor composite number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.</p>
 
 <p>My goal here is to tried to write basic python code to solve grade 4 problem .</p>
 
 <h2 id="how-to-do-it-">How to do it ?</h2>
-<p>My basic concept is I make a function name as prime or composit which take a testing number, if we call function then we can get desire result.</p>
+<p>My basic concept is I make a function name as prime or composite which take a testing number, if we call function then we can get desire result.</p>
 
 <h2 id="in-python">In Python</h2>
-<p>Here I tried to write a function that has the name <code class="language-plaintext highlighter-rouge">prime_or_composit</code> which can take n as a testing number. Initialize factors as zero. We apply for loop from range 1 to number divided by 2 + 1 times. We checked if a given number is divisible by the iteration variable. If the iteration variable divides the number and is greater than 2 then it prints that number as composite otherwise prints number as prime.</p>
+<p>Here I tried to write a function that has the name <code class="language-plaintext highlighter-rouge">prime_or_composite</code> which can take n as a testing number. Initialize factors as zero. We apply for loop from range 1 to number divided by 2 + 1 times. We checked if a given number is divisible by the iteration variable. If the iteration variable divides the number and is greater than 2 then it prints that number as composite otherwise prints number as prime.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">prime_or_composit</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">prime_or_composite</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="n">f</span> <span class="o">+=</span> <span class="mi">1</span>
             
     <span class="k">if</span> <span class="n">f</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">f"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is composit."</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">f"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is composite."</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="s">f"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s"> is prime."</span><span class="p">)</span>
-<span class="n">prime_or_composit</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">prime_or_composite</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
 </code></pre></div></div>
 <p>Output of the above code is</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6 is composit.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Common factor of 4 and 8 are [1, 2, 4].
+HCF of 4 and 8 is 4.
+
 </code></pre></div></div>
 
         
@@ -425,7 +427,7 @@
     
       
       
-      <a href="/tags/#prime-composit" class="page__taxonomy-item" rel="tag">prime-composit</a>
+      <a href="/tags/#prime-composite" class="page__taxonomy-item" rel="tag">prime-composite</a>
     
     </span>
   </p>
@@ -461,11 +463,11 @@
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=How+To+Find+Composit+And+Prime+Using+Python%3F%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composit-and-prime%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=How+To+Find+Composite+And+Prime+Using+Python%3F%20http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composite-and-prime-copy%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composit-and-prime%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composite-and-prime-copy%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composit-and-prime%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2F02%2F26%2Fcode-to-find-composite-and-prime-copy%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -476,7 +478,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/2021/03/05/How-to-find-hcf-using-python/" class="pagination--pager" title="How To Find HCF Using Python?
+">Next</a>
     
   </nav>
 
@@ -491,6 +494,57 @@
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/header_images/1.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2021/03/05/How-to-find-hcf-using-python/" rel="permalink">How To Find HCF Using Python?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-03-05T01:29:17+05:45">March 5, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to findout HCF.
+
+</p>
+  </article>
+</div>
+
         
           
 
@@ -639,57 +693,6 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">What is fourior Series
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/header_images/4.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/2020/11/30/is-fourier-series-used-in-real-life/" rel="permalink">IS Fourier Series Used In Real Life?
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="2020-11-30T01:29:17+05:45">November 30, 2020</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Some real world application of fourier series:-
 
 </p>
   </article>

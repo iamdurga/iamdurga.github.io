@@ -1,31 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-27T21:21:23+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Find Composit And Prime Using Python?</title><link href="http://localhost:4000/2021/02/26/code-to-find-composit-and-prime/" rel="alternate" type="text/html" title="How To Find Composit And Prime Using Python?" /><published>2021-02-26T01:29:17+05:45</published><updated>2021-02-26T01:29:17+05:45</updated><id>http://localhost:4000/2021/02/26/code-to-find-composit-and-prime</id><content type="html" xml:base="http://localhost:4000/2021/02/26/code-to-find-composit-and-prime/">&lt;h1 id=&quot;how-to-findout-prime-or-composit&quot;&gt;How to findout prime or composit.&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-09T09:50:41+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Find HCF Using Python?</title><link href="http://localhost:4000/2021/03/05/How-to-find-hcf-using-python/" rel="alternate" type="text/html" title="How To Find HCF Using Python?" /><published>2021-03-05T01:29:17+05:45</published><updated>2021-03-05T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/05/How-to-find-hcf-using-python</id><content type="html" xml:base="http://localhost:4000/2021/03/05/How-to-find-hcf-using-python/">&lt;h1 id=&quot;how-to-findout-hcf&quot;&gt;How to findout HCF.&lt;/h1&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;As we all familiar about prime and composit number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composit number is a number which has more than two factors. However 1 is neither prime number nor composit number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.&lt;/p&gt;
+&lt;p&gt;As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school class. For example, the HCF of 12 and 6 is 6. Similarly, HCF of 4, 8, 10 is 2 because 2 is the highest of factors of 4, 8, 10.&lt;/p&gt;
+
+&lt;p&gt;My goal here is to try to write basic Python code to solve the grade 5 problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-do-it-&quot;&gt;How to do it ?&lt;/h2&gt;
+&lt;p&gt;My basic concept is I make a function name as HCF  which take two testing number, if we call function then we can get desire result.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-python&quot;&gt;In Python&lt;/h2&gt;
+&lt;p&gt;Here I tried to write a function that has the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HCF&lt;/code&gt; which can take n1 and n2 as a testing number. Initialize variable m1 as the minimum of two numbers and m2 as the maximum of two numbers n1 and n2 and CF store the common factor as a list. We apply for a loop from range 1 to a minimum of number + 1 because the range includes starting number but excludes the end number. Here I took range up to minimum among them because the greatest common factor would be an only minimum number. We checked if our iteration variable lies in the range that divides both maximum number and minimum. Among these iteration variables, the greatest iteration variable which divided both m1 and m2 is HCF. And return the desired output.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HCF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;CF&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;CF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;Common factor of &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n1&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n2&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; are &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CF&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;HCF of &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n1&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n2&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;HCF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Output of the above code is&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Common factor of 4 and 8 are [1, 2, 4].
+HCF of 4 and 8 is 4.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="HCF" /><category term="Biginner" /><summary type="html">How to findout HCF.</summary></entry><entry><title type="html">How To Find Composite And Prime Using Python?</title><link href="http://localhost:4000/2021/02/26/code-to-find-composite-and-prime-copy/" rel="alternate" type="text/html" title="How To Find Composite And Prime Using Python?" /><published>2021-02-26T01:29:17+05:45</published><updated>2021-02-26T01:29:17+05:45</updated><id>http://localhost:4000/2021/02/26/code-to-find-composite-and-prime%20copy</id><content type="html" xml:base="http://localhost:4000/2021/02/26/code-to-find-composite-and-prime-copy/">&lt;h1 id=&quot;how-to-findout-prime-or-composite&quot;&gt;How to findout prime or composite.&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number nor composite number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.&lt;/p&gt;
 
 &lt;p&gt;My goal here is to tried to write basic python code to solve grade 4 problem .&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-do-it-&quot;&gt;How to do it ?&lt;/h2&gt;
-&lt;p&gt;My basic concept is I make a function name as prime or composit which take a testing number, if we call function then we can get desire result.&lt;/p&gt;
+&lt;p&gt;My basic concept is I make a function name as prime or composite which take a testing number, if we call function then we can get desire result.&lt;/p&gt;
 
 &lt;h2 id=&quot;in-python&quot;&gt;In Python&lt;/h2&gt;
-&lt;p&gt;Here I tried to write a function that has the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prime_or_composit&lt;/code&gt; which can take n as a testing number. Initialize factors as zero. We apply for loop from range 1 to number divided by 2 + 1 times. We checked if a given number is divisible by the iteration variable. If the iteration variable divides the number and is greater than 2 then it prints that number as composite otherwise prints number as prime.&lt;/p&gt;
+&lt;p&gt;Here I tried to write a function that has the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;prime_or_composite&lt;/code&gt; which can take n as a testing number. Initialize factors as zero. We apply for loop from range 1 to number divided by 2 + 1 times. We checked if a given number is divisible by the iteration variable. If the iteration variable divides the number and is greater than 2 then it prints that number as composite otherwise prints number as prime.&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;prime_or_composit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;prime_or_composite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
             
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is composit.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is composite.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;f&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; is prime.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;prime_or_composit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;prime_or_composite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Output of the above code is&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;6 is composit.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="prime-composit" /><category term="Biginner" /><summary type="html">How to findout prime or composit.</summary></entry><entry><title type="html">How To Convert Non Perfect Number Into Perfect Number Using Python?</title><link href="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/" rel="alternate" type="text/html" title="How To Convert Non Perfect Number Into Perfect Number Using Python?" /><published>2021-02-22T01:29:17+05:45</published><updated>2021-02-22T01:29:17+05:45</updated><id>http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number%20copy</id><content type="html" xml:base="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/">&lt;h1 id=&quot;conversion-from-non-perfect-number-into-perfect-number&quot;&gt;Conversion From Non Perfect Number Into Perfect Number.&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Common factor of 4 and 8 are [1, 2, 4].
+HCF of 4 and 8 is 4.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="prime-composite" /><category term="Biginner" /><summary type="html">How to findout prime or composite.</summary></entry><entry><title type="html">How To Convert Non Perfect Number Into Perfect Number Using Python?</title><link href="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/" rel="alternate" type="text/html" title="How To Convert Non Perfect Number Into Perfect Number Using Python?" /><published>2021-02-22T01:29:17+05:45</published><updated>2021-02-22T01:29:17+05:45</updated><id>http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number%20copy</id><content type="html" xml:base="http://localhost:4000/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/">&lt;h1 id=&quot;conversion-from-non-perfect-number-into-perfect-number&quot;&gt;Conversion From Non Perfect Number Into Perfect Number.&lt;/h1&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal numbers. For example, 25 is a perfect number because it is the product of two 5. Perfect numbers are always positive. We have many formulae for the perfect number we are using these formulae since school.&lt;/p&gt;
@@ -298,65 +328,4 @@ iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
 
 \[so\  f(x)  \in f(A_i)\ for\ all\  i\]
 
-\[Hence\ f(x) \in \cap_if(A_i)\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Let \(F : x \Rightarrow y\)</summary></entry><entry><title type="html">If x Subset Of Y Then Inverse Of x Also Subset Of Y?</title><link href="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/" rel="alternate" type="text/html" title="If x Subset Of Y Then Inverse Of x Also Subset Of Y?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y</id><content type="html" xml:base="http://localhost:4000/2020/11/18/if-x-subset-of-y-then-inverse-of-x-also-subset-of-inverse-of-y/">&lt;p&gt;Let
-\(f : X \rightarrow Y\) be a function. If  B is subset of  y then its inverse image \(f^-B\) is the subset of  x define by&lt;/p&gt;
-
-\[f^-B = {x : f(x) \in B}\]
-
-&lt;p&gt;Now prove the following.&lt;/p&gt;
-
-\[i. B_1 \subset B_2 \Rightarrow f^-B_1  \subset f^- B_1\]
-
-\[ii. f^-\cup_i B_i = \cup_i f^-B_i\]
-
-\[iii. f^-\cap_i B_i \subset \cap_i f^-B_i\]
-
-&lt;p&gt;Solution:&lt;/p&gt;
-
-&lt;p&gt;Let 
-\(F(x) : x \rightarrow y\)&lt;/p&gt;
-
-&lt;p&gt;be a function. If B is the subset of Y, then it’s inverse maps 
-\(f^-x\)
-is the subset of x define by&lt;/p&gt;
-
-\[f^-B = { f(x) \in B}\]
-
-&lt;p&gt;i.&lt;/p&gt;
-
-\[let\ x \in f^-B_1\ then\ f(x) \in B_1\]
-
-\[since\  B_1 \subset B_1\]
-
-\[we\ can\ write\ \\  
-f(x) \in f^-(B_2)\]
-
-&lt;p&gt;ii.&lt;/p&gt;
-
-\[Suppose\ ,  x \in f^-\cup_i(B_i)\]
-
-\[f(X) \in \cup_i(B_i)\]
-
-\[So\ f(x) \in B_i for\ some\ i\]
-
-&lt;p&gt;this implies that,&lt;/p&gt;
-
-\[x \in f^-B_i\]
-
-\[So\ x \in \cap_i f^-(B_i)\]
-
-&lt;p&gt;Conversely&lt;/p&gt;
-
-\[Suppose\ x \in \cap_i f^-(B_i)\]
-
-\[Then\  x \in f^-(B_i)\ for\ some\ i\]
-
-\[So\ f(x) \in B_i \subset (\cap_iB_i)\]
-
-&lt;p&gt;therefore&lt;/p&gt;
-
-\[f(x) \in (\cap_i B_i)\]
-
-&lt;p&gt;and hence&lt;/p&gt;
-
-\[x \in f^-(\cap_iB_i)\]</content><author><name>Durga Pokharel</name></author><category term="Range" /><category term="Domain" /><summary type="html">Let \(f : X \rightarrow Y\) be a function. If B is subset of y then its inverse image \(f^-B\) is the subset of x define by</summary></entry></feed>
+\[Hence\ f(x) \in \cap_if(A_i)\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Let \(F : x \Rightarrow y\)</summary></entry></feed>
