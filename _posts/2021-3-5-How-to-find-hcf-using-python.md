@@ -7,7 +7,7 @@ tags:
   - Biginner
 header:
   teaser: "assets/header_images/1.png"
-  overlay_image: "assets/header_images4.png"
+  overlay_image: "assets/header_images/5.png"
 ---
 # How to findout HCF.
 

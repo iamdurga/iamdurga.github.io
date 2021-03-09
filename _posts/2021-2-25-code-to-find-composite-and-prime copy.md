@@ -7,7 +7,7 @@ tags:
   - Biginner
 header:
   teaser: "assets/header_images/6.png"
-  overlay_image: "assets/header_images8.png"
+  overlay_image: "assets/header_images/8.png"
 ---
 # How to findout prime or composite.
 
@@ -38,7 +38,5 @@ prime_or_composite(6)
 ```
 Output of the above code is
 ```
-Common factor of 4 and 8 are [1, 2, 4].
-HCF of 4 and 8 is 4.
-
+6 is composite.
 ```

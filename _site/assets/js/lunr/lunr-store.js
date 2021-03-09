@@ -159,7 +159,7 @@ var store = [{
         "excerpt":"Conversion From Non Perfect Number Into Perfect Number. Introduction As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal...","categories": ["Python-Biginner"],
         "tags": ["Number-system","Biginner"],
         "url": "/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/",
-        "teaser": "/assets/header_images/6.png"
+        "teaser": "/assets/header_images/7.png"
       },{
         "title": "How To Find Composite And Prime Using Python?",
         "excerpt":"How to findout prime or composite. Introduction As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number...","categories": ["Python-Biginner"],

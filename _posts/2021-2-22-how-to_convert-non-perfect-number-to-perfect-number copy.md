@@ -6,8 +6,8 @@ tags:
   - Number-system
   - Biginner
 header:
-  teaser: "assets/header_images/6.png"
-  overlay_image: "assets/header_images8.png"
+  teaser: "assets/header_images/7.png"
+  overlay_image: "assets/header_images/3.png"
 ---
 # Conversion From Non Perfect Number Into Perfect Number.
 
