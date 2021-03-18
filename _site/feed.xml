@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-09T09:57:51+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Find HCF Using Python?</title><link href="http://localhost:4000/2021/03/05/How-to-find-hcf-using-python/" rel="alternate" type="text/html" title="How To Find HCF Using Python?" /><published>2021-03-05T01:29:17+05:45</published><updated>2021-03-05T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/05/How-to-find-hcf-using-python</id><content type="html" xml:base="http://localhost:4000/2021/03/05/How-to-find-hcf-using-python/">&lt;h1 id=&quot;how-to-findout-hcf&quot;&gt;How to findout HCF.&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-18T17:45:23+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Find Square Numbers From Given List Using Python?</title><link href="http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/" rel="alternate" type="text/html" title="How To Find Square Numbers From Given List Using Python?" /><published>2021-03-16T01:29:17+05:45</published><updated>2021-03-16T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python</id><content type="html" xml:base="http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/">&lt;h1 id=&quot;how-to-findout-square-number&quot;&gt;How to findout Square Number.&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As we all knew about square number. In mathematics square number or perfect square number is a number which is product of number with itself. For example 4 * 4 = 16, 2 * 2 = 4, 6 * 6 = 36.&lt;/p&gt;
+
+&lt;p&gt;My goal here is to try to write basic Python code to solve the grade 4 problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-do-it-&quot;&gt;How to do it ?&lt;/h2&gt;
+&lt;p&gt;My basic concept is here I gave numbers in the specified numbers of range and initialize empty list to store the result. And applied appropirate condition.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-python&quot;&gt;In Python&lt;/h2&gt;
+&lt;p&gt;My basic concept is here I gave numbers in the range 1 to 101 to find the square numbers between 1 to 100. We already had known that in a range lower point is inclusive and the upper point is exclusive. so, here I took range 1 to 101. I made an empty list to store the square numbers. And I applied for a loop. And I define root which is given iteration variable’s power one upon two. I round the int_root. Usage​​ of round() function is which returns a floating-point number that is a rounded version of the specified number, with the specified number of decimals. And I applied the condition if int_root’s power 2 is equal to n then that an iteration variable is a perfect number and it goes to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root_numbers&lt;/code&gt; list. A similar process is applied for all of the iteration variables until the last iteration variable is 100.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;root_numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;int_root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;round&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int_root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;root_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Output of the above code is&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1
+4
+9
+16
+25
+36
+49
+64
+81
+100
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="Square-Number" /><category term="Biginner" /><summary type="html">How to findout Square Number.</summary></entry><entry><title type="html">How To Find HCF Using Python?</title><link href="http://localhost:4000/2021/03/05/how-to-find-hcf-using-python/" rel="alternate" type="text/html" title="How To Find HCF Using Python?" /><published>2021-03-05T01:29:17+05:45</published><updated>2021-03-05T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/05/how-to-find-hcf-using-python</id><content type="html" xml:base="http://localhost:4000/2021/03/05/how-to-find-hcf-using-python/">&lt;h1 id=&quot;how-to-findout-hcf&quot;&gt;How to findout HCF.&lt;/h1&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school class. For example, the HCF of 12 and 6 is 6. Similarly, HCF of 4, 8, 10 is 2 because 2 is the highest of factors of 4, 8, 10.&lt;/p&gt;
@@ -277,53 +311,4 @@ if
 
 \[\Rightarrow |x - y| &amp;lt; \varepsilon\]
 
-&lt;p&gt;Hence, the function \(f(x) = \sin(x)\) is uniformly continious on \([0, \infty]\)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Pointwise-convergence" /><category term="Uniform-convergence" /><summary type="html">Show that the function</summary></entry><entry><title type="html">Is If x Belong To The Domain Than f(x) belong To The Range ?</title><link href="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/" rel="alternate" type="text/html" title="Is If x Belong To The Domain Than f(x) belong To The Range ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range</id><content type="html" xml:base="http://localhost:4000/2020/11/18/is-if-x-belong-to-domain-then-f(x)-belong-to-the-range/">&lt;p&gt;Let 
- \(F : x \Rightarrow y\)&lt;/p&gt;
-
-&lt;p&gt;be a function. Then prove that&lt;/p&gt;
-
-\[i.  A_1 \subset A_2   \Rightarrow  F(A_1)  \subset  F(A_2) \\  
-ii. F(\cup_i A_i)  = \cup_i F(A_i) \\ 
-iii.F(\cap_i A_i) \subset \cap_i f(A_i)\]
-
-&lt;p&gt;Solution:&lt;/p&gt;
-
-&lt;p&gt;\(Let \ f: x \rightarrow y\) be a funxtion.&lt;/p&gt;
-
-&lt;p&gt;i.&lt;/p&gt;
-
-&lt;p&gt;\(Let\ y \in f(A_1)\) 
-\(Then\ \exists x \in A_1 : y = f(x)\).
-\(But\ A_1 \subset A_2\)
-\(we\ can\ say\ , x \in A_2\) 
-\(Hence\ y = f(x)\)&lt;/p&gt;
-
-&lt;p&gt;ii.&lt;/p&gt;
-
-\[Let\  y \in f ( \cup_i A_i) then\ \exists x \in \cup_i A_i : y = f(x)\]
-
-\[Since\  x \in (\cup_iA_i) \Rightarrow  x \in A_i\ for\ some\ i\]
-
-\[so\  y = f(x) \in f(A_i)\  and\ hence\  y \in \cup_i(A_i)\]
-
-&lt;p&gt;Conversely&lt;/p&gt;
-
-\[Let\  y \in \cup_if(A_i)\ then\ y \in f(A_i) for\ some\ i\]
-
-\[so\  \exists x \in A_i : y = f(x)\]
-
-\[and\ x \in \Rightarrow x \in \cup_i(A_i)\]
-
-\[so\ that\  f(x) \in f(\cup_i A_i)\]
-
-&lt;p&gt;iii.&lt;/p&gt;
-
-\[Let\ y \in f(\cup_i A_i)\ then\ \exists x \in \cap_i A_i : y = f(x)\]
-
-\[Since\ x \in \cap_i A_i\]
-
-\[we\ can\ write\  x \in A_i\ for\  all\ i\]
-
-\[so\  f(x)  \in f(A_i)\ for\ all\  i\]
-
-\[Hence\ f(x) \in \cap_if(A_i)\]</content><author><name>Durga Pokharel</name></author><category term="Converse" /><category term="Inverse" /><summary type="html">Let \(F : x \Rightarrow y\)</summary></entry></feed>
+&lt;p&gt;Hence, the function \(f(x) = \sin(x)\) is uniformly continious on \([0, \infty]\)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Pointwise-convergence" /><category term="Uniform-convergence" /><summary type="html">Show that the function</summary></entry></feed>

@@ -170,6 +170,12 @@ var store = [{
         "title": "How To Find HCF Using Python?",
         "excerpt":"How to findout HCF. Introduction As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school...","categories": ["Python-Biginner"],
         "tags": ["HCF","Biginner"],
-        "url": "/2021/03/05/How-to-find-hcf-using-python/",
+        "url": "/2021/03/05/how-to-find-hcf-using-python/",
         "teaser": "/assets/header_images/1.png"
+      },{
+        "title": "How To Find Square Numbers From Given List Using Python?",
+        "excerpt":"How to findout Square Number. Introduction As we all knew about square number. In mathematics square number or perfect square number is a number which is product of number with itself. For example 4 * 4 = 16, 2 * 2 = 4, 6 * 6 = 36. My goal...","categories": ["Python-Biginner"],
+        "tags": ["Square-Number","Biginner"],
+        "url": "/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/",
+        "teaser": "/assets/header_images/4.png"
       }]
