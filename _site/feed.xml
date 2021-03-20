@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-18T17:45:23+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Find Square Numbers From Given List Using Python?</title><link href="http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/" rel="alternate" type="text/html" title="How To Find Square Numbers From Given List Using Python?" /><published>2021-03-16T01:29:17+05:45</published><updated>2021-03-16T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python</id><content type="html" xml:base="http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/">&lt;h1 id=&quot;how-to-findout-square-number&quot;&gt;How to findout Square Number.&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-03-20T10:41:54+05:45</updated><id>http://localhost:4000/feed.xml</id><title type="html">Durga Pokharel</title><subtitle>A girl pursuing MSc. Mathematics on CDM TU.</subtitle><author><name>Durga Pokharel</name></author><entry><title type="html">How To Find Multiple Numbers of 3 or 5 or Any Numbers from given range Using Python Dictionary?</title><link href="http://localhost:4000/2021/03/18/how-to-find-multiple-numbers-of-numbers-from-given-range-using-python-dictionary/" rel="alternate" type="text/html" title="How To Find Multiple Numbers of 3 or 5 or Any Numbers from given range Using Python Dictionary?" /><published>2021-03-18T01:29:17+05:45</published><updated>2021-03-18T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/18/how-to-find-multiple-numbers-of-numbers-from-given-range-using-python-dictionary</id><content type="html" xml:base="http://localhost:4000/2021/03/18/how-to-find-multiple-numbers-of-numbers-from-given-range-using-python-dictionary/">&lt;h1 id=&quot;how-to-findout-multiple-numbers&quot;&gt;How to findout multiple numbers.&lt;/h1&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;As we all familiar with multiplication tables up to 9. If we knew the multiplication table then we can able find multiple numbers of any number. For example multiple numbers of 3 up to 100 are: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48​, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99. Similarly, we can find any numbers.&lt;/p&gt;
+
+&lt;p&gt;My goal here is to try to write basic Python code to solve the grade 3 problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-do-it-&quot;&gt;How to do it ?&lt;/h2&gt;
+&lt;p&gt;My basic concept here is I create an empty dictionary to store the result. In the dictionary, I kept numbers as a key and multiple numbers as a value. I run for loop in a specified range and applied the required condition to find out required number’s multiple numbers.&lt;/p&gt;
+&lt;h2 id=&quot;in-python&quot;&gt;In Python&lt;/h2&gt;
+&lt;p&gt;In python, at first, I create an empty dictionary. I initialize range from 1 to 99 which I kept in a list as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;numbers&lt;/code&gt;. I also initialize &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiple_of_3&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiple_of_5&lt;/code&gt; as an empty list to store the required multiple numbers. I apply for a loop in a specified range. If given numbers(iteration variable) n is divisible by 3 then the numbers go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiple_of_3&lt;/code&gt; list also if given numbers(iteration variable) n is divisible by 5 then the numbers go to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiple_of_5&lt;/code&gt; list. Finally, I store &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiple_of_3&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiple_of_5&lt;/code&gt; as a key and required multiple numbers as value. And my python code is given below.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_dict&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;99&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Multiple_of_3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Multiple_of_5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Multiple_of_3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;Multiple_of_5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        
+&lt;span class=&quot;n&quot;&gt;my_dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Multiple_of_3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Multiple_of_3&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Multiple_of_5'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Multiple_of_5&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;my_dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Output of the above code is&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{'Multiple_of_3': [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96], 'Multiple_of_5': [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Durga Pokharel</name></author><category term="Multiple-Numbers" /><category term="Biginner" /><summary type="html">How to findout multiple numbers.</summary></entry><entry><title type="html">How To Find Square Numbers From Given List Using Python?</title><link href="http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/" rel="alternate" type="text/html" title="How To Find Square Numbers From Given List Using Python?" /><published>2021-03-16T01:29:17+05:45</published><updated>2021-03-16T01:29:17+05:45</updated><id>http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python</id><content type="html" xml:base="http://localhost:4000/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/">&lt;h1 id=&quot;how-to-findout-square-number&quot;&gt;How to findout Square Number.&lt;/h1&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;As we all knew about square number. In mathematics square number or perfect square number is a number which is product of number with itself. For example 4 * 4 = 16, 2 * 2 = 4, 6 * 6 = 36.&lt;/p&gt;
@@ -281,34 +310,4 @@ f(x) = \frac{a_0}{2} + \sum_{i=1}^\infty[\frac{\epsilon^(\frac{n.\pi.x}{l}+\epsi
 
 \[iii).\left[\begin{array}{cc} 3 &amp;amp; 4 &amp;amp; 5  \\ 1 &amp;amp; 2 &amp;amp; 2 \\ 2 &amp;amp; 3 &amp;amp; 4  \end{array}\right]\]
 
-\[iv).\left[\begin{array}{cc} a &amp;amp; b   \\ p &amp;amp; q  \\ r &amp;amp; s  \end{array}\right]\]</content><author><name>Durga Pokharel</name></author><category term="Column" /><category term="Row" /><summary type="html">What is Matrices:-</summary></entry><entry><title type="html">Can sin(x) Uniformly Convergence On [a, b] ?</title><link href="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/" rel="alternate" type="text/html" title="Can sin(x) Uniformly Convergence On [a, b] ?" /><published>2020-11-18T01:29:17+05:45</published><updated>2020-11-18T01:29:17+05:45</updated><id>http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-%5Ba,%20b%5D</id><content type="html" xml:base="http://localhost:4000/2020/11/18/can-sin(x)-uniformly-convergence-in-a,-b/">&lt;p&gt;Show that the function&lt;/p&gt;
-
-&lt;p&gt;\(f(x) = \sin(x)\)
-is uniformly continuous on 
-\([0, \infty].\)&lt;/p&gt;
-
-&lt;p&gt;Sulution:&lt;/p&gt;
-
-&lt;p&gt;For uniformly continious on 
-\([ 0, \infty]\)
-if 
-\(\forall \varepsilon, \exists \delta &amp;gt; 0, \forall x, y \in  [0, \infty] with\ | x - y| &amp;lt; \delta\)
-\(\Rightarrow | f(x) - f(y) | &amp;lt; \varepsilon\)
-\(we\ have\ , f(x) = \sin(x)\)
-\(let\ we\ choose\ \delta = \varepsilon\ then\  x, y \in [0, \infty] with\ , |x - y | &amp;lt; \delta\)&lt;/p&gt;
-
-\[| \sin(x) - \sin(y) |\]
-
-\[\Rightarrow|2\cos\frac{x + y}{2}.\sin\frac{x - y}{2} |\]
-
-\[\Rightarrow2|\cos\frac{x + y}{2}|.|\sin\frac{x - y}{2}|\]
-
-\[Since\  |\sin(x) | \leq |x|\ for\  all\   X\]
-
-\[|\cos(x)| \leq 1\]
-
-\[\Rightarrow 2.1.\frac{|x - y|}{2}\]
-
-\[\Rightarrow |x - y| &amp;lt; \varepsilon\]
-
-&lt;p&gt;Hence, the function \(f(x) = \sin(x)\) is uniformly continious on \([0, \infty]\)&lt;/p&gt;</content><author><name>Durga Pokharel</name></author><category term="Pointwise-convergence" /><category term="Uniform-convergence" /><summary type="html">Show that the function</summary></entry></feed>
+\[iv).\left[\begin{array}{cc} a &amp;amp; b   \\ p &amp;amp; q  \\ r &amp;amp; s  \end{array}\right]\]</content><author><name>Durga Pokharel</name></author><category term="Column" /><category term="Row" /><summary type="html">What is Matrices:-</summary></entry></feed>

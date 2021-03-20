@@ -178,4 +178,10 @@ var store = [{
         "tags": ["Square-Number","Biginner"],
         "url": "/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/",
         "teaser": "/assets/header_images/4.png"
+      },{
+        "title": "How To Find Multiple Numbers of 3 or 5 or Any Numbers from given range Using Python Dictionary?",
+        "excerpt":"How to findout multiple numbers. Introduction As we all familiar with multiplication tables up to 9. If we knew the multiplication table then we can able find multiple numbers of any number. For example multiple numbers of 3 up to 100 are: 3, 6, 9, 12, 15, 18, 21, 24,...","categories": ["Python-Biginner"],
+        "tags": ["Multiple-Numbers","Biginner"],
+        "url": "/2021/03/18/how-to-find-multiple-numbers-of-numbers-from-given-range-using-python-dictionary/",
+        "teaser": "/assets/header_images/2.png"
       }]
