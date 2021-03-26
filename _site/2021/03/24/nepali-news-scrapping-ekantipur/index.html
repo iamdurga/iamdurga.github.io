@@ -425,7 +425,7 @@ In this blog, I am going to write about how I was able to scrap news from some o
 
 <p>If we see what the variable <code class="language-plaintext highlighter-rouge">soup</code> is holding, then we can see the entire page source of an webpage. After going to that URL from browser, we can see many contents including ads and the valuable content is only on the center of the page. Now our target is to find the best HTML element that can give us the exact content of that portion.</p>
 
-<p><img src="/images/ekantipur.png" alt="img" /></p>
+<p><img src="http://localhost:4000/assets/images/ekantipur.png" alt="img" /></p>
 
 <h3 id="find-the-title-of-each-news">Find the Title of each news</h3>
 <p>In order to find the exact HTML element which holds the titles of each news, we have to do inspect element and hover the webpage. Which is boring task though. The <code class="language-plaintext highlighter-rouge">h2</code> element holds the title and its some properties like exact URL to the news. But the <code class="language-plaintext highlighter-rouge">h2</code> is in <code class="language-plaintext highlighter-rouge">normal</code> class hence first find the <code class="language-plaintext highlighter-rouge">.normal</code> class and then find <code class="language-plaintext highlighter-rouge">h2</code> inside that class content.</p>

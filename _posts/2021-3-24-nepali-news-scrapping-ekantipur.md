@@ -64,7 +64,7 @@ soup = BS(web_page.data, 'html5lib')
 
 If we see what the variable `soup` is holding, then we can see the entire page source of an webpage. After going to that URL from browser, we can see many contents including ads and the valuable content is only on the center of the page. Now our target is to find the best HTML element that can give us the exact content of that portion.
 
-![img]({{site.assets}}/images/ekantipur.png)
+![img]({{site.url}}/assets/images/ekantipur.png)
 
 ### Find the Title of each news
 In order to find the exact HTML element which holds the titles of each news, we have to do inspect element and hover the webpage. Which is boring task though. The `h2` element holds the title and its some properties like exact URL to the news. But the `h2` is in `normal` class hence first find the `.normal` class and then find `h2` inside that class content.
