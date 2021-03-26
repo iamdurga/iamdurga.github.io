@@ -1,10 +1,10 @@
 ---
 title:  "How To Find HCF Using Python?"
 date:   2021-3-5 01:29:17 +0545
-categories: Python-Biginner
+categories: Python-Beginner
 tags:
   - HCF
-  - Biginner
+  - Beginner
 header:
   teaser: "assets/header_images/1.png"
   overlay_image: "assets/header_images/5.png"

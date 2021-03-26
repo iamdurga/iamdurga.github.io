@@ -1,10 +1,10 @@
 ---
 title:  "How To Find Multiple Numbers of 3 or 5 or Any Numbers from given range Using Python Dictionary?"
 date:   2021-3-18 01:29:17 +0545
-categories: Python-Biginner
+categories: Python-Beginner
 tags:
   - Multiple-Numbers
-  - Biginner
+  - Beginner
 header:
   teaser: "assets/header_images/2.png"
   overlay_image: "assets/header_images/5.png"

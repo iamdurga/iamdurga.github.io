@@ -1,10 +1,10 @@
 ---
 title:  "How To Find Composite And Prime Using Python?"
 date:   2021-2-26 01:29:17 +0545
-categories: Python-Biginner
+categories: Python-Beginner
 tags:
   - prime-composite
-  - Biginner
+  - Beginner
 header:
   teaser: "assets/header_images/6.png"
   overlay_image: "assets/header_images/8.png"

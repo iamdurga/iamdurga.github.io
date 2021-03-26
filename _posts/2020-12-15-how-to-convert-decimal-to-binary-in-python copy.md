@@ -1,10 +1,10 @@
 ---
 title:  "How To Convert Decimal To Binary In Python?"
 date:   2020-12-15 01:29:17 +0545
-categories: Python-Biginner
+categories: Python-Beginner
 tags:
   - Number-system
-  - Biginner
+  - Beginner
 header:
   teaser: "assets/header_images/8.png"
   overlay_image: "assets/header_images/6.png"

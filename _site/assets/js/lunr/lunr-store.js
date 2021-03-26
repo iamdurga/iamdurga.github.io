@@ -150,38 +150,44 @@ var store = [{
         "teaser": "/assets/header_images/6.png"
       },{
         "title": "How To Convert Decimal To Binary In Python?",
-        "excerpt":"Conversion From Decimal to Binary in Python. Introduction As we have studied in our early school days, decimal is a number system with base 10 which means that we will have 10 numbers sequentially starting from zero. Binary system is a number system with a base of two which means...","categories": ["Python-Biginner"],
-        "tags": ["Number-system","Biginner"],
+        "excerpt":"Conversion From Decimal to Binary in Python. Introduction As we have studied in our early school days, decimal is a number system with base 10 which means that we will have 10 numbers sequentially starting from zero. Binary system is a number system with a base of two which means...","categories": ["Python-Beginner"],
+        "tags": ["Number-system","Beginner"],
         "url": "/2020/12/15/how-to-convert-decimal-to-binary-in-python-copy/",
         "teaser": "/assets/header_images/8.png"
       },{
         "title": "How To Convert Non Perfect Number Into Perfect Number Using Python?",
-        "excerpt":"Conversion From Non Perfect Number Into Perfect Number. Introduction As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal...","categories": ["Python-Biginner"],
-        "tags": ["Number-system","Biginner"],
+        "excerpt":"Conversion From Non Perfect Number Into Perfect Number. Introduction As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal...","categories": ["Python-Beginner"],
+        "tags": ["Number-system","Beginner"],
         "url": "/2021/02/22/how-to_convert-non-perfect-number-to-perfect-number-copy/",
         "teaser": "/assets/header_images/7.png"
       },{
         "title": "How To Find Composite And Prime Using Python?",
-        "excerpt":"How to findout prime or composite. Introduction As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number...","categories": ["Python-Biginner"],
-        "tags": ["prime-composite","Biginner"],
+        "excerpt":"How to findout prime or composite. Introduction As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number...","categories": ["Python-Beginner"],
+        "tags": ["prime-composite","Beginner"],
         "url": "/2021/02/26/code-to-find-composite-and-prime-copy/",
         "teaser": "/assets/header_images/6.png"
       },{
         "title": "How To Find HCF Using Python?",
-        "excerpt":"How to findout HCF. Introduction As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school...","categories": ["Python-Biginner"],
-        "tags": ["HCF","Biginner"],
+        "excerpt":"How to findout HCF. Introduction As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school...","categories": ["Python-Beginner"],
+        "tags": ["HCF","Beginner"],
         "url": "/2021/03/05/how-to-find-hcf-using-python/",
         "teaser": "/assets/header_images/1.png"
       },{
         "title": "How To Find Square Numbers From Given List Using Python?",
-        "excerpt":"How to findout Square Number. Introduction As we all knew about square number. In mathematics square number or perfect square number is a number which is product of number with itself. For example 4 * 4 = 16, 2 * 2 = 4, 6 * 6 = 36. My goal...","categories": ["Python-Biginner"],
-        "tags": ["Square-Number","Biginner"],
+        "excerpt":"How to findout Square Number. Introduction As we all knew about square number. In mathematics square number or perfect square number is a number which is product of number with itself. For example 4 * 4 = 16, 2 * 2 = 4, 6 * 6 = 36. My goal...","categories": ["Python-Beginner"],
+        "tags": ["Square-Number","Beginner"],
         "url": "/2021/03/16/how-to-find-square-numbers-from-given-list-using-python/",
         "teaser": "/assets/header_images/4.png"
       },{
         "title": "How To Find Multiple Numbers of 3 or 5 or Any Numbers from given range Using Python Dictionary?",
-        "excerpt":"How to findout multiple numbers. Introduction As we all familiar with multiplication tables up to 9. If we knew the multiplication table then we can able find multiple numbers of any number. For example multiple numbers of 3 up to 100 are: 3, 6, 9, 12, 15, 18, 21, 24,...","categories": ["Python-Biginner"],
-        "tags": ["Multiple-Numbers","Biginner"],
-        "url": "/2021/03/18/how-to-find-multiple-numbers-of-numbers-from-given-range-using-python-dictionary/",
+        "excerpt":"How to findout multiple numbers. Introduction As we all familiar with multiplication tables up to 9. If we knew the multiplication table then we can able find multiple numbers of any number. For example multiple numbers of 3 up to 100 are: 3, 6, 9, 12, 15, 18, 21, 24,...","categories": ["Python-Beginner"],
+        "tags": ["Multiple-Numbers","Beginner"],
+        "url": "/2021/03/18/how-to-find-multiple-numbers-of-numbers-from-given-range-using-python-dictionary-copy/",
         "teaser": "/assets/header_images/2.png"
+      },{
+        "title": "Nepali News Scrapping Using BeautifulSoup and Python.",
+        "excerpt":"Scrapping News Date From Nepali News Portal Introduction In this blog, I am going to write about how I was able to scrap news from some of news portal of Nepal. There are various news portal like Ekantipur, Gorkhapatra, Annapurna. In this blog I am going to scrap news from...","categories": ["Project"],
+        "tags": ["Web scrapping","python","BeautifulSoup"],
+        "url": "/2021/03/24/nepali-news-scrapping-ekantipur/",
+        "teaser": "/assets/header_images/1.png"
       }]

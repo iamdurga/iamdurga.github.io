@@ -1,10 +1,10 @@
 ---
 title:  "How To Convert Non Perfect Number Into Perfect Number Using Python?"
 date:   2021-2-22 01:29:17 +0545
-categories: Python-Biginner
+categories: Python-Beginner
 tags:
   - Number-system
-  - Biginner
+  - Beginner
 header:
   teaser: "assets/header_images/7.png"
   overlay_image: "assets/header_images/3.png"
