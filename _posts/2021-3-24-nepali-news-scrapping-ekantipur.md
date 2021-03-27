@@ -8,7 +8,7 @@ tags:
   - BeautifulSoup
 header:
   teaser: "assets/header_images/1.png"
-  overlay_image: "assets/header_images/8.png"
+  
 ---
 
 # Scrapping News Date From Nepali News Portal
