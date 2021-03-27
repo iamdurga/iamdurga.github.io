@@ -91,10 +91,10 @@ footer:
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
-compress_html:
-  clippings: all
-  ignore:
-    envs: development  # disable compression in dev environment
+# compress_html:
+#   clippings: all
+#   ignore:
+#     envs: development  # disable compression in dev environment
 
 defaults:
   # _posts
