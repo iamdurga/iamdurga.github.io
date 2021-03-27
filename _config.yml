@@ -47,7 +47,7 @@ include:
   - _pages
 
 facebook:
-  username               :
+  username               : https://www.facebook.com/durga.pokharel.9828
   app_id                 :
   publisher              :
   
@@ -132,9 +132,14 @@ defaults:
 comments:
   provider: "facebook"
   facebook:
-    appid: 3681244498592683 # optional
+    appid: 2868111660098953 # optional
     num_posts: # 5 (default)
     colorscheme: # "light" (default), "dark"
+# comments:
+#   provider: "utterances"
+#   utterances:
+#     theme: "github-light" # "github-dark"
+#     issue_term: "pathname"
 category_archive:
   type: liquid
   path: /categories/
