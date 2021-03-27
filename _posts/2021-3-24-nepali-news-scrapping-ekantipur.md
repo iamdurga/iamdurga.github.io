@@ -7,7 +7,7 @@ tags:
   - python 
   - BeautifulSoup
 header:
-  teaser: "assets/header_images/1.png"
+  teaser: "https://www.edureka.co/blog/wp-content/uploads/2018/11/Untitled-1.jpg"
   
 ---
 
@@ -989,3 +989,6 @@ For saving data in sqlite first import sqlite3. I gave directiory of csv file. C
 
 ## Finally
 It took me more than week to try this and still there are lot of things to do in this project because data is still not enough to do any Machine Learning or Visualization task. In next blog, I will be sharing the code of how to scrap another news portal.
+
+## References
+* [Header Image](https://www.edureka.co/)
