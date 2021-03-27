@@ -43,6 +43,8 @@ minimal_mistakes_skin: dark #"air" "sunrise"  , "aqua", "contrast", "dark", "dir
 include:
   - _pages
 
+twitter:
+  username
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
