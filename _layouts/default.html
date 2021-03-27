@@ -15,10 +15,10 @@
     <meta  property="fb:admins"  content="{https://www.facebook.com/durga.pokharel.9828}"/>
     <meta  property="fb:app_id"  content="2868111660098953"  />
     <meta  property="fb:admins"  content="2868111660098953"/>
-    <meta  property="og:url"  content="URL"  />
-    <meta  property="og:title"  content="TITLE"  />
-    <meta  property="og:description"  content="DESC"  />
-    <meta  property="og:image"  content="IMG"  />
+    <meta  property="og:url"  content={{page.url}}  />
+    <meta  property="og:title"  content={{page.title}}  />
+    <meta  property="og:description"  content={{page.description}}  />
+    <meta  property="og:image"  content={{page.teaser}}  />
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
