@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Durga Pokharel
 email: pokhareldurga88@gmail.com
 description: A girl pursuing MSc. Mathematics on CDM TU. # this means to ignore newlines until "baseurl:"  
@@ -32,9 +33,11 @@ google-site-verification: "4nkARJqd8bJRcXn5snMiO4CavMhODUfCstP2cok1XHo"
 logo: "/assets/head.png"
 teaser: "/assets/teaser.png"
 remote_theme: mmistakes/minimal-mistakes
+
 # theme: minimal-mistakes-jekyll
 # Outputting
 # permalink: /:categories/:title/
+
 permalink: /:year/:month/:day/:title/
 paginate: 6 # amount of posts to show
 paginate_path: /page:num/
@@ -43,8 +46,15 @@ minimal_mistakes_skin: dark #"air" "sunrise"  , "aqua", "contrast", "dark", "dir
 include:
   - _pages
 
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+  
 twitter:
-  username
+  username: mathdurga
+og_image: "/assets/head.png"
+ 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
