@@ -130,17 +130,17 @@ defaults:
     values:
       layout: single
       author_profile: true
-comments:
-  provider: "facebook"
-  facebook:
-    appid: 2868111660098953 # optional
-    num_posts: # 5 (default)
-    colorscheme: # "light" (default), "dark"
 # comments:
-#   provider: "utterances"
-#   utterances:
-#     theme: "github-light" # "github-dark"
-#     issue_term: "pathname"
+#   provider: "facebook"
+#   facebook:
+#     appid: 2868111660098953 # optional
+#     num_posts: # 5 (default)
+#     colorscheme: # "light" (default), "dark"
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
 category_archive:
   type: liquid
   path: /categories/
