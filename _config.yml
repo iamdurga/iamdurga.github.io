@@ -18,7 +18,9 @@ title: Durga Pokharel
 email: pokhareldurga88@gmail.com
 description: A girl pursuing MSc. Mathematics on CDM TU. # this means to ignore newlines until "baseurl:"  
 url: https://iamdurga.github.io
-twitter_username: mathdurga
+
+twitter_username: durgacodes
+
 github_username: iamdurga
 search: true
 repository: "iamdurga/iamdurga.github.io"
@@ -53,7 +55,7 @@ facebook:
   publisher              :
   
 twitter:
-  username: mathdurga
+  username: durgacodes
 og_image: "/assets/head.png"
  
 # Exclude from processing.
@@ -84,7 +86,7 @@ author:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mathdurga"
+      url: "https://twitter.com/durgacodes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/iamdurga"
@@ -96,7 +98,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mathdurga"
+      url: "https://twitter.com/durgacodes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/iamdurga"
