@@ -1,17 +1,19 @@
 ---
-title:  "Nepali News Scrapping Using BeautifulSoup and Python."
-date:   2021-3-24 01:29:17 +0545
+title: "Nepali News (ekantipur) Scrapping Using BeautifulSoup and Python."
+date:  2021-3-24 01:29:17 +0545
 categories: Project
 tags:
   - Web scrapping
   - python 
   - BeautifulSoup
+  - Data analysis
 header:
-  teaser: "https://www.edureka.co/blog/wp-content/uploads/2018/11/Untitled-1.jpg"
+  teaser: "assets/images/ekantipur.png"
   
 ---
+# Scrapping News Data From ekantipur News Portal
+Using python and BeautifulSoup.
 
-# Scrapping News Date From Nepali News Portal
 ## Introduction
 In this blog, I am going to write about how I was able to scrap news from some of news portal of Nepal. There are various news portal like [Ekantipur](https://ekantipur.com),[ Gorkhapatra](https://gorkhapatraonline.com), [Annapurna](https://www.onlinekhabar.com). In this blog I am going to scrap news from Ekantipur. I have also written a code for scrapping  Gorkhapatra and Annapurna but I will be sharing those in another blog. 
 
@@ -990,5 +992,3 @@ For saving data in sqlite first import sqlite3. I gave directiory of csv file. C
 ## Finally
 It took me more than week to try this and still there are lot of things to do in this project because data is still not enough to do any Machine Learning or Visualization task. In next blog, I will be sharing the code of how to scrap another news portal.
 
-## References
-* [Header Image](https://www.edureka.co/)
