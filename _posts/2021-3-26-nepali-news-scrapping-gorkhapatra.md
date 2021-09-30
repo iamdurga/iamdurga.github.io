@@ -75,7 +75,8 @@ soup = BS(web_page.data, 'html5lib')
 ```
 
 If we see what the variable `soup` is holding, then we can see the entire page source of an webpage. After going to that URL from browser, we can see many contents including ads and the valuable content is only on the center of the page. Now our target is to find the best HTML element that can give us the exact content of that portion.
-![img]({{site.url}}/assets/images/Gorkhapatra.png)
+
+![img]({{site.url}}/assets/images/Gorkhapatra.PNG)
 
 ### Find the Title of each national news
 In order to find the exact HTML element which holds the titles of each national news, we have to do inspect element and hover the webpage. Which is boring task though. In this news portal `p` element holds the title and its some properties like exact URL to the news. But the `p` is in `business` class and inside that business class we can find `trending2` first find the `.business` class and then find `.trending2` after that we can find 'p` inside that class content.
@@ -177,7 +178,7 @@ content
 
 Now the news is scraped for a single URL. Our task is to use this concept for all the URLs of this category.
 
-#Combining It All
+# Combining It All
 
 
 ```python
