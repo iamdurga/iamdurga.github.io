@@ -37,9 +37,8 @@ logo: "/assets/head.png"
 teaser: "/assets/teaser.png"
 
 #While Running Local Use Theme While Running Globle Use Remote Theme
-
-remote_theme: mmistakes/minimal-mistakes
-#theme: minimal-mistakes-jekyll
+# remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 
 # Outputting
 # permalink: /:categories/:title/
