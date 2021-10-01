@@ -37,8 +37,8 @@ logo: "/assets/head.png"
 teaser: "/assets/teaser.png"
 
 #While Running Local Use Theme While Running Globle Use Remote Theme
-#remote_theme: mmistakes/minimal-mistakes
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
+#theme: minimal-mistakes-jekyll
 
 # Outputting
 # permalink: /:categories/:title/
@@ -72,6 +72,10 @@ og_image: "/assets/head.png"
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# toc:
+#   min_level: 1 # default: 1
+#   max_level: 3 # default: 6
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -80,6 +84,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-toc
 
 author:
   name   : "Durga Pokharel"
