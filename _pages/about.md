@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 # About me?
-I am doing my MSc. on Mathematics on CDM(Central Department of Mathematics) Tribhuvan University Nepal. I am interested on Applied Mathematics and also I like to learn about coding on free time. 
+I am doing my Masters in Data Science at Tribhuvan University Nepal. I am interested on Applied Mathematics and also I like to learn about coding on free time. 
 
 ## My Experience and Journey
 * I have completed my SLC on 2012.
