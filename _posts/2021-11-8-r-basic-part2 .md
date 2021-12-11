@@ -12,7 +12,7 @@ toc: true
 ---
 
 
-# Getting Started With Dataframe .
+# Getting Started With Dataframe.
 
 ## Introduction
  Dataframe are the mostly used data structure in R. Dataframe is a list where all components have name and are on the same line. Easiest way of understanding about dataframe is the visualization of spreadsheets. The first row is represented by header. The header is given by the list component name. Each column can store the different datatype which is called a variable and each row is an observation across multiple variables, since dataframe are like spreadsheet we can insert the data how we will like to. There are many possibilities to inserting data.
@@ -52,12 +52,15 @@ quality <- c('high','low','high','low','high','low','high','low')
                            budget = c(120,3000,600,500,45,67,89,90))
 shopping_data
 ```
-Output of the avove code is,dataframe.
+
+Output of the avove code is, dataframe.
 
 To check wether it is dataframe or not we can use folowing code.
+
 ```R 
 str(shopping_data)
 ```
+
 Output of the above cde is,
 
 ```R
@@ -68,42 +71,53 @@ Output of the above cde is,
  $ quality : chr  "high" "low" "high" "low" ...
  $ budget  : num  120 3000 600 500 45 67 89 90 
  ```
+
  ### Check the attribute of dataframe.
+ 
  ```R
  names(shopping_data)
  ```
+ 
  ### Check dimension of dataframe.
  ```R
  dim(shopping_data)
  ```
+ 
  ### Check first six rows of dataframe
  ```R
  head(shopping_data)
  ```
+ 
  ### Check last six rows of dataframe.
  ```R
  tail(shopping_data)
  ```
+ 
  ### Take only two rows of dataframe.
  ```R
  head(shopping_data, n =  2)
  ```
+ 
  ### Access specified column of database.
  ```R
  shopping_data$product
  ```
+ 
  Output of the above code is,
  ```R
  'apple''banana''orange''papaya''rice''wheat''pee''noodle'
  ```
+ 
  ```R
  shopping_data[['product']]
  ```
+ 
  Output of the above code is,
  ```R
  'apple''banana''orange''papaya''rice''wheat''pee''noodle'
  ```
- ##  Manipulating dataframe
+
+##  Manipulating dataframe
 By manipulating data frame we khow how to select, add new row and how to sort and rank into dataframe. Dataframe are list where each elements are name vector of same length. Therefore we can select element as same as in list. we do by [[]] or $column. Dataframe are also two dimensional matricies which means we can index them as matrices by using square braces.[row,column].We fix data in one dimension they behave as list. Therefore dataframe can be index either as like list or as like matrices accoding to positions, rules, names.
 
 ### List subsetting
@@ -116,6 +130,7 @@ shopping_data$price[1:3]
 shopping_data[[3]][3]
 shopping_data$price[3]
 ```
+
 Output of the above code is,
 ```R
 'groceries''groceries''electronic''electronic''groceries''electronic''electronic''groceries'
@@ -125,6 +140,7 @@ Output of the above code is,
 67
 67
 ```
+
 ### Matrix subsetting
 ```R
 #Matrix subsetting
@@ -133,6 +149,7 @@ shopping_data[,"product"]
 shopping_data[1,]
 shopping_data[1,"price"]
 ```
+
 Output will be 
 ```R
 'apple''banana''orange''papaya''rice''wheat''pee''noodle'
@@ -141,6 +158,7 @@ A data.frame: 1 × 5
 1	apple	groceries	24	high	120
 24
 ```
+
 ### Add new attribute into dataframe.
 ```R
 feedback<- c('good','outstanding','ordinary','nice','excilent','brillent','extra-ordinary','satisfactory')
@@ -169,6 +187,7 @@ is.vector(shopping_data[[1]])
 is.list(shopping_data[1])
 is.list(shopping_data[1])
 ```
+
 Output is,
 ```R
 'apple''banana''orange'
@@ -187,6 +206,7 @@ TRUE
 TRUE
 TRUE
 ```
+
 ##  Working with tidyverse
 During data analysis we spend our most time in data cleaning and transforming the raw data. Tydyverse is an add on that let us perform operation such as cleaning data and creating powerful graph.
 ```R
@@ -199,6 +219,7 @@ shopping_data <- data.frame(product,catagory,price,quality,
 #arrange(desc(price))
 shopping_data
 ```
+
 Output is,
 ```R
 A data.frame: 8 × 5
