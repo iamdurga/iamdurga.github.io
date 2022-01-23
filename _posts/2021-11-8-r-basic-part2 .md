@@ -160,12 +160,15 @@ A data.frame: 1 × 5
 ```
 
 ### Add new attribute into dataframe.
+
 ```R
 feedback<- c('good','outstanding','ordinary','nice','excilent','brillent','extra-ordinary','satisfactory')
 shopping_data <- cbind(shopping_data,feedback)
 shopping_data
 ```
+
 Output will be
+
 ```R
 A data.frame: 8 × 6
 apple	groceries	24	high	120	good
@@ -178,6 +181,7 @@ pee	electronic	89	high	89	extra-ordinary
 noodle	groceries	90	low	90	satisfactory
 ```
 ### We can do the following operations to access the data from dataframe
+
 ```R
 shopping_data[c(1:3),1]
 shopping_data[1]
@@ -189,6 +193,7 @@ is.list(shopping_data[1])
 ```
 
 Output is,
+
 ```R
 'apple''banana''orange'
 A data.frame: 8 × 1
@@ -208,7 +213,9 @@ TRUE
 ```
 
 ##  Working with tidyverse
+
 During data analysis we spend our most time in data cleaning and transforming the raw data. Tydyverse is an add on that let us perform operation such as cleaning data and creating powerful graph.
+
 ```R
 product <- c('apple','banana','orange','papaya','Rice','wheat','pee','noodle')
 catagory <- c( 'groceries','groceries','electronic','electronic','groceries','electronic','electronic','groceries')
@@ -221,6 +228,7 @@ shopping_data
 ```
 
 Output is,
+
 ```R
 A data.frame: 8 × 5
 apple	groceries	24	high	120
@@ -233,7 +241,9 @@ pee	electronic	89	high	89
 noodle	groceries	90	low	90
 ```
 ### Select Function
+
 Select function allow us to select specified data from dataframe.
+
 ```R
 # dplyr never change the original data
 #install.packages("tidyverse")
@@ -244,6 +254,7 @@ product
 ```
 Output is,
 ```R
+
 A data.frame: 8 × 2
 24	120
 45	3000
@@ -255,11 +266,15 @@ A data.frame: 8 × 2
 90	90
 ```
 ### Filter
+
 Filter function work similar to the select. Using the pipe operator %>% we can write multiple operations at once without renaming the intermedating results.
+
 ```R
 filter(product,budget > 100)
 ```
+
 Output is,
+
 ```R
 A data.frame: 4 × 2
 24	120
@@ -267,6 +282,7 @@ A data.frame: 4 × 2
 67	600
 88	500
 ```
+
 ```R
 dataset2 <- shopping_data %>%
 select(product,price)%>%
@@ -276,7 +292,9 @@ summarize(avg = mean(price))
 
 dataset2 
 ```
+
 Output is,
+
 ```R
 A tibble: 6 × 2
 noodle	90
@@ -286,12 +304,15 @@ pee	89
 Rice	56
 wheat	78
 ```
+
 ### Arrange function
+
 It sort our dataframe in acending order.
 `arrange(price)`, to arrange dataframe in decending order we used `arrange(desc(price))`
 ```R
 arrange(product,price)
 ```
+
 ```R
 Output is,
 A data.frame: 8 × 2
@@ -304,7 +325,9 @@ A data.frame: 8 × 2
 89	89
 90	90
 ```
+
 # Managing control statements:
+
 * If statement:
 
 If statement is the most common statement that execute code that only the condition place between bracket is true. Otherwise if statement ignore that particular piece of code.
@@ -324,18 +347,24 @@ if(price < 100){
 }
 ```
 Output is,
+
 ```R
 [1] "adding tshirt to wishlist"
 ```
+
 # Control Statement in vectors
+
 ```R
 quantity <- c(1,1,2,3,4)
 ifelse(quantity == 1,'Yes','No')
 ```
+
 Output is,
+
 ```R
 'Yes''Yes''No''No''No'
 ```
+
 ```R
 price <- 100
 if(price < 100){
@@ -347,10 +376,13 @@ if(price < 100){
     print("The budget is less then price")
 }
 ```
+
 Output is,
+
 ```R
 [1] "the price is equal to budget"
 ```
+
 ```R
 price <- c(58,100,110)
 if(price < 100){
@@ -362,19 +394,26 @@ if(price < 100){
     print("The budget is less then price")
 }
 ```
+
 If the condition has the lenght grater than one then only the first input is tested. That means it check the first elements and then stop. This problem is resolved by using any function.
+
 #  Any Function
+
 ```R
 if(any(price < 100)){
     
     print('At least one price is under budget')
 }
 ```
+
 Output is,
+
 ```R
 [1] "At least one price is under budget"
 ```
+
 # All Function
+
 ```R
 if(all(price<100)){
     print('all the price are under budget')
@@ -382,11 +421,15 @@ if(all(price<100)){
     print('Not all prices satisfies the condition.')
 }
 ```
+
 Output is,
+
 ```R
 [1] "Not all prices satisfies the condition."
 ```
+
 To combine the condition we can use `&&` and `||` operator. single and and or are used to element wise vector. While double and or are used for vector compare on one(non vectorise form)
+
 ```R
 price <- 58
 if(price> 50 && price < 100){
@@ -395,11 +438,15 @@ if(price> 50 && price < 100){
     print("the price is not in between 50 and 100")
 }
 ```
+
 ```R
 [1] "The price is between 50 and 100"
 ```
+
 # Switch Statement
+
 We can add as many as if else statements however keeping more than four is difficult to keep track what is happing when the condition is true. The switch command work with the cases, each syntax contain value to be tested followed by the possible cases.
+
 ```R
 quantity <- c(1,3,4,5)
 
@@ -410,10 +457,13 @@ average_quantity <- function(quantity,type) {
 }
 average_quantity(quantity,"arthematic")
 ```
+
 Output is,
+
 ```R
 3.25
 ```
+
 ```R
 x <- c(1,2,3,4,5)
 sumfunction <- function(x,i){
@@ -423,7 +473,9 @@ sumfunction <- function(x,i){
 }
 sumfunction(x,"s")
 ```
+
 Output is,
+
 ```R
 15
 ```
