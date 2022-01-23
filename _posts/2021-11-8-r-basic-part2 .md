@@ -83,21 +83,25 @@ Output of the above cde is,
  ```
  
 ### Check first six rows of dataframe
+
  ```R
  head(shopping_data)
  ```
  
 ### Check last six rows of dataframe.
+
  ```R
  tail(shopping_data)
  ```
  
 ### Take only two rows of dataframe.
+
  ```R
  head(shopping_data, n =  2)
  ```
  
 ### Access specified column of database.
+
  ```R
  shopping_data$product
  ```
