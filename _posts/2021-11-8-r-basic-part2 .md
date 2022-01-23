@@ -71,34 +71,33 @@ Output of the above cde is,
  $ quality : chr  "high" "low" "high" "low" ...
  $ budget  : num  120 3000 600 500 45 67 89 90 
  ```
-
- ### Check the attribute of dataframe.
+### Check the attribute of dataframe.
  
  ```R
  names(shopping_data)
  ```
- 
- ### Check dimension of dataframe.
+### Check dimension of dataframe.
+
  ```R
  dim(shopping_data)
  ```
  
- ### Check first six rows of dataframe
+### Check first six rows of dataframe
  ```R
  head(shopping_data)
  ```
  
- ### Check last six rows of dataframe.
+### Check last six rows of dataframe.
  ```R
  tail(shopping_data)
  ```
  
- ### Take only two rows of dataframe.
+### Take only two rows of dataframe.
  ```R
  head(shopping_data, n =  2)
  ```
  
- ### Access specified column of database.
+### Access specified column of database.
  ```R
  shopping_data$product
  ```
