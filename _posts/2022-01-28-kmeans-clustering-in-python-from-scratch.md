@@ -1,6 +1,6 @@
 ---
 title:  "Kmeans Clustering in Python from Scratch"
-date:   2022-01-25 01:29:17 +0545
+date:   2022-01-28 01:29:17 +0545
 categories: Machine Learning 
 tags:
   - Unsupervised
