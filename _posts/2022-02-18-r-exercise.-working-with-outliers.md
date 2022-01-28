@@ -18,9 +18,11 @@ First plot the daily deaths by time and distribute the three outliers
 (added deaths around timeline of 400) before fitting the following
 models in the outlier adjusted data on training and testing datasets:
 
+Dataset is available [here](https://github.com/iamdurga/MDS-Private-Study-Materials/tree/master/First%20Semester/Statistical%20Computing%20with%20R/Assignments/Data).
+
 ``` r
 library(readxl)
-data <- read_excel("F:/MDS-Private-Study-Materials/First Semester/Statistical Computing with R/Assignments/Data/covid_tbl_final.xlsx")
+data <- read_excel("covid_tbl_final.xlsx")
 
 str(data)
 ```
@@ -45,7 +47,7 @@ str(data)
 plot(data$Date, data$Deaths_total, main = "Total Deaths", xlab = "Date", ylab = "Deaths_total")
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-2-1.png)
+![png]({{site.url}}/assets/r_exercises/outliers_and_modeling/unnamed-chunk-2-1.png)
 
 The graph shows there’s a break in between so the trend is discontinued for some days. So we plot daily deaths next to see what date has the
 breakage.
@@ -55,7 +57,7 @@ breakage.
 plot(data$Date, data$Deaths_daily, main = "Daily deaths", xlab = "Date", ylab = "Daily Deaths")
 ```
 
-![pngpng]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-3-1.png)
+![pngpng]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-3-1.png)
 
 We observed three outliers in the above plot. Next, we need to identify the date
 on which the outlier is present.
@@ -129,7 +131,7 @@ plot(data$Date,
 )
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-6-1.png)
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-6-1.png)
 
 ``` r
 # Call distribute_outlier function to handle outlier value
@@ -146,7 +148,7 @@ plot(data$Date,
 )
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-7-1.png)
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-7-1.png)
 
 ``` r
 # Call distribute_outlier function to handle outlier value
@@ -162,7 +164,7 @@ plot(data$Date,
 )
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-8-1.png)
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-8-1.png)
 
 total based on daily deaths.
 
@@ -181,7 +183,7 @@ plot(data$Date,
   ylab = "Daily Deaths")
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-10-1.png)
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-10-1.png)
 
 Next, we need to do data partition into training and test set.
 
@@ -236,7 +238,7 @@ plot(new_deaths_total ~ SN,
 abline(lm(new_deaths_total ~ SN, data = train.data), col = "red", lwd=2)
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-13-1.png) 
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-13-1.png) 
 
 ## Constructing quadratic regression model
 
@@ -277,7 +279,7 @@ plot(new_deaths_total ~ SN,
 lines(fitted(qlm) ~ SN, data=train.data, col="red", lwd=2)
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-15-1.png) 
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-15-1.png) 
 
 ## Fitting Cubic regression Model
 
@@ -319,7 +321,7 @@ plot(new_deaths_total ~ SN,
 lines(fitted(clm) ~ SN, data=train.data, col="red", lwd=2)
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-17-1.png) 
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-17-1.png) 
 
 ## Fitting Double quardatic linear regression model
 
@@ -360,7 +362,7 @@ plot(new_deaths_total ~ SN,
 lines(fitted(dlm) ~ SN, data=train.data, col="red", lwd=2)
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-19-1.png) 
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-19-1.png) 
 
 ## Fifth order linear regression model
 
@@ -404,7 +406,7 @@ plot(new_deaths_total ~ SN,
 lines(fitted(flm) ~ SN, data=train.data, col="red", lwd=2)
 ```
 
-![png]({{site.url}}/assets/outliers_and_modeling/unnamed-chunk-21-1.png) 
+![png]({{site.url}}/assets/r_exercises/otliers_and_modeling/unnamed-chunk-21-1.png) 
 
 ## KNN Regression model
 
