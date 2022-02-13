@@ -12,6 +12,7 @@ header:
   overlay_image: "assets/r_exercises/sna/unnamed-chunk-31-1.png"
 toc: true
 ---
+
 # Social Network Analysis
 
 ## Definition
