@@ -6,8 +6,8 @@ tags:
   - Data Analysis
   - R
 header:
-  teaser: "assets/r_exercise/json_api/output_78_0.png"
-  overlay_image: "assets/r_exercise/json_api/output_78_0.png"
+  teaser: "assets/r_exercises/json_api/output_78_0.png"
+  overlay_image: "assets/r_exercises/json_api/output_78_0.png"
 toc: true
 ---
 ##  Import any data from JSON API 
