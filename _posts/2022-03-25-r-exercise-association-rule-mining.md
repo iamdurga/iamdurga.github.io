@@ -1,6 +1,6 @@
 ---
 title:  "R Exercise: Association Rule Mining in R"
-date:   2022-03-18 09:29:17 +0545
+date:   2022-03-25 09:29:17 +0545
 categories: R Exercise
 tags:
   - Data Analysis
@@ -14,53 +14,40 @@ toc: true
 
 # Association Rule Mining
 
-Association rule mining (also known as Association Rule Learning) is a typical technique for determining relationships (co-occurrence) between many variables. It is mostly used in grocery stores, e-commerce websites, and other similar establishments.
+Association rule mining (also known as Association Rule Learning) is a typical technique for determining relationships (co-occurrence) between many variables. It is mostly used in grocery stores, e-commerce websites, and other similar establishments, in addition to massive transactional databases.
 
-in addition to massive transactional data bases
-
-**Amazon knows what else you want to buy when you order something on their site.** This is a very prevalent example in our daily life.
-
-Spotify works on the same principle: they know what song you want to listen to next.
+**Amazon knows what else you want to buy when you order something on their site.** This is a very prevalent example in our daily life. Spotify works on the same principle: they know what song you want to listen to next.
 
 ## Use of Association Mining Results
-
--   Changing the store layout according to trends
-
--   Customer behavior analysis
-
--   Catalogue design
-
--   Cross markteing on online store
-
--   What are the trending items customers buy
-
--   Customized email with add-on sales
+Some of most common usages includes:
+- Changing the store layout according to trends
+- Customer behavior analysis
+- Catalogue design
+- Cross markteing on online store
+- What are the trending items customers buy?
+- Customized email with add-on sales
 
 ## When Association Mining is used?
-
-When we wish to find an association between different objects in a collection, find frequent patterns in a transaction database, relational databases, or any other information repository, we utilize association rule mining. In retailling clustering and classification, association rule mining is found in 'Marketing Basket Analysis.'
+When we wish to find an association between different objects in a collection, find frequent patterns in a transaction database, relational databases, or any other information repository, we utilize association rule mining. In retailling clustering and classification, association rule mining is found in **Marketing Basket Analysis**.
 
 By developing a set of rules known as **Association Rules**, it can tell us what things clients commonly buy together. In simple terms, it generates output in the manner of **if this, then that** rules.
 
 ## What is Apriori Algorithm and Rule?
+Data from a retail market or an online e-commerce store is typically used to mine association rules. The **apriori algorithm** makes it easier to detect these patterns or rules rapidly because most transaction data is huge. Using `apriori()` with all of the rules in the data is not a smart idea!
 
-Data from a retail market or an online e-commerce store is typically used to mine association rules. The 'apriori algorithm' makes it easier to detect these patterns or rules rapidly because most transaction data is huge. Using apriori() with all of the rules in the data is not a smart idea!
-
-**Rule** A rule is a note that shows which things are frequently purchased together.
-
-It has two parts: a 'LHS' and a 'RHS', which can be represented as follows:
-
-'itemssetA => itemssetB' is a condition.
+### Rule
+* A rule is a note that shows which things are frequently purchased together.
+* It has two parts: a 'LHS' and a 'RHS', which can be represented as follows:
+    * `itemssetA => itemssetB` is a condition.
 
 ## Some Association Rule Mining Terms
 
 ### Support
-
 Association rule are given in the following form,
 
 `A=>B[support, confidence]`
 
-Where A and B are sets of items in the transation data. A and B are
+Where A and B are sets of items in the transaction data. Also, A and B are
 disjoint sets.
 
 ```
@@ -124,7 +111,7 @@ market_basket
 
 The five transcations were created from the preceding data and given the names T1,T2,T2,T4,T5.
 
-Now we'll use the 'arules packages' to do some more association rule mining. To move on, we should have installed mention packages.
+Now we'll use the `arules` package to do some more association rule mining. To move on, we should have installed mention packages.
 
 
 ``` r
@@ -213,7 +200,7 @@ inspect(trans)
     ## [4] {beer, bread, dipers, milk} T4           
     ## [5] {bread, coka, dipers, milk} T5
 
-It is preferable to employ the inspect function. It will display ten transactions. In this case, if our data is really huge, a larger number of transaction inspect functions will be necessary.
+It is preferable to use the inspect function. It will display ten transactions. In this case, if our data is really huge, a larger number of transaction inspect functions will be necessary.
 
 ### Relative frequency plot and plot of trans
 
@@ -234,10 +221,9 @@ image(trans)
 
 ## Why Apriori Algorithms is important here?
 
-Because it necessitates a thorough database scan, Frequent Item Set Generation is the most computationally intensive stage. We saw an example of only 5 transactions in the previous example, but real-world transaction data for retail might surpass GBs and TBs of data, necessitating the use of an optimal technique to prune out Item-sets that will not aid in further phases.
+Because it necessitates a thorough database scan, Frequent Item Set Generation is the most computationally intensive stage. We saw an example of only 5 transactions in the previous example, but real-world transaction data for retail might surpass GBs and TBs of data, necessitating the use of an optimal technique to prune out Item-sets that will not aid in further phases is essential.
 
-##Apriori algorithm of “trans” without/with min. support of 0.3 and min.
-confidence of 0.5.
+## Apriori algorithm of “trans” without/with min. support of 0.3 and min. confidence of 0.5.
 
 ``` r
 rues <- apriori(trans)
@@ -310,8 +296,7 @@ rules <- apriori(trans, parameter = list(supp=0.3,conf=0.5,
     ## writing ... [32 rule(s)] done [0.00s].
     ## creating S4 object  ... done [0.00s].
 
-**Note: maxlen= maximum length of the transaction! We could have used
-maxlen= 4 here as we know it but this will not be known in real-life!**
+**Note: maxlen= maximum length of the transaction! We could have used `maxlen=4` here as we know it but this will not be known in real-life!**
 
 ### Summary of rules
 
@@ -575,3 +560,5 @@ plot(subrules, method = "paracoord")
 ![]({{site.url}}/assets/r_exercises/association-rule/unnamed-chunk-22-1.png)
 
 We used the parallel coordinate approach to see in higher-dimensional space. In this case, we visualize in ten dimensions.
+
+Thank you for reading.
