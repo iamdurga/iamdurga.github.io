@@ -1,6 +1,6 @@
 ---
 title:  "R Exercise: Validation and Cross Validation for Predictive Modeling R"
-date:   2022-04-02 09:29:17 +0545
+date:   2022-04-09 09:29:17 +0545
 categories: R Exercise
 tags:
   - Data Analysis
