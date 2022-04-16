@@ -1,6 +1,6 @@
 ---
 title:  "R Exercise: Polynomial Regression Model in R"
-date:   2022-04-02 09:29:17 +0545
+date:   2022-05-21 09:29:17 +0545
 categories: R Exercise
 tags:
   - Data Analysis
