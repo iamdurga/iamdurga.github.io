@@ -1,5 +1,5 @@
 ---
-title:  "Logisctic Regression from Scratch in Pytho: Exploring MSE and Log Loss"
+title:  "Logistic Regression from Scratch in Python: Exploring MSE and Log Loss"
 date:   2022-04-09 09:29:17 +0545
 categories: Machine Learning
 tags:
