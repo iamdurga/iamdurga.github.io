@@ -1,6 +1,6 @@
 ---
 title:  "R Exercise: Different Hypothesis Testing in R"
-date:   2022-04-26 09:29:17 +0545
+date:   2022-05-26 09:29:17 +0545
 categories: R Exercise
 tags:
   - Data Analysis
