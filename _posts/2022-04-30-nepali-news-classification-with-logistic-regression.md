@@ -30,10 +30,6 @@ I loaded the modules that I needed for my news classification work here.
 
 * matplotlib.front manager: A module for finding, managing, and using fonts across platforms 
 
-* matplotlib.front manager: A module for finding, managing, and using fonts across platforms
-
-* matplotlib.front manager: A module for finding, managing, and using fonts across
-
 * warnings: Warnings are provided to warn the developer of circumstances that aren't always exceptions.
 
 
