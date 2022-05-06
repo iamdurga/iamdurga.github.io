@@ -496,7 +496,7 @@ t
 
 
 # Model Fitting
- We fit LogisticRegression by using train_set of data. We get value of coefficent of determination 92.94% that means model is able to fit only 92.94% of data.
+ We fit Logistic Regression by using train_set of data. We get value of coefficent of determination 92.94% that means model is able to fit only 92.94% of data.
 
 
 ```python
@@ -536,7 +536,7 @@ nprd
 
 
 # Accuracy of Model
-Our model accuray is only 77.41% while using Logistic Re algorithms.
+Our model accuray is only 77.41% while using Logistic Regression algorithms.
 
 
 ```python
