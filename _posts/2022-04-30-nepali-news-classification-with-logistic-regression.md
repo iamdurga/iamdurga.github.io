@@ -11,13 +11,13 @@ header:
   overlay_image: "assets/nepali_news/eda/output_36_7.png"
 toc: true
 ---
-## Logistic Regression for Nepali News Classification
+# Logistic Regression for Nepali News Classification
 Hello everyone, and welcome back to my news categorization blog. In this blog, I'll be looking into Logistic Regression for news in Nepali, which is our native language. I started this project almost a year ago but never finished it because I had no idea what I was doing and only knew BeautifulSoup from Datacamp. I was able to scrape a Nepali news webpage using that information.
 
 I enrolled in Coursera's natural language processing specialization because I was interested in utilizing machine learning on a news site and was able to grasp some of the core ideas of classification algorithms such as Naive Bayes, Logistic Regression, and Decision Tree. I'll describe how I used the Logistic Regression classification method in my data in this blog because I've already written a blog about how I enable news scraping. The primary purpose of applying various types of classification algorithms to news data is to be able to categorize it. A Machine Learning classification approach called logistic regression is used to predict the likelihood of a categorical dependent variable. I followed the steps outlined below to accomplish this.
 
 
-# Import Necessary Module
+## Import Necessary Module
 I loaded the modules that I needed for my news classification work here.
 
 * os: The OS module in Python provides functions for interacting with the operating system 
@@ -55,7 +55,7 @@ plt.style.use("seaborn-whitegrid")
 
 ```
 
-# Open the CSV file
+## Open the CSV file
 
 To integrate separate csv files, I did the following. I scraped the news on a daily basis and put it in a different csv file for each day. For the tesk, I concatenated all of the csv files.
 
@@ -339,10 +339,10 @@ I made a duplicate of the original dataframe here. The major goal of doing this 
 df = combined_csv.copy()
 ```
 
-# Open the stopwords.txt file.
+## Open the stopwords.txt file.
 Stop words are a collection of terms that are commonly used in any language. Stop words in English include words like "the," "is," and "and." Stop words are used in NLP and text mining applications to remove extraneous terms so that computers may focus on the important ones. The following is how I loaded the stop words file. Because stop words play an important role in news classification, we should eliminate them during preprocessing.
 
-# Stopwords File
+## Stopwords File
 
 
 ```python
@@ -354,8 +354,8 @@ with open(stop_file) as fp:
 #stop_words
 ```
 
-# Punctuation file
-# Open the Punctuation file.
+## Punctuation file
+## Open the Punctuation file.
 The code below is for loading a punctuation file. Punctuation is a set of tools used in writing to clearly distinguish sentences, phrases, and clauses so that their intended meaning may be understood. These tools provide no useful information during categorization, thus they should be eliminated before we train our model.
 
 
@@ -375,7 +375,7 @@ punctuation_words
 
 
 
-# Pre-processing of text
+## Pre-processing of text
 I'm only going to utilize the titles of all of my blog's categories. I'll use content to make a blog post there later, despite the enormous quantity of words in the content columns. In this blog, I'll show you how to use Naive Bayes in title data to classify news and categorize it by category.
 
 First, I created a method named 'preprocessing text' in the provided code that accepts data, stop words, and punctuation words as parameters. I made a list called 'new cat' to keep track of the information once I processed it. I also initialized naise, as you can see in the code. Then, within cat data, I use for loop. I isolated the data on cats from the white space, linked them together, and gave them names.
@@ -432,7 +432,7 @@ for i, row in ndf.iterrows():
 
 ```
 
-# Importing Necessary Module for Logistic Regression
+## Importing Necessary Module for Logistic Regression
 
 * `LogisticRegression` :  We import LogisticRegression from sklearn.linear_model. 
 * `CountVectorizer` : Convert a set of text documents into a token count matrix. Using scipy, this approach generates a sparse representation of the counts.
@@ -446,7 +446,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 ```
 
-# Data is split into two sets: train and test.
+## Data is split into two sets: train and test.
 
 Our original data was separated into train and test data at this point. Normally, data is partitioned in the proportions of 70% to 30% or 80% to 20%. Model fitting is done with train data, and model prediction is done with test data.
 
@@ -495,7 +495,7 @@ t
 
 
 
-# Model Fitting
+## Model Fitting
  We fit Logistic Regression by using train_set of data. We get value of coefficent of determination 92.94% that means model is able to fit only 92.94% of data.
 
 
@@ -515,7 +515,7 @@ clf.score(X_train_vectorized, Y_train)
 
 
 
-# Prediction on trained data
+## Prediction on trained data
 
 
 
@@ -535,7 +535,7 @@ nprd
 
 
 
-# Accuracy of Model
+## Accuracy of Model
 Our model accuray is only 77.41% while using Logistic Regression algorithms.
 
 
@@ -547,7 +547,7 @@ print("Accuracy:", 100 * sum(predictions == Y_test) / len(predictions), '%')
     Accuracy: 77.41211667913238 %
     
 
-# Fit Decision Tress
+## Fit Decision Tress
 
 
 ```python
