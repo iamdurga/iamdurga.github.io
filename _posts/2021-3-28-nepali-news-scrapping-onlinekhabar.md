@@ -1,5 +1,5 @@
 ---
-title:  "Nepali News (Annapurna Post) Scrapping Using BeautifulSoup and Python."
+title:  "Nepali News (Onlinekhabar Post) Scrapping Using BeautifulSoup and Python."
 date:   2021-3-20 01:29:17 +0545
 categories: Project
 tags:
@@ -10,13 +10,13 @@ tags:
 header:
   teaser: "assets/images/Annapurna.png"
 ---
-# Scrapping News Data From Annapurna Post News Portal
+# Scrapping News Data From Onlinekhabar Post News Portal
 
 Using python and BeautifulSoup.
 
-# Scraping News Data From Annapurna Post
+# Scraping News Data From Onlinekhabar Post
 ## Introduction
-In this blog, I am going to write about how I was able to scrap news from Annapurna news portal of Nepal.It took me more than week to try this and still there are lot of things to do in this project because data is still not enough to do any Machine Learning or Visualization task. I shared the code of how to scrap another news portal in the following link.
+In this blog, I am going to write about how I was able to scrape news from Onlinekhabar news portal of Nepal.It took me more than week to try this and still there are lot of things to do in this project because data is still not enough to do any Machine Learning or Visualization task. I shared the code of how to scrap another news portal in the following link.
 * [Scrapping Ekantipur](https://iamdurga.github.io/2021/03/23/nepali-news-scrapping-ekantipur/)
 * [Scrapping Gorkhapatra](https://iamdurga.github.io/2021/03/23/nepali-news-scrapping-ekantipur/)
 ### Motivation
