@@ -32,7 +32,7 @@ Basically modes of neuron can be divided into two parts,
 
 * Stochastic model of Neuron
 
-**Deterministic Model of Neuron** : 
+**Deterministic Model of Neuron** 
 
 Three basic elements of this neural model are:
 Synapses or connecting links, Adder, and Activation Function.
@@ -45,7 +45,7 @@ Synapses or connecting links, Adder, and Activation Function.
 `activation`: function is responsible for finding the output of the neuron. It is also referred as squashing function.
 
 
-**Stochastic model of Neuron** : 
+**Stochastic model of Neuron** 
 
 For all inputs, the deterministic neural model precisely describes input–output behavior. However,
 the stochastic neuron model causes non-deterministic input-output behavior. The activation function utilized in deterministic neural models is given a probabilistic interpretation in stochastic neural models.
@@ -69,7 +69,7 @@ Activation function which is also called hard limiter function which is responsi
 
 There are different types of activation function  some of them are listed as below,
 
-* Threshold: 
+* Threshold
 
 * Linear
 
