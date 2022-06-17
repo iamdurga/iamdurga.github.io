@@ -46,7 +46,7 @@ $$ E_{avg} = \frac{1}{2} \sum_{n=1}^{N} E(n) $$
 $$ vj(n) = \sum_{i=1}^{m} wji(n)yi(n) $$
 $$ yj(n) = \phi_j(v_j(n))$$ where y_j is output of neuron i and w_ji is weight of link from i to j.
 
-* The correction $\Delta w_{ij}(n)$  made to the weight is proportional to the partial derivative  $\frac{ \delta(E)}{\delta(w_{ji}})$ of instantaneous error
+* The correction $$\Delta w_{ij}(n)$$  made to the weight is proportional to the partial derivative  $$\frac{ \delta(E)}{\delta(w_{ji}})$$ of instantaneous error
 
 Using the chain rule of calculus, this gradient can be expressed as follows,
 
