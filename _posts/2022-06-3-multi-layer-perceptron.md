@@ -13,9 +13,9 @@ toc: true
 ---
 # Multilayer Perceptron (MLP) 
 
-**In this blog we are going to share how non-linear problem like XOR can be solve using multiliayer perceptron. We alredy written blog about how to apply multilayer perceptron on majority function[ please have a look here]( https://dataqoil.com/2022/06/17/multilayer-perce…ion-from-scratch/)** 
+**In this blog we are going to share how non-linear problem like XOR can be solve using multiliayer perceptron. We already written blog about how to apply multilayer perceptron on majority function[ please have a look here.]( https://dataqoil.com/2022/06/17/multilayer-perce…ion-from-scratch/)** 
 
-We all are familiar in that single layer perceptron ( mlp) are commonly used to classify problems that are linearly separable. If we choose a single layer perceptron for a non-linearly separable problem, the results may not be as fruitful as we expect. As a result, we must look for an alternative solution to a non-linear problem, and one such solution is the multilayer perceptron. Because AND and OR like linearly separable problem, a single layer perceptron is adequate to used. However,the problem which we can not solve linearly like XOR, thus we employed back propagation to solve it. 
+We all are familiar in that single layer perceptron (slp) are commonly used to classify problems that are linearly separable. If we choose a single layer perceptron for a non-linearly separable problem, the results may not be as fruitful as we expect. As a result, we must look for an alternative solution to a non-linear problem, and one such solution is the multilayer perceptron. Because AND and OR like linearly separable problem, a single layer perceptron is adequate to used. However, the problem which we can not solve linearly like XOR, thus we employed multi layer back propagation to solve it. 
 
 ## Forward- propagation
 
@@ -30,7 +30,7 @@ The network's synaptic weights are fixed in this phase, and the input signal is 
 $$v_j = \sum(w_{ji} y_i) $$ compute the output of each unit j. $$ y_i = \frac{1}{1 + e^{-vj}}$$
 
 ## Back- Propagation
-The back-propagation algorithm is a popular approach for training multilayer perceptrons. There are two stages to the training.
+The back-propagation algorithm is a popular approach for training multilayer perceptrons. There are two stages to the training of MLP.
 
 * Forward Phase
 * Backward Phase
@@ -44,7 +44,7 @@ An error signal is generated in this step by comparing the network's output to a
 
 ### Algorithm
 
-forward algorithm is same as I wrote in single layer perceptron. Back propagation algorithm is given below.
+Forward algorithm is same as I wrote in single layer perceptron. Back propagation algorithm can be given below.
 * The error signal at the output of neuron j at iteration n is given by
 $$ e_j(n) = d_j(n) - y_j(n) $$ where dj(n) is actual output and yj(n) is predicted output By MLP
 
