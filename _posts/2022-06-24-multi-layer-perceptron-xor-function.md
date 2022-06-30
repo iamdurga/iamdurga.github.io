@@ -1,6 +1,6 @@
 ---
 title:  "Multilayer Percepron Using XOR function from Scratch"
-date:   2022-05-26 09:29:17 +0545
+date:   2022-06-24 09:29:17 +0545
 categories: Machine Learing
 tags:
   - Neural Network

@@ -1,6 +1,6 @@
 ---
 title:  "R Exercise: Monte Carlo Simulations in R"
-date:   2022-05-12 09:29:17 +0545
+date:   2022-05-28 09:29:17 +0545
 categories: R Exercise
 tags:
   - Data Analysis

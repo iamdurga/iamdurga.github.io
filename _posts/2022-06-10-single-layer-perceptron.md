@@ -1,6 +1,6 @@
 ---
 title:  "Single Layer Perceptron From Scratch"
-date:   2022-05-26 09:29:17 +0545
+date:   2022-06-10 09:29:17 +0545
 categories: Machine Learing
 tags:
   - Neural Network
