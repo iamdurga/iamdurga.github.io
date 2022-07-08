@@ -15,10 +15,11 @@ toc: true
 # Basic Introduction of NLP 
 NLP is a Short form of natural language processing. It is subfield of artificial intelligence.The study of how to program computers to comprehend and use natural language led to the development of the area. In simple word NLP is process of making computer understand human language like English, Nepali. As name suggest natural language processing deal with the different form of language which can be text, audio, video and image.
 
-is in the confluence of several other closely related fields, including linguistics, mathematics, computer science, statistics, and neuroscience. NLP has two main component, 
+ It is in the confluence of several other closely related fields, including linguistics, mathematics, computer science, statistics, and neuroscience.  
 
 ![image]({{site.url}}/assets/NLP/Basic_of_nlp/Intersection.png)
 
+NLP has two main component,
 
 * Natural Language Understanding
 * Natural Language Generation
