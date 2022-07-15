@@ -103,7 +103,7 @@ Creating a system that can instantly respond to queries in Natural Language.
 **Topics Modeling**
 Discovering a big collection of papers' thematic organization. Text mining software that is widely utilized in fields ranging from bioinformatics to literature.
   
- ![image]({{site.url}}/assets/NLP/Basic_of_nlp/syntax structure.png)
+ ![image]({{site.url}}/assets/NLP/Basic_of_nlp/syntax_structure.png)
 
 
 
