@@ -14,6 +14,8 @@ toc: true
 
 # Several widely used NLP algorithms
 
+Images in this blog are borrowed from lecture note of [Prof. Bal Krishna Bal](https://ku-np.academia.edu/BalKrishnaBal).
+
 Not only are there many algorithms for machine learing tasks, but also for natural language processing job. The choice of which algorithm is best for a given problem cannot be made with absolute certainty. After determining our objectives, we should select algorithms. The algorithms listed below range in complexity from simple to complicated.
 
 ## Approaches to NLP
@@ -67,6 +69,8 @@ Then, using this information, an HMM tries to model the hidden states. As an ill
 We only pay attention to the words that fall under the control of these latent states. HMMs also rely on the Markov assumption, which states that each hidden state depends on the one before it (s). Because human language is sequential in nature, the preceding word in a phrase affects the following word. HMMs with these two suppositions are an effective modeling tool.
 
 ![image]({{site.url}}/assets/NLP/algorithms/HMM.png)
+
+
 
 ##### Conditional Random Fields
 

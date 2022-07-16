@@ -13,6 +13,8 @@ toc: true
 ---
 
 # Basic Introduction of NLP 
+Images in this blog are borrowed from lecture note of [Prof. Bal Krishna Bal](https://ku-np.academia.edu/BalKrishnaBal).
+
 NLP is a Short form of natural language processing. It is subfield of artificial intelligence.The study of how to program computers to comprehend and use natural language led to the development of the area. In simple word NLP is process of making computer understand human language like English, Nepali. As name suggest natural language processing deal with the different form of language which can be text, audio, video and image.
 
  It is in the confluence of several other closely related fields, including linguistics, mathematics, computer science, statistics, and neuroscience.  
