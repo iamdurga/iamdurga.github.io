@@ -15,6 +15,8 @@ toc: true
 # Introduction 
 To manipulating vectors means we perform some arithmetics operation on these vectors. By performing some arithmetics on vectors resulting vectors or any value can represent very interesting fact or inside. This is very interesting inside that we perform some operation on the given data and result represent more interesting fact about the data. 
 
+**This blog has been written by taking [Coursera's NLP Specialization](https://www.coursera.org/specializations/natural-language-processing) as a reference. Hence, the images used in this blog are from that course itself. All credit goes to Coursera.**
+
 # How to manipulate word as vectors
 
 
