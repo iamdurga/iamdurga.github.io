@@ -1,6 +1,6 @@
 ---
 title:  "Manipulation of word vectors"
-date:   2022-07-31 09:29:17 +0545
+date:   2022-08-25 09:29:17 +0545
 categories: Natural-Language-Processing
 tags:
   - Natural Language Understanding

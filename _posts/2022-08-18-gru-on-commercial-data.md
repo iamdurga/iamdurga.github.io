@@ -1,6 +1,6 @@
 ---
 title:  "Stock Price Prediction On Commercial Data Using GRU"
-date:   2022-07-30 09:29:17 +0545
+date:   2022-08-18 09:29:17 +0545
 categories: Machine Learning
 tags:
   - Neurons

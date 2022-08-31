@@ -1,24 +1,21 @@
 ---
-title:  "Stock Price Prediction On Commercial Data Using LSTM"
-date:   2022-07-30 09:29:17 +0545
+title:  "Stock Price Prediction On Commercial Data Using RNN"
+date:   2022-09-01 09:29:17 +0545
 categories: Machine Learning
 tags:
-  - Partition
-  - Hierarchy
-  - cluster
+  - Neurons
+  - Activation
+  - gradient
 header:
-  teaser: "assets/lstm_rnn/test_trend.png"
-  overlay_image: "assets/lstm_rnn/test_trend.png"
+  teaser: "assets/lstm_rnn/test1.png"
+  overlay_image: "assets/lstm_rnn/test1.png"
 toc: true
 ---
 
+# Basic Introduction to RNN 
+A type of neural network called a recurrent neural network (RNN) uses the output from a previous step as input for the current step. Traditional neural networks have inputs and outputs that are independent of one another, but there is a need to remember the previous words in situations where it is necessary to anticipate the next word in a sentence. As a result, RNN was developed, which utilized a Hidden Layer to resolve this problem. The Hidden state, which retains some information about a sequence, is the primary and most significant characteristic of RNNs. Following figure show the architecture of RNN.
 
-# Basic Introduction about LSTM
-RNNs are unable to remember long-term dependencies in time series data because of the vanishing gradient issue. An RNN version called LSTM was created to deal with this problem. Similar to RNN, LSTM features a hidden state that functions as short-term memory. Additionally, it preserves cell state, which functions as long-term memory. 
-
-Three gates a forget gate, an input gate, and a output gate make up the LSTM architecture. The forget gate is in place to decide what data from the previous state needs to be remembered and what can be forgotten. Which data from the current input is saved in the cell state depends on the input gate. Finally, the output gate determines the next hidden state value. The LSTM network's architecture is depicted in the Figure
-
-![image]({{site.url}}/assets/LSTM/Lstm.png)
+![image]({{site.url}}/assets/LSTM/Rnn.png)
 
 
 
@@ -33,32 +30,30 @@ Here we import necessary module which we required while Fitting LSTM model on Co
 
 `cufflinks` : for making interactive plot with pandas data
 
-` keras` : to fit LSTM model using keras library
+`sklearn` :  to do necessary preprocessing
 
+`keras` : for RNN model build
 
 
 
 ```python
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from keras.models import Sequential
-from keras.layers import Dense, LSTM
-import math
-from sklearn.preprocessing import MinMaxScaler,StandardScaler 
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
 import cufflinks
+from keras.models import Sequential
+from keras.layers import Dense, SimpleRNN
+
 cufflinks.go_offline()
 cufflinks.set_config_file(world_readable=True, theme='pearl')
 ```
 
 # Read Data
-
 This specific data is acquired from GitHub, which houses numerous csv files from various businesses. However, I used data from a commercial bank for this LSTM model. There are 2572 rows in all.
 
 
 ```python
-#data = "ALICL_2000-01-01_2021-12-31.csv"
 commerce = pd.read_csv("ADBL_2000-01-01_2021-12-31.csv", engine='python')
 commerce.head()
 
@@ -170,7 +165,7 @@ commerce.shape
 
 
 
- # Sort Data in Ascending order
+# Sort Data in Ascending Order
 Our data is arranged according to time in descending order. In order to maintain our data in rising order according to our date property, we here change the given data into ascending order. Using the built-in function head, we were able to only examine a portion of the given data set (). We can only access the top 5 data points of the provided dataset by utilizing this head function.
 
 
@@ -277,7 +272,6 @@ Our analysis might not be successful if there are any missing values. Therefore,
 
 
 ```python
-#Handle missing data by dropinig NAs.
 commerce = commerce.dropna()
 commerce.tail()
 ```
@@ -375,15 +369,15 @@ commerce.tail()
 
 
 
-# Plot Trend 
+# Plot Trend
 Here, we plot our statistics to see how they are trending. by keeping the data in the line plot's horizontal axis and the closing price in its vertical axis. We are aware that time series data is information that varies over time. As a result, they lack a steady trend.
 
 
-
 ```python
-commerce.iplot(kind="line",x="Date",y="Close Price",xTitle="Date", yTitle="Close Price", title="Commercial Bank Data Trend")
+commerce.iplot(kind="line",x="Date",y="Close Price",xTitle="Date", yTitle="Close Price", title="Commercial Bank Trend")
 ```
 ![image]({{site.url}}/assets/lstm_rnn/original_plot.png)
+
 
 The graph shows that the initial closure price was around 270, and that it subsequently declined before gradually rising to its ideal level in July 2020, which was around 1200. Throughout the remaining time frame, there are frequent changes in closing price.
 
@@ -397,8 +391,7 @@ commerce['Next Price'] = commerce.shift(-1)['Close Price']
 
 
 ```python
-commerce= commerce.dropna()
-
+commerce = commerce.dropna()
 ```
 
 # Rename Columns
@@ -443,7 +436,7 @@ Y["NextPrice"] = ss.fit_transform(Y)
 
 ```
 
-# Train Test Split
+ # Train Test Split
 
 Data will be randomly split using train test split of sklearn, losing the sequence. As a result, we created scratch sets for our train and test datasets. We divided the data as follows: we used 80% of the data for the train set, 10% for the validation set, and the final 10% for the test set.
 
@@ -477,18 +470,7 @@ X_train.shape,X_test.shape,X.shape
 
 
 
-Here, we divided our data into five-sequence groupings. We used the first five pieces of data in the first series. We kept the first data in the second sequence and added six more. In the third sequence, we left the second sequence alone and added seven new data points. The sequence selection procedure was carried out in this manner. We took 25 hidden layers from this hidden layer. We also used 50 layers for the input and output layers.
-
-
-```python
-model = Sequential()
-model.add(LSTM(units=50, return_sequences=True,input_shape=(5,1)))
-model.add(LSTM(units=50, return_sequences=False))
-model.add(Dense(units=25))
-model.add(Dense(units=1))
-```
-
-# Convert to matrix
+# Convert to Matrix
 Here, we convert train, test set of data into matrix inorder to do calculation easy.
 
 
@@ -509,9 +491,9 @@ trainX,trainY =convertToMatrix(X_train,step)
 testX,testY =convertToMatrix(X_test,step)
 # validX,validY = convertToMatrix(X_valid,step)
 
-trainX = np.reshape(trainX, (trainX.shape[0], trainX.shape[1],1))
+trainX = np.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
 # validX = np.reshape(validX, (validX.shape[0], 1, validX.shape[1]))
-testX = np.reshape(testX, (testX.shape[0], testX.shape[1],1))
+testX = np.reshape(testX, (testX.shape[0], 1, testX.shape[1]))
 
 trainX.shape,testX.shape #,validX.shape
 ```
@@ -519,76 +501,102 @@ trainX.shape,testX.shape #,validX.shape
 
 
 
-    ((2308, 5, 1), (253, 5, 1))
+    ((2308, 1, 5), (253, 1, 5))
 
 
 
-We perform model compilation in the code below. Here, we used mean squared error as the loss function and the Adam optimizer as our optimization function. Next, we fitted the model using the train, test, batch size, and epochs parameters. We finally received a loss of 0.0358.
-
-
-```python
-model.compile(optimizer='adam', loss='mean_squared_error')
-model.fit(trainX, trainY, batch_size=1, epochs=1)
-```
-
-    2308/2308 [==============================] - 13s 4ms/step - loss: 0.0389
-    
-
-
-
-
-    <keras.callbacks.History at 0x27d130762b0>
-
-
-
-In the following block of the code we perform model prediction operation.
+# Modeling
+Here, we are going to build RNN model using simpleRNN which has 32 input unit and relu activation function in input layer similarly we used 8 hidden layer and relu as hidden activation function. We compile the model using rmsprop as optimizer function and `mean_squared_error` as a loss. Rest of this is we can see following.
 
 
 ```python
-predictions = model.predict(testX)
-predictions = ss.inverse_transform(predictions)
-predictions.shape,testX.shape
+# SimpleRNN model
+model = Sequential()
+model.add(SimpleRNN(units=32, input_shape=(1,step), activation="relu"))
+model.add(Dense(8, activation="relu")) 
+model.add(Dense(1))
+model.compile(loss='mean_squared_error', optimizer='rmsprop')
+model.summary()
 ```
 
-    8/8 [==============================] - 1s 4ms/step
+    Model: "sequential"
+    _________________________________________________________________
+     Layer (type)                Output Shape              Param #   
+    =================================================================
+     simple_rnn (SimpleRNN)      (None, 32)                1216      
+                                                                     
+     dense (Dense)               (None, 8)                 264       
+                                                                     
+     dense_1 (Dense)             (None, 1)                 9         
+                                                                     
+    =================================================================
+    Total params: 1,489
+    Trainable params: 1,489
+    Non-trainable params: 0
+    _________________________________________________________________
     
 
-
-
-
-    ((253, 1), (253, 5, 1))
-
-
-
-From this model we get RMSE value 13.58. We know that we expect lower value of RMSE as possible.
+We fit the model using train, validate, epochs and batch_size as parameter. And than we perform model prediction.
 
 
 ```python
-Y_test_ss = ss.inverse_transform(Y_test)[:-5]
-
-rmse=np.sqrt(np.mean(((predictions- Y_test_ss)**2)))
-print(rmse)
+# we have 90% of data as train and if we take 11.11% from train, that will be equal to 10% of overall data as validation
+model.fit(trainX,trainY, validation_split=0.111,#validation_data=(validX,validY),
+          epochs=1, batch_size=16, verbose=2)
+trainPredict = model.predict(trainX)
+testPredict= model.predict(testX)
+predicted=np.concatenate((trainPredict,testPredict),axis=0)
 ```
 
-    27.81754085685057
+    129/129 - 2s - loss: 0.6497 - val_loss: 0.0175 - 2s/epoch - 13ms/step
+    73/73 [==============================] - 0s 2ms/step
+    8/8 [==============================] - 0s 1ms/step
     
+
+# Evaluate
+
+Smaller the better.
+
+
+```python
+test_score = model.evaluate(testX, testPredict, verbose=0)
+print(test_score)
+```
+
+    0.0
+    
+
+# RMSE of Test
+From this model we get RMSE value 21.74. We know that we expect lower value of RMSE as possible.
+
+
+```python
+from sklearn.metrics import mean_squared_error
+
+mean_squared_error(ss.inverse_transform(testX[:,:,0].flatten()), 
+                   ss.inverse_transform(testPredict.flatten()), squared=False)
+```
+
+
+
+
+    24.91797533136122
+
+
 
 # Test Trend
 
 
 
 ```python
-test=pd.DataFrame()
-test["pred"]=ss.inverse_transform(predictions.flatten())
-test["real"]=ss.inverse_transform(Y_test_ss)
-test["date"]=X_test.index[:-5]
-test.iplot(kind="line", x="date",xTitle ="Date",yTitle= "Closed Price",title= "Trend of Closed Price")
+train=pd.DataFrame()
+train["pred"]=ss.inverse_transform(trainPredict.flatten())
+train["real"]=ss.inverse_transform(trainX[:,:,0])
+train["date"]=X_train.index[:-5]
+train.iplot(kind="line", x="date",xTitle= "Date",yTitle = "Closed Price", title= "Predicted Trend of Closed Price")
 ```
-![image]({{site.url}}/assets/lstm_rnn/test_trend.png)
 
-The test trend of our data is depicted in the following graphs. The numbers show that the test trend differs in some way from the data's original trend. Here, the blue hue represents the actual trend of the data, while the orange color represents the forecast trend. We can tell from the figures that our model is overfitting. The model predicts the best price on July 22, 2021, but on other days it anticipates erratic price movements.
+![image]({{site.url}}/assets/lstm_rnn/test1.png)
 
+From figure we can observe that predicted and real trend are approximately same. In figure blue is for real trend and orange for predicted trend.
 
-```python
-
-```
