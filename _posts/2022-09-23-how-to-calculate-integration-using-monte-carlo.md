@@ -17,14 +17,14 @@ In mathematics, an integral assigns numbers to functions in a way that describes
 
 In this blog we are going to introduce integration of complex function using Monte Carlo method and later we estimate the error of our calculated integration.
 
-Lets us consider following integration problem $$  \int_{0}^{1} e^x $$. If we solve this problem mathematically we get, 
+Lets us consider following integration problem,
 
-$$  \int_{0}^{1} e^x 
-= [e^x]_{0}^{1}
-= e^1 - e^0
-= 2.718281828459045 - 1
-= 1.718281828459045
-$$
+![image]({{site.url}}/assets/monte/1.png)
+
+
+ If we solve this problem mathematically we get, 
+
+![image]({{site.url}}/assets/monte/2.png)
 
 Hence, actual value of above integration problem is 1.718281...
 
