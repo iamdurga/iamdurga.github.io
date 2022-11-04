@@ -11,7 +11,8 @@ header:
   overlay_image: "assets/monte/output_8_1.png"
 toc: true
 ---
-Previously, we wrote blogs on many machine learning algorithms as well as many other topics to help you broaden your knowledge. Please kindly visit our [side](https://dataqoil.com/blog/) and we would be glad if we got some feedback from you to improve our writing. To see some of them, you can follow the mentioned links.
+
+Previously, we wrote blogs on many machine learning algorithms as well as many other topics to help you broaden your knowledge. Please kindly visit our [site](https://dataqoil.com/blog/) and we would be glad if we got some feedback from you to improve our writing. To see some of them, you can follow the mentioned links.
 * [Linear Regression](https://dataqoil.com/2022/04/21/fit-linear-regression-using-different-gradient-descent-algorithms/)
 
 * [Logistic Regression](https://dataqoil.com/2020/08/11/writing-a-logistic-regression-class-from-scratch/)
