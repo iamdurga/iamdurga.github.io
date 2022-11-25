@@ -1,6 +1,6 @@
 ---
 title:  "Different method of Outliers Detection"
-date:   2022-11-25 09:29:17 +0545
+date:   2022-11-25 07:29:17 +0545
 categories: Data Science
 tags:
   - Outliers
