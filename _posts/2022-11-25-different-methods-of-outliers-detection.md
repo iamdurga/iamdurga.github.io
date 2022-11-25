@@ -1,10 +1,10 @@
 ---
-title:  "Naive Bayes From Scratch"
-date:   2022-11-18 09:29:17 +0545
-categories: Machine Learning
+title:  "Different method of Outliers Detection"
+date:   2022-11-24 09:29:17 +0545
+categories: Data Science
 tags:
-  - Naive Bayes
-  - Machine Learning
+  - Outliers
+  - Data Science
   - Classification
 header:
   teaser: "assets/outlier/outlier.png"
