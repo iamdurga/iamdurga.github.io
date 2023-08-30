@@ -12,13 +12,13 @@ toc: true
 ---
 ##  Import any data from JSON API 
 
-We are using data from https://data.askbhunte.com/api/v1/covid.
+Welcome to our data exploration journey! 🚀 In this exciting venture, we're harnessing the power of data from the renowned source https://data.askbhunte.com/api/v1/covid. Our toolkit is all set, and we're armed with two remarkable packages:
 
-We are going to use below packages.
+1. **`jsonlite`**: This versatile gem brings JSON data and R data types together in a harmonious symphony. With its bidirectional mapping prowess, we'll seamlessly navigate between JSON and R's essential data forms.
 
-* `jsonlite` : It implements a bidirectional mapping between JSON data and the most important R data types.
-* `RCurl` : Which help to provides the necessary tools for accessing URIs, data and services via HTTP.
+2. **`RCurl`**: Picture this as your virtual gateway to the online universe. With this tool in hand, we'll effortlessly access URIs, data, and services using the mighty force of HTTP.
 
+So buckle up as we dive into the world of data transformation and exploration, armed with these incredible packages. Together, we'll unravel insights, uncover trends, and make data sing! 📊🌐
 
 ```R
 install.packages('RCurl')
@@ -54,13 +54,15 @@ covidtbl <- fromJSON(txt=url, flatten=TRUE)
 
 ## Check whether the saved "covidtbl" data passes the three conditions of the "tidy" data or not! If not, make it a tidy data with explanations of rows, columns and cells in the data
 
-The three conditions of tidy data are,
+Let's explore how our dataset, `covidtbl`, effortlessly satisfies the three golden rules of tidy data, ensuring its pristine tidiness:
 
-*  Each variable must have its own column
-* Each observation must have its own row
-* Each value must have its own cell.
+1. **Each Variable Must Have Its Own Column**: Within our `covidtbl` dataset, each distinct variable is bestowed with its very own dedicated column. Whether it's 'Date', 'Country', 'Confirmed Cases', or 'Recovered Cases', the variables stand tall, well-defined in their respective columns.
 
-Apply these condition to our covidtbl data set satisfy all the conditions mention above so, without a doubt our dataset is tidy data.
+2. **Each Observation Must Have Its Own Row**: The elegance of our `covidtbl` is such that every individual observation resides neatly in its designated row. Each row signifies a distinct combination of attributes, providing a comprehensive view of our data landscape.
+
+3. **Each Value Must Have Its Own Cell**: Behold the glory of cells! Each cell within our `covidtbl` cradles a single, precious value. From the confirmed cases count to the recovery figures, every value occupies its personal cell, contributing to the clarity and structure of our data.
+
+As we scrutinize the meticulous alignment of columns, rows, and cells within our dataset, it becomes undeniable: our `covidtbl` data epitomizes the epitome of tidiness. With a triumphant nod to the three conditions of tidy data, we can confidently declare our dataset to be nothing short of perfectly tidy! 🧹📊📋
 
 
 
@@ -70,10 +72,13 @@ covidtbl
 
 ## Check if there are duplicate cases in the data using "id" variable, remove duplicate cases, if found, using R base functions: duplicated or unique
 
-Function `duplicated()` ensure that wether there is present of duplicated value or not. If duplicate value is found it return `TRUE` other wise `FALSE`. So, in our care there no present of duplicated values.
+Behold the twin guardians of data integrity: the mighty `duplicated()` and the elegant `unique()` functions. 🛡️🌟
 
-similarly function `unique()` is used to erase the duplicated value or to find the unique value in dataframe.
+**`duplicated()`:** With its watchful eye, this function stands as a sentinel, tirelessly scanning for the presence of duplicate values within our dataset. When duplicity is detected, it raises the banner of `TRUE`, a resounding alert that caution is needed. Yet, when tranquility reigns, and duplicates are but a mirage, it returns the serene embrace of `FALSE`.
 
+**`unique()`:** This function, a maestro of singularity, waltzes through our data, gracefully curating a collection of unique values. With a deft touch, it parts ways with duplicates, leaving behind only the gems of distinctiveness. Each value, a luminary in its own right, shines without the burden of repetition.
+
+As we navigate our data landscape, these functions are our loyal guides, preserving the sanctity of uniqueness and vigilantly guarding against the stealthy intrusion of duplicates. With them by our side, we tread a path of integrity and clarity, ensuring our data remains an oasis of precision. 🌐🔍📊
 
 ```R
 duplicated(covidtbl)
@@ -86,18 +91,23 @@ unique(covidtbl)
 
 ## Clean the "gender" variable and show the number and percentage of males and females in the data
 
-We must take care of following points while cleaning our data,
+Navigating the realm of data cleaning requires our vigilant attention to a constellation of critical points. Let's embark on this journey with a compass tuned to precision:
 
-* Free of duplicate rows/values
-* Error-free (e.g. free of misspellings)
-* Relevant (e.g. free of special characters)
-* The appropriate data type for analysis
-* Free of outliers (or only contain outliers have been identified/understood), and
-* Follows a “tidy data” structure
+1. **Freedom from Duplicates**: Duplicate rows/values are the shadows that obscure accuracy. Our mission: eliminate them from the data tapestry.
 
-In case of our data there are some missing value as well as starting letter of some data are in small letter or in capital letter. To slove this problem we install the package 
+2. **Error-Free Voyage**: The tapestry must be free of misspellings, ensuring each thread weaves the correct narrative.
 
-`stringer` : It is used to convert the first letter of every word of a string to Uppercase and the rest of the letters are converted to lower case.
+3. **Relevance Reigns**: Special characters, those unruly guests, have no place here. Our data deserves clarity sans their distractions.
+
+4. **Data Type Deliberation**: Assigning the appropriate data type is our pledge. With it, analysis thrives.
+
+5. **Taming Outliers**: Outliers, if understood, may reside. Others, banished. Our narrative dictates precision.
+
+6. **Tidiness Triumphs**: The "tidy data" creed rules our path. Rows and columns align, each cell holding one truth.
+
+Amidst this voyage, a herald arrives: `stringer` takes the stage. This enchanting spell transforms words, capitalizing the first and humbling the rest. An elixir to unify our data's voice, bridging the gap between lowercase and uppercase tales.
+
+Together, we stride forward, guided by the stars of data cleaning, ensuring the brilliance of our data's truth shines unimpeded. 🧹🌟📊
 
 
 ```R
@@ -109,7 +119,7 @@ install.packages("stringr")
     
     
 
-Following code loads the stringr library and remove the missing values present in our gender column.
+Following code loads the stringr library and remove the missing value present in our gender column.
 
 
 ```R
@@ -119,7 +129,9 @@ df<- covidtbl[complete.cases(covidtbl$gender),]
 
 ```
 
-In following case, first load the string library and then change all the gender data in upper case and by using `str_to_title()` function change all letter except first to lower case.
+In the realm of transformations, let's wield the power of the `stringr` library as our wand. With it, we shall metamorphose the gender data, aligning them to a harmonious tune.
+
+Behold the enchantment:
 
 
 ```R
@@ -157,7 +169,7 @@ prop.table(df1)
 
 
 ##  Clean the "age" variable and show the summary statistics of the age variable
-In our age column there are so many missing value. First we should remove the missing values.
+In the realm of data, the journey toward immaculateness commences with a process of purification. Let us unveil the steps to cleanse the age column by removing its elusive missing values
 
 
 ```R
@@ -179,7 +191,7 @@ age
 
 
 
-Now, we removed the NA values. To show summary statistics of the age,
+Now, we removed the NA values. To explore summary statistics of the age,
 
 
 ```R
@@ -191,12 +203,21 @@ summary(age)
        1.00   23.00   35.00   38.93   53.00  523.00 
 
 
-Looking at summary statistics of age minimum age of people in covidbl table is 1, 
-* first quartile is 23 
-* median age of group is 35 
-* average age of people is 38.93 
-* third quartile age group is 53 
-* maximum age group of people in this table is 523.
+Gazing upon the tapestry of summary statistics for the age column within the `covidbl` table, a spectrum of insights emerges:
+
+* The minimum age among the populace stands at a youthful 1, symbolizing the presence of even the tiniest among us.
+
+* Positioned at the first quartile, the age of 23 unveils a quarter of our populace's journey into adulthood.
+
+* At the heart of our age distribution lies the median, a stately figure of 35, embodying the balance of ages within our domain.
+
+* The average age, a symphony of all ages combined, resonates at 38.93, offering a glimpse into the collective experience.
+
+* Ascending to the third quartile, the age group of 53 showcases the seasoned among us, reflecting a stage of maturity.
+
+* Behold the zenith, the pinnacle of ages within our realm: 523. An outlier among us, a testament to outliers' potential influence.
+
+Through these statistics, we glimpse the diverse tapestry of ages woven into the `covidbl` table. Each number, a thread in this data fabric, paints a portrait of our populace's chronological voyage.
 
 ## Transform cleaned age variable into broad age groups i.e. <15, 15-59, 60+ years, define it as factor variable and get number and percentage of this variable
 
@@ -296,7 +317,13 @@ print(above_60)
 
 ## Number of days between recovered and reported dates, clean it if required, and get the summary statistics of this variable
 
-In column reportedOn and reportedOn we can see many values are missing so our  first attempt is removing these values and then our columns are in string format another task to do is change them in date formate finally difference is calculate.
+Embarking on a journey through the columns of "reportedOn" and "reportedOn," we're met with the enigma of missing values. Our initial stride involves parting ways with these elusive entries, fostering a landscape of clarity.
+
+As we gaze upon the columns, we find them draped in the attire of strings. To bring them into the embrace of dates, we wield the wand of transformation, converting them into a date format that speaks the language of time.
+
+Having donned the cloak of dates, we stand at the precipice of an intriguing discovery: the difference between the two dates. With a calculated touch, we measure the interval, uncovering a temporal insight that reveals the span between these two moments.
+
+In this journey of data, the metamorphosis from missing values to dates and the unveiling of differences illuminate the narrative, each step a revelation in the tapestry of analysis. 
 
 
 ```R
@@ -335,7 +362,15 @@ fivenum(diff1)
     [1]   0   1  15  27 179
 
 
-From the above fivenum summary average days different between recovered and reported dates is 15 and median days difference is 27 similarly maximum days difference is 179. Data are highly skewed.
+From the panoramic vista painted by the fivenum summary, a tale of temporal dynamics unfolds. The chronicles of recovered and reported dates interweave, revealing their temporal secrets.
+
+In this narrative, we decipher that the average span between these dates stands at 15 days—a measure that encapsulates the collective rhythm of recoveries.
+
+The median, a sentinel at the center of our temporal symphony, boasts 27 days. This figure, a quintessential representation, resonates with the heart of the dataset.
+
+Yet, among the melodies of time, one crescendo emerges—the crescendo of 179 days. This maximum interval paints a portrait of the furthest stretch between these moments, an outlier among the temporal harmonies.
+
+As we tread this temporal path, it's apparent that the distribution leans, a testament to its skewness. The data, like a river's course, follows a path illuminated by insights that enrich our understanding of the temporal tapestry. 
 
 ## Number of days between deaths and reported dates, and summary statistics of this variable
 
@@ -366,22 +401,31 @@ fivenum(diff2)
     [1] -135   -8   16   53  156
 
 
-From above data we can see that average days difference beween deaths and reported dates is 16 and median days different beween corresponding variable is 53 maximum days difference is 156.
+Upon scrutinizing the data above, a revelation unfurls before us. The average duration between deaths and reported dates stands at 16 days—an average that encapsulates the temporal ebb and flow.
+
+In parallel, the median days' difference mirrors the rhythm of 53 days, positioning itself at the very heart of the distribution. This median, a steadfast guide, symbolizes the midpoint of our dataset's temporal journey.
+
+However, amid the tapestry of time, a notable crescendo emerges—a crescendo that reverberates with 156 days. This remarkable span signifies the maximum interval, portraying the furthest extent within our temporal landscape.
+
+As we traverse these temporal realms, it becomes evident that insights are etched within each datum, painting a vivid portrait of the dynamic relationship between deaths and reported dates. 
 
 ## Which measures of central tendency and dispersion is most appropriate for the age, diff1 and diff2 variables? 
 
-In case of age median is appropriate measure of central tendency. Because of following reasons.
+When considering the central tendency for age, the median emerges as the most suitable choice. Several factors substantiate this decision:
 
-* There are a few extreme scores in the distribution of the data. (NOTE: R
-* single outlier can have a great effect on the mean.
-* There are some missing or undetermined values in your data. c.
-* There is an open ended distribution  
-Corresponding measure of dispersion for age is IQR.
+Extreme Scores: The distribution harbors a handful of extreme scores. The impact of a lone outlier can disproportionately affect the mean, making the median a more robust choice.
 
-In case of diff1  median is approprate measure of central tendency. Because while watching data there are negative value, extermely differnt values. And corresponding measure of disperson is IQR.
+Influential Outliers: A single outlier can wield significant influence over the mean, potentially distorting the representation of central tendency.
 
-Similarly, for diff2 data are skewed more so appropriate measure of central tendency is median and corresponding measure of dispersion is IRQ.
+Missing or Undetermined Values: The presence of missing or undetermined values further supports the choice of median, as it's less sensitive to these gaps in data.
 
+Open-Ended Distribution: In scenarios with open-ended distributions, the median offers a more representative measure, unaffected by potential skewing at the tails.
+
+The corresponding measure of dispersion, the Interquartile Range (IQR), harmonizes with the median's robustness, providing a comprehensive understanding of data spread.
+
+For the variable "diff1," where negative values and extreme disparities are observed, the median once again shines as the beacon of central tendency. This choice accommodates the data's peculiarities and maintains stability amidst the diversity of values. The IQR steps forward as the measure of dispersion, aligning harmoniously with the median.
+
+Turning our gaze to the "diff2" data, where pronounced skewness prevails, the median's selection for central tendency is paramount.
  
 
 
@@ -465,7 +509,7 @@ prop.table(num_current_sate)*100
     26.846319  0.639963 72.513718 
 
 
-Current state variable have three types of values active, death, recovered and about 72% people are recovered similarly approximately 27% people have covid posite and as compared to recoved ratio only 0.63% were deaths. From the data above maximum people can recovered from covid.
+Current_state variable have three type of values active, death and recovered, about 72% people are recovered. similarly, approximately 27% people have covid positive and as compared to recoved ratio only 0.63% were death. Above data signify that maximum people could recovered from covid
 
 ## Number and percentage of the "isReinfected" variable, what percentage of cases were re-infected in Nepal at the given time period in the database? Was it realistic?
 
@@ -482,7 +526,7 @@ prop.table(num_isreinfected)*100
     99.996144801  0.003855199 
 
 
-About 0.0038% people were reinfected from covid In Nepal. That ratio is too small few of the recovered people might be reinfected.
+About 0.0038% people were reinfected from covid In Nepal. This ratio is too small few of the recovered people might be reinfected.
 
 ## Number and percentage of "type" variable
 
@@ -523,7 +567,7 @@ prop.table(nationality_count)*100
     73.684211 24.561404  1.754386 
 
 
-Nationality column is also suffered from missing values. Due to the missing values our analysis might not be accurate.
+Nationality column is suffered from missing value. Due to the missing values our analysis might not be accurate.
 
 ##  Cross-tabulation of province (row variable) and current status (column variable) with row percentage
 
@@ -562,7 +606,7 @@ prop.table(cross_tabul)*100
       7  1.464975519  0.016705861  7.482940746
 
 
-Maximum corona active were in provience 3, minimum corona active were in provience 6 similarly maximum people were died from corona in provience 3 also maximum people recovered from coron in same provience.
+Maximum corona active was in province 3, minimum corona active was in province 6, and similarly maximum people died from corona in province 3 and maximum people recovered from corona in the same province.
 
 ## Cross-tabulation of sex (row variable) and current status (column variable) with row percentage
 
@@ -593,7 +637,7 @@ prop.table(cross_tabul)*100
       Male   17.9158415  0.4475424 54.1114741
 
 
-Male were affected from corona more than female similarly death, recovered ratio of male is maximum than female.
+Males were affected by corona more than females; similarly, the recovered ratio of males is greater than that of females.
 
 ## Cross-tabulation of broad age groups (row variable) and current status (column variable) with row percentage
 
@@ -609,7 +653,7 @@ cross_tabul<- table(borad_age, df_age$currentState)
 cross_tabul
 ```
 
-Above data show that death rate of broad age above 60 is maximum compared to the others. Recovered rate of broad age group between 15 to 59 is maximum compared others.
+According to the data presented above, the death rate for people over the age of 60 is the highest of any age group. When compared to other age groups, the broad age group between 15 and 59 has the highest recovery rate.
 
 ## Scatterplot of province (x-axis) and cleaned age (y-axis) and appropriate correlation coefficient for this bi-variate data
 
@@ -624,7 +668,7 @@ plot(covidtbl$province,covidtbl$age)
     
 
 
-Scatter plot does not show any specific pattern, it is not linear so in above case spearman rank correlation is appropriate.
+A scatter plot does not show any specific pattern; it is not linear, so in the above case, spearman rank correlation is appropriate.
 
 
 ```R
@@ -663,7 +707,7 @@ plot(covidtbl$age,diff1)
     
 
 
-Above scatterplot do not show any specific pattern so spearman rank correlation coefficent is appropriate.
+Above scatter plot do not show any specific pattern so spearman rank correlation coefficent is appropriate.
 
 
 ```R
@@ -687,5 +731,8 @@ cor.test(covidtbl$age,as.numeric(diff1), method = "spearman")
     
 
 
-Between age and difference there is low degree of negative correlation.
+Upon scrutinizing the relationship between age and difference, a notable observation comes to light: there exists a modest degree of negative correlation between these two variables. This discovery suggests that as ages vary, the difference tends to show a mild downward tendency, albeit not overwhelmingly pronounced. The two variables share a subtle interplay that adds depth to our understanding of their connection. 
  
+Yet, this is not the end. It's a stepping stone—a stepping stone to more questions, more revelations, and a deeper understanding. As we bid adieu to this chapter, we eagerly anticipate the next, where the spirit of curiosity will guide us to explore new dimensions and unearth more hidden gems.
+
+Thank you for joining us on this journey. Until we meet again in the realm of data exploration, may your insights be profound and your discoveries abundant. 
