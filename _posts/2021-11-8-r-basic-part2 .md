@@ -15,14 +15,16 @@ toc: true
 # Getting Started With Dataframe.
 
 ## Introduction
- Dataframe are the mostly used data structure in R. Dataframe is a list where all components have name and are on the same line. Easiest way of understanding about dataframe is the visualization of spreadsheets. The first row is represented by header. The header is given by the list component name. Each column can store the different datatype which is called a variable and each row is an observation across multiple variables, since dataframe are like spreadsheet we can insert the data how we will like to. There are many possibilities to inserting data.
+Dataframes are the most commonly used data structures in R. A dataframe is a list in which all components have names and are arranged in rows and columns. The easiest way to understand a dataframe is by visualizing it as a spreadsheet. The first row of a dataframe is typically represented as the header, and the header is defined by the names of the list components. Each column in a dataframe can store different data types, referred to as variables, and each row represents an observation across multiple variables.
+
+Since dataframes resemble spreadsheets, data can be inserted in various ways to suit specific needs. There are multiple possibilities for data insertion.
 
 | Product | apple | Banana|
 |----------|-------|-------|
 |price store A| 23 | 56|
 | price store B | 67| 80|
 
-It is not dataframe because here price store is divided into two parts. If we rearrange the data by taking product is one variable and price is next variable  and store is one variable then it become dataframe.
+This isn't a dataframe because the "price" data is divided into two parts. To transform this data into a dataframe, we would need to rearrange it by treating "product" as one variable, "price" as the next variable, and "store" as another variable. Once this rearrangement is done, it will become a dataframe.
 
 |Product | Price | Store|
 |--------|--------|-----|
@@ -121,7 +123,9 @@ Output of the above cde is,
  ```
 
 ##  Manipulating dataframe
-By manipulating data frame we khow how to select, add new row and how to sort and rank into dataframe. Dataframe are list where each elements are name vector of same length. Therefore we can select element as same as in list. we do by [[]] or $column. Dataframe are also two dimensional matricies which means we can index them as matrices by using square braces.[row,column].We fix data in one dimension they behave as list. Therefore dataframe can be index either as like list or as like matrices accoding to positions, rules, names.
+By manipulating a dataframe, we can learn how to select, add new rows, and perform sorting and ranking operations within the dataframe. Dataframes are essentially lists where each element is a named vector of the same length. Consequently, we can select elements from dataframes much like we do with lists, using double square brackets `[[]]` or the `$` notation followed by the column name.
+
+Furthermore, dataframes are also considered two-dimensional matrices. This means that we can index them as matrices using square brackets `[row, column]`. When we manipulate data in one dimension within dataframes, they behave like lists. Therefore, dataframes can be indexed either like lists or like matrices, depending on the positions, rules, and names involved.
 
 ### List subsetting
 ```R 
@@ -217,7 +221,7 @@ TRUE
 
 ##  Working with tidyverse
 
-During data analysis we spend our most time in data cleaning and transforming the raw data. Tydyverse is an add on that let us perform operation such as cleaning data and creating powerful graph.
+During data analysis, a significant portion of our time is dedicated to data cleaning and transforming raw data. The tidyverse is an add-on that enables us to perform operations such as data cleaning and create powerful graphs, making the data analysis process more efficient and effective.
 
 ```R
 product <- c('apple','banana','orange','papaya','Rice','wheat','pee','noodle')
@@ -270,7 +274,7 @@ A data.frame: 8 × 2
 ```
 ### Filter
 
-Filter function work similar to the select. Using the pipe operator %>% we can write multiple operations at once without renaming the intermedating results.
+The `filter` function works similarly to the `select` function. By using the pipe operator `%>%`, we can chain multiple operations together at once without the need to rename intermediate results. This allows for a more streamlined and efficient data manipulation process.
 
 ```R
 filter(product,budget > 100)
@@ -310,8 +314,7 @@ wheat	78
 
 ### Arrange function
 
-It sort our dataframe in acending order.
-`arrange(price)`, to arrange dataframe in decending order we used `arrange(desc(price))`
+To sort our dataframe in ascending order, we use the `arrange(price)` function. To arrange the dataframe in descending order, we use the `arrange(desc(price))` function.
 ```R
 arrange(product,price)
 ```
@@ -333,12 +336,12 @@ A data.frame: 8 × 2
 
 * If statement:
 
-If statement is the most common statement that execute code that only the condition place between bracket is true. Otherwise if statement ignore that particular piece of code.
+The "if" statement is the most common statement used to execute code only if the condition placed between the brackets is true. Otherwise, the "if" statement ignores that particular piece of code.
 ` if(condition){
 code to be executed}`
  to overcome this abstacle we add extra element else
  # Paste function
-Paste converts its arguments ( via as.character) to character strings and concatenates them (separating them by the string given by sep ). If the arguments are vectors, they are concatenated term-by-term to give a character vector result.
+The "paste" function converts its arguments (via `as.character`) to character strings and concatenates them, separating them by the string given by "sep." If the arguments are vectors, they are concatenated term-by-term to produce a character vector result.
 ```R
 product <- "tshirt"
 price<- 110
@@ -398,7 +401,7 @@ if(price < 100){
 }
 ```
 
-If the condition has the lenght grater than one then only the first input is tested. That means it check the first elements and then stop. This problem is resolved by using any function.
+If the condition has a length greater than one, then only the first input is tested. This means it checks the first element and then stops. This problem can be resolved by using the "any" function.
 
 #  Any Function
 
@@ -431,7 +434,7 @@ Output is,
 [1] "Not all prices satisfies the condition."
 ```
 
-To combine the condition we can use `&&` and `||` operator. single and and or are used to element wise vector. While double and or are used for vector compare on one(non vectorise form)
+To combine conditions, we can use the `&&` and `||` operators. Single `&` and `|` are used for element-wise vector operations, while double `&&` and `||` are used for non-vectorized forms of comparing vectors.
 
 ```R
 price <- 58
@@ -448,7 +451,7 @@ if(price> 50 && price < 100){
 
 # Switch Statement
 
-We can add as many as if else statements however keeping more than four is difficult to keep track what is happing when the condition is true. The switch command work with the cases, each syntax contain value to be tested followed by the possible cases.
+We can add as many `if` else statements as needed. However, keeping more than four can make it difficult to keep track of what is happening when the condition is true. The `switch` command works with cases, and each syntax contains a value to be tested followed by the possible cases.
 
 ```R
 quantity <- c(1,3,4,5)
@@ -486,9 +489,7 @@ Output is,
 # Loop
 Loop is the sequence of instructions that are repeated untill a certain condition is reached.
 * For loop
-It perform the same operations on all elements from input.
-Its syntax is `if(variable in sequence ){ Expression}`
-between parenthesis there are three argument first argument is variable which can take any name then we have keyword in and last is sequence or vector of any kind.
+It performs the same operation on all elements from the input. Its syntax is as follows: `if (variable in sequence) { Expression }`. Within the parentheses, there are three arguments: the first argument is a variable, which can have any name, followed by the keyword "in," and the last argument is a sequence or vector of any kind.
 
 For loop does not save output untill we print it.
 ```R
@@ -504,7 +505,7 @@ Output is,
 [1] "lemoan"
 ```
 # While loop
-While loop perform the operation as long as given conditions is true. Syntax is similary as for loop. To make loop stop there must be relation between condtion and expression other wise loop does not stop ever.
+A `while` loop performs operations as long as the given condition is true. Its syntax is similar to that of a `for` loop. To make the loop stop, there must be a relation between the condition and the expression; otherwise, the loop will never stop.
 ```R
 index <- 1
 while(index <3 ) {
@@ -519,9 +520,9 @@ Output is,
 [1] "The index value is 2"
 ```
 # Repeat Loop
-They repeat the same operation untill it hitting the stop key or by inserting special function to stop them. Repeat loop are important in algorithms optimization and maximization. As an syntax `repeat expression`
+Repeat loops repeat the same operation until they encounter a stop key or a special function that stops them. Repeat loops are important in algorithm optimization and maximization. Their syntax is as follows: `repeat { expression }`.
 
-The next statement is used to discontinue one particular cycle and skip to the next.
+The `next` statement is used to discontinue one particular cycle and skip to the next one.
 
 ```R
 x <- 1

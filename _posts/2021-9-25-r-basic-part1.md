@@ -15,15 +15,17 @@ toc: true
 # Getting Started With R .
 
 ## Introduction
- R is a programming language and software environment for statical computing and graphics supported by the R foundation. R is not like a general-purpose programming language like Java, C, because it was created by statisticians as an active environment. Interactivity is the critical characteristic that allows R to explore our data. It is also a programming language and development environment for statistical testing and graphical testing. Each statistical testing is either linear, non-linear modeling, classification or many more. Different types of the plot are required while doing data analysis. In order to run R, we will use IDE(according to Wikipedia an integrated development environment(IDE) is a software application that provides comprehensive facilities to the programmer for software development). The core component which is required for every R program is BaseR. These core components contain only the code importing bits that run our code successfully. 
+R is a programming language and software environment for statistical computing and graphics supported by the R Foundation. Unlike general-purpose programming languages like Java and C, R was created by statisticians as an interactive environment. Interactivity is a critical characteristic that allows R to explore data effectively. It serves as both a programming language and a development environment for statistical and graphical analysis, covering various statistical testing approaches, including linear and non-linear modeling, classification, and more. During data analysis, different types of plots are often required.
+
+To run R, we typically use an Integrated Development Environment (IDE), which is a software application that provides comprehensive facilities for software development, according to Wikipedia. The core component required for every R program is Base R, which contains the essential code segments necessary to successfully run our code.
 
 
 ## History About R 
-Bell labs develops s language in 1976. In 1993 Ross Lhaka and Robert Gentleman created R in New-Zealand. R became a free source in 1995. R version 1.0.0 is released in 2000 to the public. IDE Rstdio is release in 2011.
+Bell Labs developed the S language in 1976. In 1993, Ross Ihaka and Robert Gentleman created R in New Zealand. R became open source in 1995. R version 1.0.0 was released to the public in 2000. The RStudio IDE was released in 2011.
 
 ## Drawback
-* R is build by using `S`. If we want to build apps R probabily one be our choice.
-* The object that we work must be strored in memory and working with fetch data set can queckly
+- R is built using `S`. If we want to build apps, R is probably one of our choices.
+- The objects that we work with must be stored in memory, and working with large datasets can quickly become a challenge.
 
 ## Installing and Setting up R in your Windows
 ### Step 1: Downloading installation file 
@@ -44,7 +46,7 @@ I prefer to use Jupyter Notebook for runing R because it is more friendly for me
 I am assigning variable in R as my first R programs.
 
 ### Assigning Variable and operator in R
- A Variable is a container that stores values. An assignment statement set or reset the value store in the storage location(s) denoted by variable name(by Wikipedia). The assignment operator is a command that is it telling the computer to assign the text apple to the variable product. we can also assign by `assign('products', ' apple)`. We can assign the variable in R in many ways like below.
+ A variable is a container that stores values. An assignment statement sets or resets the value stored in the storage location(s) denoted by the variable name (according to Wikipedia). The assignment operator is a command that tells the computer to assign the text "apple" to the variable "product." We can also assign it using `assign('product', 'apple')`. In R, we can assign variables in many ways, as shown below.
 
 #### Way 1
 ```R
@@ -175,13 +177,13 @@ Output is,
 ```
 
 ## Comments
-Comments are used to give important information about the code. Comments are not run by the program but a programmer writes it for better explanation of the code.
+Comments are used to provide important information about the code. They are not executed by the program but are written by the programmer to enhance the explanation of the code.
 ```R
 # This is a comment in R
 ```
 
 ## Exploring vectors and factors
-Data structure as name suggest represent way to organize data to facilate different operations to perform faster calculations.
+A data structure, as the name suggests, represents a way to organize data to facilitate different operations and perform faster calculations.
 
 * `Vectors`:
 Collection of data of same structure.
@@ -190,9 +192,11 @@ Which are used to store categorical data.
 * `Array`:
 Is a matrix which are generalization of vectors.
 * `List\DataFrame`:
-Elements of different list are dataframe. List are more complex data structure because they allow us to store other list too. We can think data frame as spreadsheets where  data are organize as columns and rows where each column has specific data type. Within a data frame we have all kinds of datatype but within one column we have only one data type. Other criteria to categorize our data is by dimensional. 
+Elements of different lists are data frames. Lists are more complex data structures because they allow us to store other lists as well. We can think of a data frame as a spreadsheet where data is organized into columns and rows, with each column having a specific data type. Within a data frame, we can have various data types, but within one column, we have only one data type. Another criterion for categorizing our data is by dimension:
 
-Vector and list are one dimensional objects. Matrices and dataframe are two dimensional data structure. Array are the object that have more than two dimensions.
+- Vectors and lists are one-dimensional objects.
+- Matrices and data frames are two-dimensional data structures.
+- Arrays are objects that have more than two dimensions.
 
 > Vector have two properties they are one dimensional and containing element of same type.
 
@@ -295,7 +299,7 @@ Output is,
 
 
 ## Sequence generation
-It is used to create sequence of elements in a vector. `seq()` function takes length and difference between values as optional argument. In a code below, I take elements in the range 1 to 5 in the interval of 1.5.
+It is used to create a sequence of elements in a vector. The `seq()` function takes length and the difference between values as optional arguments. In the code below, I took elements in the range from 1 to 5 with an interval of 1.5.
 
 Example:
 ```R
@@ -307,7 +311,7 @@ Output is,
 ```
 
 ## Replicating elements
-It is used to return the replicating element in the list in a specified times. In the following code I replicate the numbers from 1 to 6 two times. A builtin function `rep()` is used.
+It is used to return the replicated elements in the list a specified number of times. In the following code, I replicated the numbers from 1 to 6 two times using the built-in function `rep()`.
 
 Example:
 ```R
@@ -329,7 +333,7 @@ Out put is,
 ```
 
 ## Scan Function
-Scan function read any file into vector. It is very powerful function. In the code given below, it scan function read `covid_data.csv`.
+The `scan()` function reads a file into a vector and is a powerful function. In the code given below, the `scan()` function reads the file `covid_data.csv`.
 
 ```R
 f <- scan("covid data.csv", what = "Character")
@@ -393,4 +397,4 @@ saq8 <- read_sav("F:/Statisticts with R/CSV file for covid data/SAQ8.sav")
 
 In above example, I first installed package named as `haven` and then I used it to read `sav` file.
 
-This all for this blog and I hope you enjoyed it. Please leave the feedbacks and stay tuned for my next blog.
+This is all for this blog, and I hope you enjoyed it. Your feedback is highly appreciated, and I would love to hear your thoughts. Please leave your comments and suggestions below. Stay tuned for my next blog, where we'll explore more exciting topics and insights.
