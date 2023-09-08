@@ -672,10 +672,10 @@ print(f"Test F1: {f1_score(test_y, model.predict(test_x))}")
     
 
 ## Conclusion
-* What did we observed while using MSE's Gradient?
+* What did we observed while using MSE Gradient?
     * Error was decreasing slowly and its decrease rate was not decreasing.
-    * Accuracy was as like log loss's.
-* What did we observed while using LogLoss's Gradient?
+    * Accuracy was as like log loss.
+* What did we observed while using LogLoss Gradient?
     * Error was decreasing fast but its decrease rate was decreasing.
 * What did we observed while using  Library?
     * Accuracy, F1 Score, Recall and Precision were better.
