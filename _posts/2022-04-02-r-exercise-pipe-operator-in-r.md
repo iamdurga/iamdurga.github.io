@@ -191,7 +191,7 @@ iris %>%
     
 (only first 20 rows are shown.)
 
-By using above code we can select only those columns which has
+By using above we can select only those columns which has
 **Sepal** as prefix and want to filter those values which have values
 greater than `Sepal.Length >= 5.0` and finally we did arrange in
 ascending order. If we need to sort in descending order we simply need to type
