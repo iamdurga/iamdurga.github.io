@@ -79,7 +79,7 @@ head(outliers[, c("SN","Date", "Deaths_daily")])
     ## 5   474 2021-05-10 00:00:00          139
     ## 6   475 2021-05-11 00:00:00          225
 
-It shows that there are three records during February and March which has unusual no. of deaths. This data is correct as it was the correction over past counts. But this can’t be considered as a death of single date. Thus, we need to distribute the death accordingly.
+It shows there are three records during February and March which has unusual no. of deaths. This data is correct as it was the correction over past counts. But this can’t be considered as a death of single date. Thus, we need to distribute the death accordingly.
 
 We use daily % over total till that date to distribute the rate proportionally.
 
