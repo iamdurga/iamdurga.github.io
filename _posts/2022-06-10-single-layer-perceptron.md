@@ -13,50 +13,44 @@ toc: true
 ---
 # Artificial Neuron Network
 
-The term "neural network" refers to an artificial neural network (ANN) (NN). It is a computational paradigm that is inspired by the way the human brain or nervous system performs computation. Perception, pattern recognition, motor control, and other computations are all performed by the brain, which is a highly complex, non-linear, and parallel computation machine. The basic structural unit of the brain is the neuron or nerve cell. Basic structure of neuron network look like below. Where it contains some number of input layer, some hidden layer and output layer. Output produce depend upon which activation we are using.
+The term "neural network" refers to an artificial neural network (ANN) (NN), which is a computational paradigm inspired by the way the human brain or nervous system performs computation. Perception, pattern recognition, motor control, and other computations are all performed by the brain, which is a highly complex, non-linear, and parallel computational machine. The basic structural unit of the brain is the neuron or nerve cell. The basic structure of a neural network looks like the following, containing a number of input layers, hidden layers, and an output layer. The output produced depends on the activation function used.
 
 
-Humans can complete the work far faster than today's fastest digital machines. This is made possible by the parallel computation of neurons that are linked together.
+Humans can complete work far faster than today's fastest digital machines, and this is made possible by the parallel computation of neurons that are linked together.
 
 # Biological Neuron Network
-The figure below show the basic structure of biological neuron network. A human neuron consists of a cell body for signal processing, many dendrites to receive signals, an axon for outputting the result and synapses between the axon and dendrites of other cells.
+The figure below shows the basic structure of a biological neuron network. A human neuron consists of a cell body for signal processing, many dendrites to receive signals, an axon for outputting the result, and synapses between the axon and dendrites of other cells.
 
 
 
 
 ## Modes of Neuron
 
-Basically modes of neuron can be divided into two parts,
+Basically, models of neurons can be divided into two parts:
 
-* Deterministic model of Neuron
-
-* Stochastic model of Neuron
+1. Deterministic model of Neuron
+2. Stochastic model of Neuron
 
 **Deterministic Model of Neuron** 
 
 Three basic elements of this neural model are:
-Synapses or connecting links, Adder, and Activation Function.
 
+1. **Synapses** or connecting links: These are the connecting links used to link the inputs of the neuron network. Each link is characterized by a weight that defines the strength of the link.
 
-`Synapses` are also the connecting link that are used to link the input of neuron network. Each link is characterized by weight that defines strength of the link.
+2. **Adder**: The adder is responsible for finding the weighted sum of inputs to the neuron.
 
-`adder` : is responsible for finding weight sum of inputs to the neuron.
-
-`activation`: function is responsible for finding the output of the neuron. It is also referred as squashing function.
-
+3. **Activation Function**: The activation function is responsible for determining the output of the neuron. It is also referred to as the squashing function.
 
 **Stochastic model of Neuron** 
 
-For all inputs, the deterministic neural model precisely describes input–output behavior. However,
-the stochastic neuron model causes non-deterministic input-output behavior. The activation function utilized in deterministic neural models is given a probabilistic interpretation in stochastic neural models.
+For all inputs, the deterministic neural model precisely describes input–output behavior. However, the stochastic neuron model causes non-deterministic input-output behavior. The activation function utilized in deterministic neural models is given a probabilistic interpretation in stochastic neural models.
 
-A neuron is only allowed to be in one of two states: +1 (ON) or -1 (OFF) (OFF). A neuron's decision to fire is probabilistic. Let x denote the neuron's state and P(v) denote the probability of firing, where v is the neuron's activation potential.
-
+In the stochastic neural model, a neuron is only allowed to be in one of two states: +1 (ON) or -1 (OFF). A neuron's decision to fire is probabilistic. Let x denote the neuron's state, and P(v) denote the probability of firing, where v is the neuron's activation potential.
 
 
 $$ P(v) = \frac{1}{1 + e ^\frac{-v}{T}} $$ 
 
-This makes the input-output behavior stochastic by adding uncertainty to neuron firing. Everything else in the stochastic neuron model is the same as it is in the deterministic model.
+This makes the input-output behavior stochastic by adding uncertainty to neuron firing. Everything else in the stochastic neuron model remains the same as it is in the deterministic model.
 
 ## Modes of activation function
 
@@ -64,41 +58,38 @@ This makes the input-output behavior stochastic by adding uncertainty to neuron 
 
 ## Activation Function
 
-Activation function which is also called hard limiter function which is responsible to convert input of ANN into output. The activation function is a nonlinear transformation of the input signal. The output is then processed and provided as input to the next layer of neurons.
+The activation function, also known as the hard limiter function, is responsible for converting the input of an ANN into an output. The activation function performs a nonlinear transformation of the input signal. The output is then processed and serves as input to the next layer of neurons.
 
-
-There are different types of activation function  some of them are listed as below,
+There are different types of activation functions, and some of them are listed below:
 
 * Threshold
 
 * Linear
 
-* sigmoid 
+* Sigmoid
 
 * Tanh
 
 
-
 ## Structures of Neural Network
 
-The structure of neurons in a neural network is referred to as neural network architecture. In general, there are three types of neural network topologies or structures.
+The structure of neurons in a neural network is referred to as neural network architecture. In general, there are three types of neural network topologies or structures:
 
-* Single Layer Feed forward Neuron Network
+1. **Single Layer Feedforward Neural Network**
 
-* Multilayer Feed forward Neuron Network
+2. **Multilayer Feedforward Neural Network**
 
-* Recurrent Neural Network 
+3. **Recurrent Neural Network**
 
-In this blog I am going to describe about how single layer neural network work and how we can do it from scratch.
-
+In this blog, I am going to describe how a single-layer neural network works and how to implement it from scratch.
 
 ## Single Layer Feed Forward Neuron Network
 
-It's the most basic type of network architecture. We have an input layer of source nodes that is directly connected to an output layer of neurons (computation nodes) in this architecture, but not the other way around.
+It's the most basic type of network architecture. In this architecture, we have an input layer of source nodes that is directly connected to an output layer of neurons (computation nodes), but not the other way around.
 
 ## Learning In Neuron Network
 
-The ability of artificial neural networks to learn is one of its most striking capabilities. Artificial neural networks (ANNs) learn by altering the network's weighted connections between neurons. Following are the learning rules for neural network,
+The ability of artificial neural networks to learn is one of their most striking capabilities. Artificial neural networks (ANNs) learn by altering the network's weighted connections between neurons. The following are the learning rules for neural networks:
 
 * Hebbian Learning Rule
 
@@ -108,9 +99,7 @@ The ability of artificial neural networks to learn is one of its most striking c
 
 ## Hebbian Learning Rule
 
-The rule is based on the idea that if two neighboring neurons activate and deactivate at the same time, they will activate and deactivate at the same time. The weight of the connections between these neurons should then rise.
-
-The weight difference between neurons acting in opposite phases should decrease. The weight should not change if there is no signal connection. This assumption can be described by using following formula.
+The rule is based on the idea that if two neighboring neurons activate and deactivate at the same time, their connection weights should increase. Conversely, the weight difference between neurons operating in opposite phases should decrease. If there is no signal connection, the weight should remain unchanged. This assumption can be described using the following formula.
 
 $$ \delta(w_{ij}) = \alpha * x_i * y_i$$
 
@@ -140,7 +129,7 @@ Import module numpy which is used for mathematical calculations.
 import numpy as np
 ```
 
-At first initialize bias and learning rate zero. Define the function `hebb_train()` which train the hebbian learning algorithm.Now run the for loop from 0 to size of observations `dw` and `db` gives updating factor of weight and bias. 
+Initially, initialize the bias and learning rate to zero. Define the function `hebb_train()` to train the Hebbian learning algorithm. Now, run a for loop from 0 to the size of observations, where `dw` and `db` represent the updating factors for weight and bias, respectively.
 
 
 ```python
@@ -160,7 +149,7 @@ def hebb_train(x,y,w):
     return w
 ```
 
-In below block of code shell we define the function `hebb_predict()` which helps to make prediction for hebbian learning model. `z` gives product of input vectors and weight we then put sum of these product into hard limiter activation function and then return output as y.
+The following block of code is for the activation function. In this example, we are using the threshold function as the activation function. If the values are greater than a certain threshold value, we assign class 1; otherwise, we set it to class 0.
 
 
 ```python
@@ -271,11 +260,11 @@ for x in testx:
 
 ## Single Layer FeedForward Using perceptron
 
-The perceptron is the most basic type of neural network for identifying patterns that are linearly separable. Linearly separable patterns are those that can be divided by a hyperplane. Basically, perceptron consists of a single neuron with adjustable synaptic weights and bias.
+The perceptron is the most basic type of neural network for identifying patterns that are linearly separable. Linearly separable patterns are those that can be divided by a hyperplane. Essentially, a perceptron consists of a single neuron with adjustable synaptic weights and bias.
 
-The pattern classification capability of a perceptron based on a single neuron is limited to only two classes. We can do classification with more than two classes by increasing the output layer of the perceptron to include more than one neuron. For the perceptron to perform properly, the classes must be linearly separable.
-
+The pattern classification capability of a perceptron, based on a single neuron, is limited to only two classes. Classification with more than two classes can be achieved by increasing the output layer of the perceptron to include more than one neuron. For the perceptron to perform properly, the classes must be linearly separable.
 The hard limiter input of perceptron is,
+
 $$ v = \sum(w_ix_i + b)$$
 
 
