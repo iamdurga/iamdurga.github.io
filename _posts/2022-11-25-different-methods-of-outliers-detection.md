@@ -6,6 +6,7 @@ tags:
   - Outliers
   - Data Science
   - Classification
+  - Data Analysis
 header:
   teaser: "assets/outlier/outlier.png"
   overlay_image: "assets/outlier/outlier.png"
