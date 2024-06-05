@@ -15,9 +15,9 @@ toc: true
 # Getting Started With R .
 
 ## Introduction
-R is a programming language and software environment for statistical computing and graphics supported by the R Foundation. Unlike general-purpose programming languages like Java and C, R was created by statisticians as an interactive environment. Interactivity is a critical characteristic that allows R to explore data effectively. It serves as both a programming language and a development environment for statistical and graphical analysis, covering various statistical testing approaches, including linear and non-linear modeling, classification, and more. During data analysis, different types of plots are often required.
+R is a programming language and software environment for statistical computing and graphics supported by the R Foundation. Unlike general-purpose programming languages like Java and C, R was created by statisticians as an interactive environment. Interactivity is a critical characteristic that allows R to effectively explore data. It serves as both a programming language and a development environment for statistical and graphical analysis, covering various statistical testing approaches, including linear and non-linear modeling, classification, and more. Different types of plots are often required during data analysis.
 
-To run R, we typically use an Integrated Development Environment (IDE), which is a software application that provides comprehensive facilities for software development, according to Wikipedia. The core component required for every R program is Base R, which contains the essential code segments necessary to successfully run our code.
+To run R, we typically use an Integrated Development Environment (IDE), which is a software application that provides comprehensive facilities for software development, according to Wikipedia. The core component required for every R program is Base R, which contains the essential code segments necessary to successfully execute our code.
 
 
 ## History About R 
@@ -32,9 +32,9 @@ Bell Labs developed the S language in 1976. In 1993, Ross Ihaka and Robert Gentl
 * Download R tools from [Official Website](https://cran.r-project.org/bin/windows/Rtools/)
 * Next, we need to have an IDE, most popular one is Rstudio. We can download it from [this link](https://www.rstudio.com/products/rstudio/download/).
 
-After downloading installation file, install them on desired places and then open the console.
+After downloading the installation file, install it in the desired location, and then open the console.
 
-After installation completed open R then we get window just like below
+After installation is completed, open R, and then we will get a window just like the one below.
 
 ![img]({{site.url}}/assets/Math_blog/windows 3.PNG)
 
@@ -122,21 +122,27 @@ FALSE
 ```
 
 ## Some Commonly Used Data Types in R
-Data is centre for analysis if there is no data there is no analysis. Every piece of data are working with some characteristics thses characteristics can be summarize with data type.
-* `Character` :
-Anything inside quotation is a character.
-* `Number`: 
-Number in R is double. Working with whole and fraction is a unique feature of double. Another is integer. 
-* `Integer` 
-Integer is actually simplified version of double. It store data as a string we must use capital letter L. In our use we need to use double rather than integer.
-* `Logical(Boolean)`:
-`Yes` or `No`. Also `T` or `F`.
-* `Complex Number`:
-$$ 2 + 6i $$
-* `Raw`:
-It is not so popular data type. It is not easy to create variable of raw type. If we really need to create raw function as a result of calling this function we get raw type data.
+Data is the center for analysis; if there is no data, there is no analysis. Every piece of data works with certain characteristics. These characteristics can be summarized with data types.
 
-All the fundamental data types are called atomic data type.
+- `Character`:
+Anything inside quotation marks is a character.
+
+- `Number`:
+Numbers in R are double. Working with both whole and fractional numbers is a unique feature of double. Another type is integer.
+
+- `Integer`:
+An integer is actually a simplified version of double. It stores data as a string; we must use the capital letter L. In our use, we need to use double rather than integer.
+
+- `Logical (Boolean)`:
+Represents "Yes" or "No," also represented as "T" or "F."
+
+- `Complex Number`:
+Example: \(2 + 6i\).
+
+- `Raw`:
+This is not a very popular data type. It is not easy to create a variable of raw type. If we really need to create a raw function, as a result of calling this function, we get raw type data.
+
+All the fundamental data types are called atomic data types.
 
 ### Example of numbers
 An integer:
@@ -178,29 +184,35 @@ Output is,
 
 ## Comments
 Comments are used to provide important information about the code. They are not executed by the program but are written by the programmer to enhance the explanation of the code.
+
 ```R
 # This is a comment in R
 ```
 
 ## Exploring vectors and factors
-A data structure, as the name suggests, represents a way to organize data to facilitate different operations and perform faster calculations.
 
-* `Vectors`:
-Collection of data of same structure.
-* `Factors`:
-Which are used to store categorical data.
-* `Array`:
-Is a matrix which are generalization of vectors.
-* `List\DataFrame`:
-Elements of different lists are data frames. Lists are more complex data structures because they allow us to store other lists as well. We can think of a data frame as a spreadsheet where data is organized into columns and rows, with each column having a specific data type. Within a data frame, we can have various data types, but within one column, we have only one data type. Another criterion for categorizing our data is by dimension:
+A data structure, as the name suggests, represents a way to organize data to facilitate different operations and perform calculations more quickly.
 
-- Vectors and lists are one-dimensional objects.
-- Matrices and data frames are two-dimensional data structures.
-- Arrays are objects that have more than two dimensions.
+- `Vectors`:
+  Collection of data of the same structure.
 
-> Vector have two properties they are one dimensional and containing element of same type.
+- `Factors`:
+  Used to store categorical data.
+
+- `Array`:
+  A matrix that is a generalization of vectors.
+
+- `List\DataFrame`:
+  Elements of different lists are data frames. Lists are more complex data structures because they allow us to store other lists as well. We can think of a data frame as a spreadsheet where data is organized into columns and rows, with each column having a specific data type. Within a data frame, we can have various data types, but within one column, we have only one data type. Another criterion for categorizing our data is by dimension:
+
+  - Vectors and lists are one-dimensional objects.
+  - Matrices and data frames are two-dimensional data structures.
+  - Arrays are objects that have more than two dimensions.
+
+> Vectors have two properties: they are one-dimensional and contain elements of the same type.
 
 ### Assigning a column vector
+
 Lets assign a column vector,
 ```R
 assign('b',c(1,2,3,4))

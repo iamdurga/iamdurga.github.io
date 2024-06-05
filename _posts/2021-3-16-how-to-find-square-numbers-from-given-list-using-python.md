@@ -12,16 +12,16 @@ header:
 # How to findout Square Number.
 
 ## Introduction
-As we all knew about square number. In mathematics square number or perfect square number is a number which is product of number with itself. For example 4 * 4 = 16, 2 * 2 = 4, 6 * 6 = 36.  
+As we all know about square numbers, in mathematics, a square number or perfect square number is a number that is the product of a number with itself. For example, 4 * 4 = 16, 2 * 2 = 4, and 6 * 6 = 36.
 
 My goal here is to try to write basic Python code to solve the grade 4 problem. 
 
 
 ## How to do it ? 
-My basic concept is here I gave numbers in the specified numbers of range and initialize empty list to store the result. And applied appropirate condition. 
+My basic concept here is to provide numbers in the specified range and initialize an empty list to store the results. I then applied the appropriate condition.
 
 ## In Python
-My basic concept is here I gave numbers in the range 1 to 101 to find the square numbers between 1 to 100. We already had known that in a range lower point is inclusive and the upper point is exclusive. so, here I took range 1 to 101. I made an empty list to store the square numbers. And I applied for a loop. And I define root which is given iteration variable's power one upon two. I round the int_root. Usage​​ of round() function is which returns a floating-point number that is a rounded version of the specified number, with the specified number of decimals. And I applied the condition if int_root's power 2 is equal to n then that an iteration variable is a perfect number and it goes to the `root_numbers` list. A similar process is applied for all of the iteration variables until the last iteration variable is 100. 
+My basic concept here is to generate numbers in the range from 1 to 101 to find the square numbers between 1 and 100. As we know, in a range, the lower point is inclusive and the upper point is exclusive, so I used the range from 1 to 101. I created an empty list to store the square numbers and applied a for loop. I defined a variable `root` as the square root of the iteration variable. Then, I rounded `root` using the `round()` function, which returns a floating-point number rounded to the specified number of decimals. Next, I applied the condition that if the square of the rounded `root` is equal to the iteration variable `n`, then that iteration variable is a perfect square number, and it is added to the `root_numbers` list. This process is applied for all iteration variables until the last iteration variable, which is 100.
 
 ```python
 numbers = list(range(1,101))
