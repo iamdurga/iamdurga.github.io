@@ -12,7 +12,7 @@ header:
 # How to findout prime or composite.
 
 ## Introduction
-As we all familiar about prime and composite number from earlier days. Simply prime number is that number which has factor as 1 and itself. Similarly composite number is a number which has more than two factors. However 1 is neither prime number nor composite number. 13 is prime number because possible factors of 13 are only 1 and 13, but 12 is prime number due to factors of 12 are 1,2,3,4,6,12.  
+As we are all familiar with prime and composite numbers from earlier days, a prime number is simply a number that has factors of 1 and itself. Similarly, a composite number is a number that has more than two factors. However, 1 is neither a prime number nor a composite number. 13 is a prime number because the only possible factors of 13 are 1 and 13, but 12 is a composite number because its factors are 1, 2, 3, 4, 6, and 12.  
 
 My goal here is to tried to write basic python code to solve grade 4 problem . 
 
@@ -21,7 +21,7 @@ My goal here is to tried to write basic python code to solve grade 4 problem .
 My basic concept is I make a function name as prime or composite which take a testing number, if we call function then we can get desire result. 
 
 ## In Python
-Here I tried to write a function that has the name `prime_or_composite` which can take n as a testing number. Initialize factors as zero. We apply for loop from range 1 to number divided by 2 + 1 times. We checked if a given number is divisible by the iteration variable. If the iteration variable divides the number and is greater than 2 then it prints that number as composite otherwise prints number as prime. 
+Here I tried to write a function named `prime_or_composite`, which takes \( n \) as the testing number. Initialize factors as zero. We apply a for loop from the range 1 to \( \frac{number}{2} + 1 \). We check if the given number is divisible by the iteration variable. If the iteration variable divides the number and the count of factors is greater than 2, then it prints that the number is composite; otherwise, it prints that the number is prime.
 
 ```python
 def prime_or_composite(n):

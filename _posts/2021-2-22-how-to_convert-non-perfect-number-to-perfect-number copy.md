@@ -12,20 +12,21 @@ header:
 # Conversion From Non Perfect Number Into Perfect Number.
 
 ## Introduction
-As we have studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product with the same number or product of two equal numbers. For example, 25 is a perfect number because it is the product of two 5. Perfect numbers are always positive. We have many formulae for the perfect number we are using these formulae since school. 
+As we studied in our early school days, a perfect number is a number that is a square of another number. Also, we can define a perfect number as a product of the same number or the product of two equal numbers. For example, 25 is a perfect number because it is the product of two 5s. Perfect numbers are always positive. We have many formulas for perfect numbers, and we have been using these formulas since school.
 
-My goal here is to tried to write basic python code to the non perfect numbers how can we change it to the perfect number. 
+My goal here is to try to write basic Python code to convert non-perfect numbers into perfect numbers. 
 
 
 ## How to do it ? 
-As our basic concept is applying while loop and find out nearest perfect number from our number and how much we need to add or substract to change perfect number. 
+As our basic concept is to apply a while loop to find the nearest perfect number from our number and determine how much we need to add or subtract to reach the perfect number.
 
 ## In Python 
 
+Creation of a Python program to convert a non-perfect number into a perfect number:
 
+To do this, take a number as input and apply the general formula used to check whether it is a perfect square, as learned in school. If our given number is already perfect, we do not need to proceed further. If our given number is not perfect, we initialize `before` as 0, `after` as 1, and `curr_num` as 1. 
 
-Creation of python program to convert a non-perfect number into the perfect number.
-For this take a number as an input and apply the general formula which we used to check whether it is a perfect square or not at the school level. If our given number is already perfect we do not need to go further process. If our given number is not perfect we initialize `before` as 0 `after` as 1 and `curr_num` as 1. Now we start while loop and again used the formula which is used to check perfect square or not in the integer type. If croot's square equal to the current number we do not need to go for the internal loop. If that not we compare our given number with `curr-num` if our number is less than `curr_num` we change before equal `curr_num` if the number is greater than `curr_num` we change `after` which is equal to current. In each iteration our `curr_num` increases by 1, the rest of the code is given below.
+Now we start a while loop and use the formula again to check if the current number is a perfect square in integer form. If the square of the cube root equals the current number, we do not need to go further in the loop. If not, we compare our given number with `curr_num`. If our number is less than `curr_num`, we set `before` equal to `curr_num`. If the number is greater than `curr_num`, we set `after` equal to the current number. In each iteration, our `curr_num` increases by 1. The rest of the code is given below.
 
 ```python
 n = int(input('Enter an integer'))

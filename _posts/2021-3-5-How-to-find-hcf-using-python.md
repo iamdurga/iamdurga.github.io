@@ -12,7 +12,7 @@ header:
 # How to findout HCF.
 
 ## Introduction
-As we all knew HCF. It stands for Highest Common Factor. Definition of HCF is the highest common factor which divides both of two or more numbers is called the highest common factor. It is one method of solving the problem in the earlier school class. For example, the HCF of 12 and 6 is 6. Similarly, HCF of 4, 8, 10 is 2 because 2 is the highest of factors of 4, 8, 10.  
+As we all know, HCF stands for Highest Common Factor. The definition of HCF is the highest common factor that divides two or more numbers. It is one method of solving problems in early school classes. For example, the HCF of 12 and 6 is 6. Similarly, the HCF of 4, 8, and 10 is 2 because 2 is the highest factor common to 4, 8, and 10.
 
 My goal here is to try to write basic Python code to solve the grade 5 problem. 
 
@@ -21,7 +21,7 @@ My goal here is to try to write basic Python code to solve the grade 5 problem.
 My basic concept is I make a function name as HCF  which take two testing number, if we call function then we can get desire result. 
 
 ## In Python
-Here I tried to write a function that has the name `HCF` which can take n1 and n2 as a testing number. Initialize variable m1 as the minimum of two numbers and m2 as the maximum of two numbers n1 and n2 and CF store the common factor as a list. We apply for a loop from range 1 to a minimum of number + 1 because the range includes starting number but excludes the end number. Here I took range up to minimum among them because the greatest common factor would be an only minimum number. We checked if our iteration variable lies in the range that divides both maximum number and minimum. Among these iteration variables, the greatest iteration variable which divided both m1 and m2 is HCF. And return the desired output. 
+Here, I tried to write a function named `HCF` that takes \( n1 \) and \( n2 \) as input numbers. Initialize the variable \( m1 \) as the minimum of the two numbers and \( m2 \) as the maximum of the two numbers \( n1 \) and \( n2 \). The variable \( CF \) stores the common factors as a list. We apply a for loop from the range 1 to the minimum number + 1 because the range includes the starting number but excludes the end number. I took the range up to the minimum number because the greatest common factor would only be the minimum number. We check if our iteration variable in the range divides both the maximum number and the minimum number. Among these iteration variables, the greatest iteration variable that divides both \( m1 \) and \( m2 \) is the HCF. The function then returns the desired output.
 
 ```python
 def HCF(n1,n2):
