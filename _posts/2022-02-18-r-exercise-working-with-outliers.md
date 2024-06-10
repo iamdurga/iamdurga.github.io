@@ -49,8 +49,7 @@ plot(data$Date, data$Deaths_total, main = "Total Deaths", xlab = "Date", ylab = 
 
 ![png]({{site.url}}/assets/r_exercises/outliers_and_modeling/unnamed-chunk-2-1.png)
 
-The graph shows there’s a break in between so the trend is discontinued for some days. So we plot daily deaths next to see what date has the
-breakage.
+The graph shows there’s a break in between, so the trend is discontinued for some days. We plot daily deaths next to see on what date the breakage occurs.
 
 ``` r
 #plotting daily deaths by time 
@@ -59,8 +58,7 @@ plot(data$Date, data$Deaths_daily, main = "Daily deaths", xlab = "Date", ylab = 
 
 ![pngpng]({{site.url}}/assets/r_exercises/outliers_and_modeling/unnamed-chunk-3-1.png)
 
-We observed three outliers in the above plot. Next, we need to identify the date
-on which the outlier is present.
+We observed three outliers in the above plot. Next, we need to identify the date on which each outlier is present.
 
 ``` r
 # Identify outliers
@@ -79,9 +77,9 @@ head(outliers[, c("SN","Date", "Deaths_daily")])
     ## 5   474 2021-05-10 00:00:00          139
     ## 6   475 2021-05-11 00:00:00          225
 
-It shows there are three records during February and March which has unusual no. of deaths. This data is correct as it was the correction over past counts. But this can’t be considered as a death of single date. Thus, we need to distribute the death accordingly.
+It shows there are three records during February and March that have an unusual number of deaths. This data is correct as it was the correction over past counts. However, this can’t be considered as the deaths of a single date. Thus, we need to distribute the deaths accordingly.
 
-We use daily % over total till that date to distribute the rate proportionally.
+We use the daily percentage over the total until that date to distribute the rate proportionally.
 
 ``` r
 distribute_outlier <- function(SN_value) {
