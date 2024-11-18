@@ -29,11 +29,7 @@ life.
 
 ## Social Network Analysis
 
-Social network analysis (SNA), also known as network science, is a field
-of data analytics that uses networks and graph theory to understand
-social structures. We can see network around us such as road network,
-online network, network of social media such as facebook, twitter etc.
-Learning SNA allow us to explore insight of various data sources.
+Social network analysis (SNA), also known as network science, is a specialized field of data analytics that employs networks and graph theory to analyze and understand social structures and relationships. Networks are all around us, playing a crucial role in various aspects of daily life. Examples include road networks that connect cities, online networks that facilitate communication, and social media networks such as Facebook, Twitter, and Instagram that link individuals and communities. By learning SNA, we gain the ability to delve into the intricate connections and patterns present in diverse data sources, uncovering valuable insights that can help solve complex problems, optimize systems, and improve decision-making in fields ranging from transportation to social behavior analysis.
 
 ## SNA Graph
 
