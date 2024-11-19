@@ -239,9 +239,7 @@ ggplot(mpg, aes(hwy)) + geom_histogram(binwidth = 2.5)
 ![]({{site.url}}/assets/r_exercises/ggplot/unnamed-chunk-17-1.png) 
 
 ## Frequency polygon
-A frequency polygon is a line graph of class
-frequency plotted against class midpoint. It can be obtained by joining
-the midpoints of the top of the rectangles in the histogram.
+A frequency polygon is a line graph of class frequency plotted against class midpoint. It can be obtained by joining the midpoints of the top of the rectangles in the histogram.
 
 ``` r
 ggplot(mpg, aes(hwy)) + geom_freqpoly()
