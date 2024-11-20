@@ -14,7 +14,7 @@ toc: true
 
 # Association Rule Mining
 
-Association rule mining (also known as Association Rule Learning) is a typical technique for determining relationships (co-occurrence) between many variables. It is mostly used in grocery stores, e-commerce websites, and other similar establishments, in addition to massive transactional databases.
+Association rule mining, also known as Association Rule Learning, is a popular technique for identifying relationships (or co-occurrences) between multiple variables. It is widely applied in contexts such as grocery stores, e-commerce websites, and other similar establishments to uncover patterns in customer behavior. Additionally, it is highly effective for analyzing massive transactional databases, enabling businesses to optimize inventory, recommend products, and enhance customer experience.
 
 **Amazon knows what else you want to buy when you order something on their site.** This is a very prevalent example in our daily life. Spotify works on the same principle: they know what song you want to listen to next.
 
