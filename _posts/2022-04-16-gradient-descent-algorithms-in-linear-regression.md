@@ -12,7 +12,7 @@ header:
 toc: true
 ---
 # Gradient Descent
-Gradient Descent is the most popular optimizer to update parameters and it uses the gradient of the error with respect to the parameter. But the parameter update rule is different and thus there are different variants of Gradient Descent.
+Gradient Descent is one of the most widely used optimizers for updating model parameters in machine learning. It works by calculating the gradient of the error with respect to the parameters and adjusting the parameters to minimize the error. However, the specific rule for updating parameters can vary, leading to different variants of Gradient Descent. These variants, such as Stochastic Gradient Descent (SGD), Mini-batch Gradient Descent, and Adam, offer unique advantages and trade-offs in terms of speed, stability, and convergence efficiency, depending on the problem being addressed.
 
 
 ## Mini- Batch Gradient Decent
